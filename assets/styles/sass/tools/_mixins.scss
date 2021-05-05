@@ -1,0 +1,11 @@
+@mixin container-size($width: 100%, $height: 100) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($direction: row, $break: nowrap, $alignMain: center, $alignCross: center) {
+    display: flex;
+    flex-flow: $direction $break;
+    justify-content: $alignMain;
+    align-items: $alignCross;
+}
