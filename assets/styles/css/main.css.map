@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/generic/_reset.scss","../sass/generic/_box-sizing.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;EAGI;EACA;EACA;;;ACLJ;EACI","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/generic/_reset.scss","../sass/generic/_box-sizing.scss","../sass/generic/_rem-size.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;EAGI;EACA;EACA;;;ACLJ;EACI;;;ACDJ;EACI","file":"main.css"}
