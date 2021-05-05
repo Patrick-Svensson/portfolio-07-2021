@@ -1,17 +1,19 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+/* Error: expected "{".
+ *   ,
+ * 7 | colourprojectcardtext: #525252;
+ *   |                               ^
+ *   '
+ *   assets/styles/sass/settings/_colours.scss 7:31  @forward
+ *   assets/styles/sass/settings/_index.scss 2:1     @use
+ *   assets/styles/sass/main.scss 1:1                root stylesheet */
 
-body {
-  box-sizing: border-box;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 7 \2502  colourprojectcardtext: #525252;\a   \2502                                ^\a   \2575 \a   assets/styles/sass/settings/_colours.scss 7:31  @forward\a   assets/styles/sass/settings/_index.scss 2:1     @use\a   assets/styles/sass/main.scss 1:1                root stylesheet';
 }
-
-:root {
-  font-size: 62.5%;
-}
-
-/*# sourceMappingURL=main.css.map */
