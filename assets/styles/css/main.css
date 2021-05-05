@@ -1,5 +1,13 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
-  background-color: aquamarine;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
