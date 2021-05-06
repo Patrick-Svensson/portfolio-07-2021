@@ -1,0 +1,11 @@
+@use "../settings" as *;
+
+* {
+    font-family: $fontMain;
+    color: $colourText;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}

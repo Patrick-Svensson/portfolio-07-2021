@@ -1,0 +1,24 @@
+@use "../settings" as *;
+
+h1 {
+    font-family: $fontProfile;
+    font-size: 7.2rem;
+    font-weight: 400;
+    text-shadow: 0.2rem 0.1rem 0.3rem $colourTextShadow;
+}
+
+h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-shadow: 0.1rem 0.05rem 0.2rem $colourTextShadow;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
