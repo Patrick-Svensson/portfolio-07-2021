@@ -18,4 +18,9 @@ body {
   font-family: "Fahkwang", sans-serif;
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=main.css.map */
