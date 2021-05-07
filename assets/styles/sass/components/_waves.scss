@@ -1,0 +1,9 @@
+@use "../tools" as *;
+
+.c-waves {
+    position: relative;
+    @include wrapper-size(100%, 100%);
+    margin-bottom: -0.7rem; /*Fix for safari gap*/
+    min-height: 10rem;
+    max-height: 15rem;
+}

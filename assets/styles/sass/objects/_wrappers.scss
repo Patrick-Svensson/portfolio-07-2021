@@ -11,16 +11,25 @@
     @include flex(column, nowrap, center, center);
     position: relative;
     background-color: $colourBgLight;
-    // &::before {
-    //     content: " ";
-    //     @include wrapper-size(100vw, 100vh);
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    // }
 }
 
 .o-testamonials-wrapper {
     @include wrapper-size(100vw, 75rem);
-    @include flex(rox, nowrap, center, center);
+    @include flex(row, nowrap, center, center);
 }
+
+/* ****** My Projects ****** */
+.o-projects-wrapper {
+    @include wrapper-size(100vw, 367rem);
+    @include flex(column, nowrap, flex-start, center);
+}
+/* ****** Myself ****** */
+
+.o-waves-wrapper {
+    @include wrapper-size(100vw, 15vh);
+    position: relative;
+    background: linear-gradient(60deg, #a2bece 0%, #dce9ee 100%);
+    color: $colourBgLight;
+}
+
+/* ****** Contact ****** */
