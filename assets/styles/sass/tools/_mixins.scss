@@ -9,3 +9,10 @@
     justify-content: $alignMain;
     align-items: $alignCross;
 }
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}

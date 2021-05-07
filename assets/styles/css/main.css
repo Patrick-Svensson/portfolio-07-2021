@@ -113,7 +113,12 @@ a {
 /* ****** Contact ****** */
 .o-contact-wrapper {
   width: 100vw;
-  height: 50vh;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+  background: linear-gradient(#fff 0%, #fcfcfc 100%);
+  border-top: 0.2rem solid #dce9ee;
 }
 
 /* ****** Header ****** */
@@ -133,8 +138,11 @@ a {
   background-repeat: no-repeat;
   background-position-x: -10%;
   background-position-y: 30%;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
   transform: scale(1.2);
-  opacity: 25%;
+  opacity: 15%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -158,8 +166,19 @@ a {
   background-repeat: no-repeat;
 }
 
-/* ****** Myself ****** */
 /* ****** Contact ****** */
+.o-contact-bg {
+  background-image: url("../../images/certificate.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
+  opacity: 8%;
+  position: absolute;
+}
+
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 .c-waves {
   position: relative;

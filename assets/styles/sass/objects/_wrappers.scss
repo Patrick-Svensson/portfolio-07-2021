@@ -46,5 +46,10 @@
 /* ****** Contact ****** */
 
 .o-contact-wrapper {
-    @include wrapper-size(100vw, 50vh);
+    @include wrapper-size(100vw, 80vh);
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+    background: linear-gradient(#fff 0%, $colourBgLight 100%);
+    border-top: 0.2rem solid $colourMyselfBgLight;
 }

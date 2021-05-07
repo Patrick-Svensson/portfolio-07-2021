@@ -14,8 +14,8 @@
     background-repeat: no-repeat;
     background-position-x: -10%;
     background-position-y: 30%;
-    transform: scale(1.2);
-    opacity: 25%;
+    @include transform(scale(1.2));
+    opacity: 15%;
     @include flex(row, nowrap, center, center);
 }
 
@@ -33,6 +33,15 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* ****** Myself ****** */
 
 /* ****** Contact ****** */
+.o-contact-bg {
+    background-image: url("../../images/certificate.jpg");
+    @include wrapper-size(100%, 100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
+    opacity: 8%;
+    position: absolute;
+}
