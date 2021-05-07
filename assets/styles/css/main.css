@@ -117,7 +117,7 @@ a {
   position: relative;
   overflow: hidden;
   margin-top: 3rem;
-  background: linear-gradient(#fff 0%, #fcfcfc 100%);
+  background-color: #fcfcfc;
   border-top: 0.2rem solid #dce9ee;
 }
 

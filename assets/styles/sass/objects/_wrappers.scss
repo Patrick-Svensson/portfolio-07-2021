@@ -50,6 +50,6 @@
     position: relative;
     overflow: hidden;
     margin-top: 3rem;
-    background: linear-gradient($colourBgBright 0%, $colourBgLight 100%);
+    background-color: $colourBgLight;
     border-top: 0.2rem solid $colourMyselfBgLight;
 }
