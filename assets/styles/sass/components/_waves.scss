@@ -1,5 +1,6 @@
 @use "../tools" as *;
 
+/* ****** Waves (Copepen by Daniel Österman @Goodkatz) ****** */
 .c-waves {
     position: relative;
     @include wrapper-size(100%, 100%);

@@ -24,11 +24,17 @@
     @include flex(column, nowrap, flex-start, center);
 }
 /* ****** Myself ****** */
+.o-myself-wrapper {
+    @include wrapper-size(100vw, 90vh);
+    @include flex(row, nowrap, center, center);
+    background: linear-gradient(60deg, $colourMyselfBgDark 0%, $colourMyselfBgLight 100%);
+}
 
+/* ****** Waves (Copepen by Daniel Österman @Goodkatz) ****** */
 .o-waves-wrapper {
     @include wrapper-size(100vw, 15vh);
     position: relative;
-    background: linear-gradient(60deg, #a2bece 0%, #dce9ee 100%);
+    background: linear-gradient(60deg, $colourMyselfBgDark 0%, $colourMyselfBgLight 100%);
     color: $colourBgLight;
 }
 
