@@ -1,0 +1,25 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.header-wrapper {
+    @include wrapper-size(100vw, 100vh);
+}
+
+.main-wrapper {
+    @include flex(column, nowrap, center, center);
+    margin-top: 100vh;
+    position: relative;
+    background-color: $colourBgLight;
+    // &::before {
+    //     content: " ";
+    //     @include wrapper-size(100vw, 100vh);
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
+}
+
+.testamonials-wrapper {
+    @include wrapper-size(100vw, 75rem);
+    @include flex(rox, nowrap, center, center);
+}

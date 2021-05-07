@@ -1,4 +1,5 @@
 @use "../settings" as *;
+@use "../tools" as *;
 
 * {
     font-family: $fontMain;
@@ -7,5 +8,7 @@
 
 body,
 html {
+    @include wrapper-size(100vw, auto);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }

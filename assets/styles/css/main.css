@@ -21,7 +21,10 @@ body {
 
 body,
 html {
+  width: 100vw;
+  height: auto;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -49,6 +52,44 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.header-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100vh;
+  position: relative;
+  background-color: #fcfcfc;
+}
+
+.testamonials-wrapper {
+  width: 100vw;
+  height: 75rem;
+  display: flex;
+  flex-flow: rox nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-bg-waves {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover;
+}
+
+.testamonials-bg {
+  background-image: url(../../../images/polar-chart.png);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
