@@ -152,28 +152,30 @@ a {
 /* ****** My Projects ****** */
 .o-projects-bg-top {
   background-image: url("../../images/my-work-bg-top.jpg");
-  width: 100%;
-  height: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 50%;
 }
 
 .o-projects-bg-bottom {
   background-image: url("../../images/my-work-bg-bottom.jpg");
-  width: 100%;
-  height: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 50%;
 }
 
 /* ****** Contact ****** */
 .o-contact-bg {
   background-image: url("../../images/certificate.jpg");
-  width: 100%;
-  height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
+  height: 100%;
   transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
   opacity: 8%;
   position: absolute;

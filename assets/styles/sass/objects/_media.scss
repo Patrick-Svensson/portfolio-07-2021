@@ -16,31 +16,24 @@
     background-position-y: 30%;
     @include transform(scale(1.2));
     opacity: 15%;
-    @include flex(row, nowrap, center, center);
+    @include flex(row, nowrap, center);
 }
 
 /* ****** My Projects ****** */
 .o-projects-bg-top {
-    background-image: url("../../images/my-work-bg-top.jpg");
+    @include background-image(url("../../images/my-work-bg-top.jpg"), cover, no-repeat, center);
     @include wrapper-size(100%, 50%);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .o-projects-bg-bottom {
-    background-image: url("../../images/my-work-bg-bottom.jpg");
+    @include background-image(url("../../images/my-work-bg-bottom.jpg"), cover, no-repeat, center);
     @include wrapper-size(100%, 50%);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* ****** Contact ****** */
 .o-contact-bg {
-    background-image: url("../../images/certificate.jpg");
+    @include background-image(url("../../images/certificate.jpg"), contain, no-repeat, center);
     @include wrapper-size(100%, 100%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
     opacity: 8%;
     position: absolute;
