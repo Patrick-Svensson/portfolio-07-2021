@@ -73,7 +73,7 @@ a {
 
 .o-testamonials-wrapper {
   width: 100vw;
-  height: 75rem;
+  height: 100vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -93,20 +93,20 @@ a {
 /* ****** Myself ****** */
 .o-myself-wrapper {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center;
-  background: linear-gradient(60deg, #a2bece 0%, #dce9ee 100%);
+  align-items: flex-end;
+  background: linear-gradient(90deg, #a2bece 0%, #dce9ee 100%);
 }
 
-/* ****** Waves (Copepen by Daniel Österman @Goodkatz) ****** */
+/* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 .o-waves-wrapper {
   width: 100vw;
   height: 15vh;
   position: relative;
-  background: linear-gradient(60deg, #a2bece 0%, #dce9ee 100%);
+  background: linear-gradient(90deg, #a2bece 0%, #dce9ee 100%);
   color: #fcfcfc;
 }
 
@@ -155,7 +155,7 @@ a {
 
 /* ****** Myself ****** */
 /* ****** Contact ****** */
-/* ****** Waves (Copepen by Daniel Österman @Goodkatz) ****** */
+/* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 .c-waves {
   position: relative;
   width: 100%;
@@ -166,7 +166,7 @@ a {
   max-height: 15rem;
 }
 
-/* ****** Waves (Copepen by Daniel Österman @Goodkatz) ****** */
+/* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 .u-waves--parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
