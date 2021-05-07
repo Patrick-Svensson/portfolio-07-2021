@@ -54,12 +54,14 @@ a {
   text-decoration: none;
 }
 
-.header-wrapper {
+/* ****** Header ****** */
+.o-header-wrapper {
   width: 100vw;
   height: 100vh;
 }
 
-.main-wrapper {
+/* ****** Testamonials ****** */
+.o-main-wrapper {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -68,7 +70,7 @@ a {
   background-color: #fcfcfc;
 }
 
-.testamonials-wrapper {
+.o-testamonials-wrapper {
   width: 100vw;
   height: 75rem;
   display: flex;
@@ -77,14 +79,16 @@ a {
   align-items: center;
 }
 
-.header-bg-waves {
+/* ****** Header ****** */
+.o-header-bg-waves {
   width: 100vw;
   height: 100vh;
   position: fixed;
   object-fit: cover;
 }
 
-.testamonials-bg {
+/* ****** Testamonials ****** */
+.o-testamonials-bg {
   background-image: url("../../images/polar-chart.png");
   width: 100%;
   height: 83%;

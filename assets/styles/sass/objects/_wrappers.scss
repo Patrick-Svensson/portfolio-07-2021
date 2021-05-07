@@ -1,11 +1,13 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.header-wrapper {
+/* ****** Header ****** */
+.o-header-wrapper {
     @include wrapper-size(100vw, 100vh);
 }
 
-.main-wrapper {
+/* ****** Testamonials ****** */
+.o-main-wrapper {
     @include flex(column, nowrap, center, center);
     position: relative;
     background-color: $colourBgLight;
@@ -18,7 +20,7 @@
     // }
 }
 
-.testamonials-wrapper {
+.o-testamonials-wrapper {
     @include wrapper-size(100vw, 75rem);
     @include flex(rox, nowrap, center, center);
 }
