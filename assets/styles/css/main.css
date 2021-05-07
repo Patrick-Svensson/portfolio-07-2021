@@ -111,6 +111,11 @@ a {
 }
 
 /* ****** Contact ****** */
+.o-contact-wrapper {
+  width: 100vw;
+  height: 50vh;
+}
+
 /* ****** Header ****** */
 .o-header-bg-waves {
   width: 100vw;

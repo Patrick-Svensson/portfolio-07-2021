@@ -44,3 +44,7 @@
 }
 
 /* ****** Contact ****** */
+
+.o-contact-wrapper {
+    @include wrapper-size(100vw, 50vh);
+}
