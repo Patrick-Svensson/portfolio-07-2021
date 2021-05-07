@@ -7,7 +7,6 @@
 
 .main-wrapper {
     @include flex(column, nowrap, center, center);
-    margin-top: 100vh;
     position: relative;
     background-color: $colourBgLight;
     // &::before {
