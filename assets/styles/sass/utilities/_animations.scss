@@ -1,29 +1,57 @@
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .u-waves--parallax > use {
+    -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 .u-waves--parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
     animation-delay: -2s;
+    -webkit-animation-duration: 12s;
     animation-duration: 12s;
 }
 .u-waves--parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
     animation-delay: -3s;
+    -webkit-animation-duration: 15s;
     animation-duration: 15s;
 }
 .u-waves--parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
     animation-delay: -4s;
+    -webkit-animation-duration: 18s;
     animation-duration: 18s;
 }
 .u-waves--parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
     animation-delay: -5s;
+    -webkit-animation-duration: 25s;
     animation-duration: 25s;
 }
-@keyframes move-forever {
+@-webkit-keyframes move-forever {
     0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
         transform: translate3d(-90px, 0, 0);
     }
     100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+        transform: translate3d(85px, 0, 0);
+    }
+}
+@keyframes move-forever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
         transform: translate3d(85px, 0, 0);
     }
 }

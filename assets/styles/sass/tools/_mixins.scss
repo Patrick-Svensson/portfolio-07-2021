@@ -4,21 +4,31 @@
 }
 
 @mixin flex($direction: row, $break: nowrap, $alignMain: center, $alignCross: center) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: $direction $break;
     flex-flow: $direction $break;
+    -webkit-box-pack: $alignMain;
+    -ms-flex-pack: $alignMain;
     justify-content: $alignMain;
+    -webkit-box-align: $alignCross;
+    -ms-flex-align: $alignCross;
     align-items: $alignCross;
 }
 
-@mixin background-image($url: url(" "), $size: cover, $repeat: no-repeat, $position: center) {
+@mixin background-image($url: url(" "), $size: cover, $position: center) {
     background-image: $url;
     background-size: $size;
-    background-repeat: $repeat;
     background-position: $position;
+    background-repeat: no-repeat;
 }
 
 @mixin transform($property) {
     -webkit-transform: $property;
+    -moz-transform: $property;
     -ms-transform: $property;
     -o-transform: $property;
     transform: $property;

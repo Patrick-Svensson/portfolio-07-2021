@@ -21,20 +21,20 @@
 
 /* ****** My Projects ****** */
 .o-projects-bg-top {
-    @include background-image(url("../../images/my-work-bg-top.jpg"), cover, no-repeat, center);
+    @include background-image(url("../../images/my-work-bg-top.jpg"), cover, center);
     @include wrapper-size(100%, 50%);
 }
 
 .o-projects-bg-bottom {
-    @include background-image(url("../../images/my-work-bg-bottom.jpg"), cover, no-repeat, center);
+    @include background-image(url("../../images/my-work-bg-bottom.jpg"), cover, center);
     @include wrapper-size(100%, 50%);
 }
 
 /* ****** Contact ****** */
 .o-contact-bg {
-    @include background-image(url("../../images/certificate.jpg"), contain, no-repeat, center);
+    @include background-image(url("../../images/certificate.jpg"), contain, center);
     @include wrapper-size(100%, 100%);
-    transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
+    @include transform(rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40));
     opacity: 8%;
     position: absolute;
 }

@@ -63,9 +63,18 @@ a {
 
 /* ****** Testamonials ****** */
 .o-main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #fcfcfc;
@@ -74,9 +83,18 @@ a {
 .o-testamonials-wrapper {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -84,9 +102,18 @@ a {
 .o-projects-wrapper {
   width: 100vw;
   height: 367rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -94,9 +121,18 @@ a {
 .o-myself-wrapper {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
   align-items: flex-end;
   background: linear-gradient(90deg, #a2bece 0%, #dce9ee 100%);
 }
@@ -139,13 +175,23 @@ a {
   background-position-x: -10%;
   background-position-y: 30%;
   -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
   opacity: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -153,8 +199,8 @@ a {
 .o-projects-bg-top {
   background-image: url("../../images/my-work-bg-top.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 50%;
 }
@@ -162,8 +208,8 @@ a {
 .o-projects-bg-bottom {
   background-image: url("../../images/my-work-bg-bottom.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 50%;
 }
@@ -172,10 +218,14 @@ a {
 .o-contact-bg {
   background-image: url("../../images/certificate.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  -webkit-transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
+  -moz-transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
+  -ms-transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
+  -o-transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
   transform: rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40);
   opacity: 8%;
   position: absolute;
@@ -193,35 +243,62 @@ a {
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 .u-waves--parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
 .u-waves--parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
   animation-delay: -2s;
+  -webkit-animation-duration: 12s;
   animation-duration: 12s;
 }
 
 .u-waves--parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
   animation-delay: -3s;
+  -webkit-animation-duration: 15s;
   animation-duration: 15s;
 }
 
 .u-waves--parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
   animation-delay: -4s;
+  -webkit-animation-duration: 18s;
   animation-duration: 18s;
 }
 
 .u-waves--parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
   animation-delay: -5s;
+  -webkit-animation-duration: 25s;
   animation-duration: 25s;
 }
 
-@keyframes move-forever {
+@-webkit-keyframes move-forever {
   0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
     transform: translate3d(-90px, 0, 0);
   }
   100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+    transform: translate3d(85px, 0, 0);
+  }
+}
+@keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
     transform: translate3d(85px, 0, 0);
   }
 }
