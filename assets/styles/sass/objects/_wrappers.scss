@@ -5,6 +5,15 @@
 
 .o-header-wrapper {
     @include wrapper-size(100vw, 100vh);
+    @include flex(row, nowrap, center, center);
+    position: relative;
+    text-align: center;
+}
+
+.header-content-wrapper {
+    @include wrapper-size(80%, 80%);
+    @include flex(row, nowrap, flex-end, flex-end);
+    position: relative;
 }
 
 /* ****** Testamonials ****** */

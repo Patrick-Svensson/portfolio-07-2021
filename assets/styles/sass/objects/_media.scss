@@ -1,9 +1,17 @@
 @use "../tools" as *;
 /* ****** Header ****** */
-.o-header-bg-waves {
+.o-bg-video {
     @include wrapper-size(100vw, 100vh);
-    position: fixed;
     object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.o-header-drawing-bg {
+    @include background-image(url("../../images/flicka-drawing.png"), contain, bottom right);
+    @include wrapper-size(100%, 100%);
+    @include flex(row, nowrap, flex-start, center);
 }
 
 /* ****** Testamonials ****** */

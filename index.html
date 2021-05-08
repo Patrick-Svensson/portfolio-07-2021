@@ -18,18 +18,26 @@
         <link rel="stylesheet" href="assets/styles/css/main.css" />
     </head>
     <body>
+        <!-- ****** Header Background Video ****** -->
+        <video
+            playsinline
+            autoplay
+            muted
+            loop
+            poster="assets/images/portfolio-waves.png"
+            class="o-bg-video"
+        >
+            <source src="assets/videos/portfolio-waves.mp4" />
+        </video>
+
         <!-- ****** Header ****** -->
         <header class="o-header-wrapper">
-            <video
-                playsinline
-                autoplay
-                muted
-                loop
-                poster="assets/images/portfolio-waves.png"
-                class="o-header-bg-waves"
-            >
-                <source src="assets/videos/portfolio-waves.mp4" />
-            </video>
+            <div class="header-content-wrapper">
+                <div class="o-header-drawing-bg">
+                    <div class="c-header-top-frame"></div>
+                    <div class="c-header-bottom-frame"></div>
+                </div>
+            </div>
         </header>
 
         <main class="o-main-wrapper">
@@ -43,7 +51,6 @@
                 <div class="o-projects-bg-top"></div>
                 <div class="o-projects-bg-bottom"></div>
             </section>
-
             <!-- ****** Myself ****** -->
             <section class="o-myself-wrapper">
                 <!-- ****** Waves (Copepen by Daniel Österman @Goodkatz) ****** -->
