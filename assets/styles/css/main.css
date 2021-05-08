@@ -32,7 +32,7 @@ h1 {
   font-family: "Spinnaker", sans-serif;
   font-size: 7.2rem;
   font-weight: 400;
-  text-shadow: 0.2rem 0.1rem 0.3rem #636363;
+  text-align: left;
 }
 
 h2 {
@@ -75,10 +75,11 @@ a {
   position: relative;
   text-align: center;
 }
-
-.header-content-wrapper {
+.o-header-bg-wrapper {
   width: 80%;
   height: 80%;
+  max-width: 200rem;
+  max-height: 130rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,13 +87,70 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  -webkit-box-pack: flex-end;
-  -ms-flex-pack: flex-end;
-  justify-content: flex-end;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+.o-header-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.o-header-text-container {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+.o-header-links-wrapper {
+  width: 90%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
-  position: relative;
+}
+.o-header-links-container {
+  width: 100%;
+  height: auto;
+  max-width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
 }
 
 /* ****** Testamonials ****** */
@@ -204,7 +262,7 @@ a {
 .o-header-drawing-bg {
   background-image: url("../../images/flicka-drawing.png");
   background-size: contain;
-  background-position: bottom right;
+  background-position: right;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -213,14 +271,14 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: flex-start;
-  -ms-flex-pack: flex-start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
 }
 
 /* ****** Testamonials ****** */
@@ -300,6 +358,24 @@ a {
   max-height: 15rem;
 }
 
+.c-header-heading {
+  text-shadow: 0.2rem 0.1rem 0.3rem #636363;
+}
+.c-header-heading--small {
+  font-size: 2.4rem;
+  display: block;
+  text-shadow: none;
+  padding-top: 3rem;
+}
+.c-header-heading--medium {
+  font-size: 3.2rem;
+  display: block;
+  text-shadow: none;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ****** Header ****** */
 .c-header-top-left-frame:before {
   width: 100%;
   height: 100%;
@@ -311,7 +387,6 @@ a {
   top: 0;
   border-left: 0.1rem solid #494949;
 }
-
 .c-header-top-frame:before {
   width: 100%;
   height: 100%;
@@ -323,7 +398,6 @@ a {
   top: 0;
   border-top: 0.1rem solid #494949;
 }
-
 .c-header-bottom-right-frame:before {
   width: 100%;
   height: 100%;
@@ -335,7 +409,6 @@ a {
   bottom: 0;
   border-bottom: 0.1rem solid #494949;
 }
-
 .c-header-bottom-frame:before {
   width: 100%;
   height: 100%;
@@ -346,6 +419,17 @@ a {
   right: 0;
   bottom: 0;
   border-right: 0.1rem solid #494949;
+}
+
+.c-header__links {
+  font-size: 1.8rem;
+  text-shadow: 0.1rem 0.05rem 0.1rem #636363;
+  padding-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.c-header-logo {
+  align-self: flex-start;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

@@ -9,9 +9,9 @@
 }
 
 .o-header-drawing-bg {
-    @include background-image(url("../../images/flicka-drawing.png"), contain, bottom right);
+    @include background-image(url("../../images/flicka-drawing.png"), contain, right);
     @include wrapper-size(100%, 100%);
-    @include flex(row, nowrap, flex-start, center);
+    @include flex(column, nowrap, space-between, flex-end);
 }
 
 /* ****** Testamonials ****** */

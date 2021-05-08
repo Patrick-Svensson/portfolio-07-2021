@@ -2,20 +2,43 @@
 @use "../tools" as *;
 
 /* ****** Header ****** */
+.o-header {
+    &-wrapper {
+        @include wrapper-size(100vw, 100vh);
+        @include flex(row, nowrap, center, center);
+        position: relative;
+        text-align: center;
+    }
 
-.o-header-wrapper {
-    @include wrapper-size(100vw, 100vh);
-    @include flex(row, nowrap, center, center);
-    position: relative;
-    text-align: center;
+    &-bg-wrapper {
+        @include wrapper-size(80%, 80%);
+        max-width: 200rem;
+        max-height: 130rem;
+        @include flex(row, nowrap, flex-start, flex-start);
+        position: relative;
+    }
+
+    &-content-wrapper {
+        @include wrapper-size(100%, 100%);
+        display: flex;
+    }
+
+    &-text-container {
+        @include wrapper-size(90%, auto);
+        @include flex(column, wrap, space-around, flex-start);
+    }
+
+    &-links-wrapper {
+        @include wrapper-size(90%, 30%);
+        @include flex(row, nowrap, flex-start, flex-end);
+    }
+
+    &-links-container {
+        @include wrapper-size(100%, auto);
+        max-width: 60rem;
+        @include flex(row, nowrap, space-between, flex-end);
+    }
 }
-
-.header-content-wrapper {
-    @include wrapper-size(80%, 80%);
-    @include flex(row, nowrap, flex-end, flex-end);
-    position: relative;
-}
-
 /* ****** Testamonials ****** */
 
 .o-main-wrapper {

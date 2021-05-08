@@ -14,7 +14,7 @@
             href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Spinnaker&display=swap"
             rel="stylesheet"
         />
-        <link rel="icon" href="assets/images/personal-logo.svg" />
+        <link rel="icon" href="assets/images/personal-logo-favicon.svg" />
         <link rel="stylesheet" href="assets/styles/css/main.css" />
     </head>
     <body>
@@ -32,8 +32,31 @@
 
         <!-- ****** Header ****** -->
         <header class="o-header-wrapper">
-            <div class="header-content-wrapper">
-                <div class="o-header-drawing-bg"></div>
+            <div class="o-header-bg-wrapper">
+                <div class="o-header-content-wrapper">
+                    <div class="o-header-drawing-bg">
+                        <svg class="c-header-logo">
+                            <use xlink:href="assets/images/personal-logo.svg#personalLogo"></use>
+                        </svg>
+                        <div class="o-header-text-container">
+                            <h1 class="c-header-heading">
+                                Hi there,<br />I'm Patrick
+                                <span class="c-header-heading--small">From boatbulder to</span>
+                                <span class="c-header-heading--medium">Front-End Developer</span>
+                                <span class="c-header-heading--small"
+                                    >Let me show you a little bit of...</span
+                                >
+                            </h1>
+                        </div>
+                        <div class="o-header-links-wrapper">
+                            <div class="o-header-links-container">
+                                <a class="c-header__links" href="#">...my projects</a>
+                                <a class="c-header__links" href="#">...myself</a>
+                                <a class="c-header__links" href="#">...how to contact me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="c-header-top-left-frame"></div>
                 <div class="c-header-top-frame"></div>
                 <div class="c-header-bottom-right-frame"></div>

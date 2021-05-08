@@ -1,34 +1,37 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.c-header-top-left-frame:before {
-    @include wrapper-size(100%, 100%);
-    @include frame(0, 40%);
-    left: 0;
-    top: 0;
-    border-left: 0.1rem solid $colourText;
-}
+/* ****** Header ****** */
+.c-header {
+    &-top-left-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(0, 40%);
+        left: 0;
+        top: 0;
+        border-left: 0.1rem solid $colourText;
+    }
 
-.c-header-top-frame:before {
-    @include wrapper-size(100%, 100%);
-    @include frame(50%, 0);
-    left: 0;
-    top: 0;
-    border-top: 0.1rem solid $colourText;
-}
+    &-top-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(50%, 0);
+        left: 0;
+        top: 0;
+        border-top: 0.1rem solid $colourText;
+    }
 
-.c-header-bottom-right-frame:before {
-    @include wrapper-size(100%, 100%);
-    @include frame(90%, 0);
-    right: 0;
-    bottom: 0;
-    border-bottom: 0.1rem solid $colourText;
-}
+    &-bottom-right-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(90%, 0);
+        right: 0;
+        bottom: 0;
+        border-bottom: 0.1rem solid $colourText;
+    }
 
-.c-header-bottom-frame:before {
-    @include wrapper-size(100%, 100%);
-    @include frame(0, 40%);
-    right: 0;
-    bottom: 0;
-    border-right: 0.1rem solid $colourText;
+    &-bottom-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(0, 40%);
+        right: 0;
+        bottom: 0;
+        border-right: 0.1rem solid $colourText;
+    }
 }
