@@ -17,7 +17,7 @@ body {
 
 * {
   font-family: "Fahkwang", sans-serif;
-  color: #3a3a3a;
+  color: #494949;
 }
 
 body,
@@ -298,6 +298,54 @@ a {
   /*Fix for safari gap*/
   min-height: 10rem;
   max-height: 15rem;
+}
+
+.c-header-top-left-frame:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 40%;
+  left: 0;
+  top: 0;
+  border-left: 0.1rem solid #494949;
+}
+
+.c-header-top-frame:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-top: 0.1rem solid #494949;
+}
+
+.c-header-bottom-right-frame:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.1rem solid #494949;
+}
+
+.c-header-bottom-frame:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 40%;
+  right: 0;
+  bottom: 0;
+  border-right: 0.1rem solid #494949;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

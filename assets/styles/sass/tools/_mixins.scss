@@ -33,3 +33,10 @@
     -o-transform: $property;
     transform: $property;
 }
+
+@mixin frame($width: 0, $height: 0) {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+}
