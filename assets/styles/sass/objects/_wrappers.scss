@@ -16,6 +16,13 @@
         max-height: 130rem;
         @include flex(row, nowrap, flex-start, flex-start);
         position: relative;
+        @include responsive(mobile) {
+            @include wrapper-size(100%, 100%);
+        }
+
+        @include responsive(tablet-port) {
+            @include wrapper-size(85%, 85%);
+        }
     }
 
     &-content-wrapper {
