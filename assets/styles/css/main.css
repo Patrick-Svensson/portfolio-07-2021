@@ -30,7 +30,7 @@ html {
 
 h1 {
   font-family: "Spinnaker", sans-serif;
-  font-size: 7.2rem;
+  font-size: clamp(3.8rem, 2.5636rem + 3.8636vw, 7.2rem);
   font-weight: 400;
   text-align: left;
 }
@@ -371,13 +371,13 @@ focus {
   text-shadow: 0.2rem 0.1rem 0.3rem #636363;
 }
 .c-header__heading--small {
-  font-size: 2.4rem;
+  font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   display: block;
   text-shadow: none;
   padding-top: 3rem;
 }
 .c-header__heading--medium {
-  font-size: 3.2rem;
+  font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
   display: block;
   text-shadow: none;
   padding-top: 1rem;
@@ -431,7 +431,7 @@ focus {
 }
 
 .c-header__links {
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
   text-shadow: 0.1rem 0.05rem 0.1rem #636363;
   padding-bottom: 2rem;
   margin-right: 2rem;

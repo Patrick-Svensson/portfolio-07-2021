@@ -1,7 +1,7 @@
 @use "../settings" as *;
 
 .c-header__links {
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
     text-shadow: 0.1rem 0.05rem 0.1rem $colourTextShadow;
     padding-bottom: 2rem;
     margin-right: 2rem;
