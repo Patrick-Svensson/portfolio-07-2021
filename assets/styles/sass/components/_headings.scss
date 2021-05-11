@@ -1,6 +1,6 @@
 @use "../settings" as *;
 
-.c-header-heading {
+.c-header__heading {
     text-shadow: 0.2rem 0.1rem 0.3rem $colourTextShadow;
 
     &--small {
