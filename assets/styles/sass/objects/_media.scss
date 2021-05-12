@@ -12,6 +12,9 @@
     @include background-image(url("../../images/flicka-drawing.png"), contain, bottom right);
     @include wrapper-size(100%, 100%);
     @include flex(column, nowrap, space-between, flex-end);
+    @include responsive(tablet-land) {
+        @include background-image(url("../../images/flicka-drawing-faded.png"), contain, bottom right);
+    }
 }
 
 /* ****** Testamonials ****** */

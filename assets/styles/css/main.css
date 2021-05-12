@@ -323,6 +323,14 @@ a:active {
   -ms-flex-align: flex-end;
   align-items: flex-end;
 }
+@media screen and (max-width: 75em) {
+  .o-header-drawing-bg {
+    background-image: url("../../images/flicka-drawing-faded.png");
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+}
 
 /* ****** Testamonials ****** */
 .o-testamonials-bg {
