@@ -31,12 +31,12 @@
     }
 
     &-text-container {
-        @include wrapper-size(90%, auto);
-        @include flex(column, wrap, space-around, flex-start);
+        @include wrapper-size(90%, 55%);
+        @include flex(column, wrap, space-between, flex-start);
     }
 
     &-links-wrapper {
-        @include wrapper-size(90%, 30%);
+        @include wrapper-size(90%, 25%);
         @include flex(row, nowrap, flex-start, flex-end);
     }
 
@@ -46,6 +46,21 @@
         @include flex(row, nowrap, space-between, flex-end);
     }
 }
+
+/* ****** Logo ****** */
+
+.o-logo-container {
+    @include wrapper-size(30rem, 15rem);
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    @include responsive(mobile) {
+        transform: scale(0.8);
+        top: -1rem;
+        left: -1rem;
+    }
+}
+
 /* ****** Testamonials ****** */
 
 .o-main-wrapper {
