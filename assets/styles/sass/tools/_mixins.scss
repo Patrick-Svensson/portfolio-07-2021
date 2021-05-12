@@ -75,6 +75,13 @@
         }
     }
 
+    @if $breakpoint == mobile-land {
+        @media screen and (max-height: 41rem) {
+            // 670px
+            @content;
+        }
+    }
+
     @if $breakpoint == tablet-port {
         @media screen and (max-width: 48em) {
             // 768px
