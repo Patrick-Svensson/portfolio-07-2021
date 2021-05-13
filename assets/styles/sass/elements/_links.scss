@@ -7,7 +7,8 @@ a {
 
 a:hover,
 focus {
-    @include hover($colourText);
+    @include transform(scale(1.2));
+    color: scale-color($colourText, $lightness: -40%);
 }
 
 a:active {

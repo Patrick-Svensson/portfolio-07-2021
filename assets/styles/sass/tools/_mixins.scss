@@ -51,13 +51,6 @@
     height: $height;
 }
 
-/* ***** Hover ***** */
-
-@mixin hover($colour) {
-    @include transform(scale(1.2));
-    color: scale-color($colour, $lightness: -40%);
-}
-
 /* ***** Media Queries ***** */
 
 /*
