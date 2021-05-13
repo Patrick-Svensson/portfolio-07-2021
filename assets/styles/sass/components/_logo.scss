@@ -1,0 +1,26 @@
+@use "../tools" as *;
+
+.c-logo {
+    position: absolute;
+    top: 0rem;
+    left: 2rem;
+    @include responsive(mobile) {
+        transform: scale(0.8);
+        top: -1rem;
+        left: -1rem;
+    }
+
+    @include responsive(mobile-land) {
+        transform: scale(0.8);
+        top: -2rem;
+        left: -2rem;
+    }
+
+    &__link:hover {
+        @include transform(scale(1.1) translate(-0.5rem, -0.5rem));
+    }
+
+    &__link:active {
+        @include transform(scale(1.01));
+    }
+}

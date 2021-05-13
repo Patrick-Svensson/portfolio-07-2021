@@ -4,13 +4,3 @@
 a {
     text-decoration: none;
 }
-
-a:hover,
-focus {
-    @include transform(scale(1.2));
-    color: scale-color($colourText, $lightness: -40%);
-}
-
-a:active {
-    @include transform(scale(1.1));
-}

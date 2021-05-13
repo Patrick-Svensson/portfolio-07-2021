@@ -47,30 +47,6 @@
     }
 }
 
-/* ****** Logo ****** */
-
-.o-logo-container {
-    @include wrapper-size(30rem, 15rem);
-    position: absolute;
-    top: 0rem;
-    left: 2rem;
-    @include responsive(mobile) {
-        transform: scale(0.8);
-        top: -1rem;
-        left: -1rem;
-    }
-
-    @include responsive(mobile-land) {
-        transform: scale(0.6);
-        top: -3rem;
-        left: -5rem;
-    }
-
-    // &:hover {
-
-    // }
-}
-
 /* ****** Testamonials ****** */
 
 .o-main-wrapper {

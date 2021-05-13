@@ -9,4 +9,14 @@
     @include responsive(mobile) {
         margin-right: 1rem;
     }
+
+    &:hover,
+    focus {
+        @include transform(scale(1.2));
+        color: scale-color($colourText, $lightness: -40%);
+    }
+
+    &:active {
+        @include transform(scale(1.1));
+    }
 }
