@@ -203,7 +203,7 @@ a {
 
 .o-testamonials-wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,8 +325,8 @@ a {
   height: 83%;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-position-x: -10%;
-  background-position-y: 30%;
+  background-position-x: 90%;
+  background-position-y: 28%;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
