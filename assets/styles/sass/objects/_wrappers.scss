@@ -55,7 +55,7 @@
     background-color: $colourBgLight;
 }
 
-.o-testamonials-wrapper {
+.o-test-wrapper {
     @include wrapper-size(100vw, 70vh);
     @include flex(row, nowrap, center, center);
 }

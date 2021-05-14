@@ -201,7 +201,7 @@ a {
   background-color: #fcfcfc;
 }
 
-.o-testamonials-wrapper {
+.o-test-wrapper {
   width: 100vw;
   height: 70vh;
   display: -webkit-box;
@@ -319,7 +319,7 @@ a {
 }
 
 /* ****** Testamonials ****** */
-.o-testamonials-bg {
+.o-test-bg {
   background-image: url("../../images/polar-chart.png");
   width: 100%;
   height: 83%;
@@ -332,7 +332,6 @@ a {
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
-  opacity: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,6 +527,15 @@ a {
   -ms-transform: scale(1.01);
   -o-transform: scale(1.01);
   transform: scale(1.01);
+}
+
+.c-test-card1 {
+  width: 50%;
+  height: 60%;
+  max-width: 90rem;
+  max-height: 40rem;
+  background-color: #e2eff5;
+  box-shadow: 0.2rem 0.5rem 0.5rem 0 #b9b9b9;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

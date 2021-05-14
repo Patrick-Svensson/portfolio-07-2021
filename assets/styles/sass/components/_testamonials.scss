@@ -1,0 +1,10 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.c-test-card1 {
+    @include wrapper-size(50%, 60%);
+    max-width: 90rem;
+    max-height: 40rem;
+    background-color: $colourTestCard;
+    box-shadow: 0.2rem 0.5rem 0.5rem 0 $colourCardShadow;
+}

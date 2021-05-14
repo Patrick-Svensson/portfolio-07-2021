@@ -18,7 +18,7 @@
 }
 
 /* ****** Testamonials ****** */
-.o-testamonials-bg {
+.o-test-bg {
     background-image: url("../../images/polar-chart.png");
     @include wrapper-size(100%, 83%);
     object-fit: cover;
@@ -26,7 +26,6 @@
     background-position-x: 90%;
     background-position-y: 28%;
     @include transform(scale(1.2));
-    opacity: 15%;
     @include flex(row, nowrap, center);
 }
 
