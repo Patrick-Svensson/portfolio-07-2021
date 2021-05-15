@@ -1,10 +1,16 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.c-test-card1 {
+.c-test-card {
     @include wrapper-size(50%, 60%);
+    @include flex(row, nowrap, center, center);
     max-width: 90rem;
     max-height: 40rem;
     background-color: $colourTestCard;
     box-shadow: 0.2rem 0.5rem 0.5rem 0 $colourCardShadow;
+
+    &__content-container {
+        @include wrapper-size(93%, 83%);
+        position: relative;
+    }
 }

@@ -19,7 +19,7 @@
         border-top: 0.1rem solid $colourText;
     }
 
-    &-bottom-right-frame:before {
+    &-bottom-frame:before {
         @include wrapper-size(100%, 100%);
         @include frame(90%, 0);
         right: 0;
@@ -27,11 +27,45 @@
         border-bottom: 0.1rem solid $colourText;
     }
 
-    &-bottom-frame:before {
+    &-bottom-right-frame:before {
         @include wrapper-size(100%, 100%);
         @include frame(0, 40%);
         right: 0;
         bottom: 0;
         border-right: 0.1rem solid $colourText;
+    }
+}
+
+.c-test {
+    &-top-left-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(0, 50%);
+        left: 0;
+        top: 0;
+        border-left: 0.1rem solid $colourCardShadow;
+    }
+
+    &-top-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(70%, 0);
+        left: 0;
+        top: 0;
+        border-top: 0.1rem solid $colourCardShadow;
+    }
+
+    &-bottom-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(70%, 0);
+        right: 0;
+        bottom: 0;
+        border-bottom: 0.1rem solid $colourCardShadow;
+    }
+
+    &-bottom-right-frame:before {
+        @include wrapper-size(100%, 100%);
+        @include frame(0, 50%);
+        right: 0;
+        bottom: 0;
+        border-right: 0.1rem solid $colourCardShadow;
     }
 }
