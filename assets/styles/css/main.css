@@ -552,6 +552,10 @@ a {
   }
 }
 
+.scrollIcon {
+  visibility: hidden;
+}
+
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 /*
 * Prefixed by https://autoprefixer.github.io
@@ -629,11 +633,11 @@ a {
     transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(0.4rem);
-    -moz-transform: translateY(0.4rem);
-    -ms-transform: translateY(0.4rem);
-    -o-transform: translateY(0.4rem);
-    transform: translateY(0.4rem);
+    -webkit-transform: translateY(0.8rem);
+    -moz-transform: translateY(0.8rem);
+    -ms-transform: translateY(0.8rem);
+    -o-transform: translateY(0.8rem);
+    transform: translateY(0.8rem);
   }
 }
 
