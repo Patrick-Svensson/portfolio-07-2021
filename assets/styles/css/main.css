@@ -538,6 +538,20 @@ a {
   box-shadow: 0.2rem 0.5rem 0.5rem 0 #b9b9b9;
 }
 
+.c-scroll-icon {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  right: 50%;
+  font-size: clamp(0.8rem, 0.5091rem + 0.9091vw, 1.6rem);
+  color: #494949;
+}
+@media screen and (max-height: 41rem) {
+  .c-scroll-icon {
+    bottom: 1.5rem;
+  }
+}
+
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 /*
 * Prefixed by https://autoprefixer.github.io
@@ -596,6 +610,30 @@ a {
   100% {
     -webkit-transform: translate3d(85px, 0, 0);
     transform: translate3d(85px, 0, 0);
+  }
+}
+/* ****** Scroll Icon ****** */
+.c-scroll-icon {
+  -webkit-animation: bounce 0.5s linear 1s infinite alternate;
+  -moz-animation: bounce 0.5s linear 1s infinite alternate;
+  -o-animation: bounce 0.5s linear 1s infinite alternate;
+  animation: bounce 0.5s linear 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(0.4rem);
+    -moz-transform: translateY(0.4rem);
+    -ms-transform: translateY(0.4rem);
+    -o-transform: translateY(0.4rem);
+    transform: translateY(0.4rem);
   }
 }
 

@@ -1,3 +1,5 @@
+@use "../tools" as *;
+
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 
 /*
@@ -53,5 +55,24 @@
     100% {
         -webkit-transform: translate3d(85px, 0, 0);
         transform: translate3d(85px, 0, 0);
+    }
+}
+
+/* ****** Scroll Icon ****** */
+
+.c-scroll-icon {
+    -webkit-animation: bounce 0.5s linear 1s infinite alternate;
+    -moz-animation: bounce 0.5s linear 1s infinite alternate;
+    -o-animation: bounce 0.5s linear 1s infinite alternate;
+    animation: bounce 0.5s linear 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        @include transform(translateY(0));
+    }
+
+    to {
+        @include transform(translateY(0.4rem));
     }
 }
