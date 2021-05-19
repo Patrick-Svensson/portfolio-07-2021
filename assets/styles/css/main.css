@@ -46,7 +46,7 @@ h1 {
   font-weight: 400;
   text-align: left;
 }
-@media screen and (max-height: 41rem) {
+@media screen and (max-height: 35rem) {
   h1 {
     font-size: 3.8rem;
   }
@@ -239,6 +239,11 @@ a {
     height: 100vh;
   }
 }
+@media screen and (max-height: 35rem) {
+  .o-test-wrapper {
+    display: none;
+  }
+}
 
 /* ****** My Projects ****** */
 .o-projects-wrapper {
@@ -366,6 +371,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 /* ****** My Projects ****** */
@@ -424,7 +430,7 @@ a {
   text-shadow: none;
   padding-top: 3rem;
 }
-@media screen and (max-height: 41rem) {
+@media screen and (max-height: 35rem) {
   .c-header__heading--small {
     display: none;
   }
@@ -436,7 +442,7 @@ a {
   padding-top: 1rem;
   margin-bottom: 3rem;
 }
-@media screen and (max-height: 41rem) {
+@media screen and (max-height: 35rem) {
   .c-header__heading--medium {
     font-size: 2rem;
   }
@@ -716,7 +722,7 @@ a {
     left: -1rem;
   }
 }
-@media screen and (max-height: 41rem) {
+@media screen and (max-height: 35rem) {
   .c-logo {
     transform: scale(0.8);
     top: -2rem;
@@ -756,7 +762,7 @@ a {
   align-items: center;
   max-width: 90rem;
   max-height: 40rem;
-  background-color: #e2eff5;
+  background: linear-gradient(90deg, #dce9ee 0%, #effaff 50%, #dce9ee 100%);
   box-shadow: 0.2rem 0.5rem 0.5rem 0 #b9b9b9;
 }
 @media screen and (max-width: 30em) {
@@ -796,6 +802,46 @@ a {
   }
 }
 
+c-test-coarousel__indicator-container {
+  width: 4rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 2rem;
+}
+@media screen and (max-width: 30em) {
+  c-test-coarousel__indicator-container {
+    width: 3rem;
+  }
+}
+
+c-test-carousel__indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid #b9b9b9;
+  background-color: #effaff;
+}
+@media screen and (max-width: 30em) {
+  c-test-carousel__indicator {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
 .c-scroll-icon {
   position: absolute;
   bottom: 4rem;
@@ -804,7 +850,7 @@ a {
   font-size: clamp(0.8rem, 0.5091rem + 0.9091vw, 1.6rem);
   color: #494949;
 }
-@media screen and (max-height: 41rem) {
+@media screen and (max-height: 35rem) {
   .c-scroll-icon {
     bottom: 1.5rem;
   }

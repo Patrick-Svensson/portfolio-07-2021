@@ -61,6 +61,9 @@
     @include responsive(mobile) {
         height: 100vh;
     }
+    @include responsive(mobile-land) {
+        display: none;
+    }
 }
 
 /* ****** My Projects ****** */
@@ -74,7 +77,7 @@
 .o-myself-wrapper {
     @include wrapper-size(100vw, 100vh);
     @include flex(row, nowrap, center, flex-end);
-    background: linear-gradient(90deg, $colourMyselfBgDark 0%, $colourMyselfBgLight 100%);
+    background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
@@ -82,7 +85,7 @@
 .o-waves-wrapper {
     @include wrapper-size(100vw, 15vh);
     position: relative;
-    background: linear-gradient(90deg, $colourMyselfBgDark 0%, $colourMyselfBgLight 100%);
+    background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
     color: $colourBgLight;
 }
 
@@ -94,5 +97,5 @@
     overflow: hidden;
     margin-top: 3rem;
     background-color: $colourBgLight;
-    border-top: 0.2rem solid $colourMyselfBgLight;
+    border-top: 0.2rem solid $colourCloud;
 }

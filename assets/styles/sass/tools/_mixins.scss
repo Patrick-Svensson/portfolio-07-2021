@@ -69,7 +69,7 @@
     }
 
     @if $breakpoint == mobile-land {
-        @media screen and (max-height: 41rem) {
+        @media screen and (max-height: 35rem) {
             // 670px
             @content;
         }

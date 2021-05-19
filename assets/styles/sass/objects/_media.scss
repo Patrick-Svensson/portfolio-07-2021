@@ -27,6 +27,7 @@
     background-position-y: 28%;
     @include transform(scale(1.2));
     @include flex(row, nowrap, center);
+    position: relative;
 }
 
 /* ****** My Projects ****** */
