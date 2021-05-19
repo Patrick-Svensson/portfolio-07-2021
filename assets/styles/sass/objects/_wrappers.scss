@@ -1,6 +1,12 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
+.o-main-wrapper {
+    @include flex(column, nowrap, center, center);
+    position: relative;
+    background-color: $colourBgLight;
+}
+
 /* ****** Header ****** */
 .o-header {
     &-wrapper {
@@ -49,15 +55,12 @@
 
 /* ****** Testamonials ****** */
 
-.o-main-wrapper {
-    @include flex(column, nowrap, center, center);
-    position: relative;
-    background-color: $colourBgLight;
-}
-
 .o-test-wrapper {
     @include wrapper-size(100vw, 70vh);
     @include flex(row, nowrap, center, center);
+    @include responsive(mobile) {
+        height: 100vh;
+    }
 }
 
 /* ****** My Projects ****** */

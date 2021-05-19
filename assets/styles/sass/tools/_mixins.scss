@@ -83,8 +83,8 @@
     }
 
     @if $breakpoint == tablet-land {
-        @media screen and (max-width: 75em) {
-            // 1200px
+        @media screen and (max-width: 68em) {
+            // 1088px
             @content;
         }
     }
