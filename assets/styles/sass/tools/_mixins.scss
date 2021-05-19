@@ -57,7 +57,8 @@
 - 480px = mobile
 481 - 768px = tablet-port
 769 - 1200px = tablet-land
-1200 - = laptop (default)
+1200 - 1800px = laptop (default)
+1800 - = desktop
 */
 
 @mixin responsive($breakpoint) {
@@ -69,8 +70,8 @@
     }
 
     @if $breakpoint == mobile-land {
-        @media screen and (max-height: 35rem) {
-            // 670px
+        @media (min-width: 25em) and (max-height: 42em) {
+            // 400px 672px
             @content;
         }
     }
@@ -83,8 +84,15 @@
     }
 
     @if $breakpoint == tablet-land {
-        @media screen and (max-width: 68em) {
+        @media screen and (max-width: 75em) {
             // 1088px
+            @content;
+        }
+    }
+
+    @if $breakpoint == desktop {
+        @media screen and (min-width: 112.5em) {
+            // 1800px
             @content;
         }
     }

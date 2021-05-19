@@ -23,11 +23,14 @@
     @include wrapper-size(100%, 83%);
     object-fit: cover;
     background-repeat: no-repeat;
-    background-position-x: 90%;
+    background-position-x: 80%;
     background-position-y: 28%;
     @include transform(scale(1.2));
     @include flex(row, nowrap, center);
     position: relative;
+    @include responsive(desktop) {
+        @include transform(scale(1.5));
+    }
 }
 
 /* ****** My Projects ****** */

@@ -14,7 +14,7 @@
 
     &__content-container {
         @include wrapper-size(93%, 83%);
-        @include flex(row, nowrap, flex-end, flex-end);
+        @include flex(row, nowrap, center, center);
         position: relative;
         @include responsive(mobile) {
             @include wrapper-size(90%, 90%);
@@ -24,9 +24,53 @@
             @include wrapper-size(90%, 90%);
         }
     }
+
+    &__content {
+        @include wrapper-size(80%, 55%);
+        @include flex(row, nowrap, space-between, center);
+        @include responsive(tablet-land) {
+            justify-content: center;
+        }
+    }
+
+    &__img-container {
+        @include wrapper-size(12rem, 12rem);
+        border-radius: 50%;
+        box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourCardShadow;
+        overflow: hidden;
+        @include responsive(tablet-land) {
+            position: absolute;
+            top: -35%;
+            left: 10%;
+        }
+
+        @include responsive(tablet-port) {
+            top: -25%;
+        }
+    }
+
+    &__img {
+        @include wrapper-size(100%, 100%);
+        object-fit: contain;
+    }
+
+    &__qoute-container {
+        @include wrapper-size(70%, 100%);
+        @include flex(row, wrap, center, center);
+        @include responsive(mobile) {
+            width: 80%;
+        }
+    }
+
+    &__quote {
+        font-style: italic;
+        @include responsive(mobile) {
+            line-height: 1.3rem;
+        }
+    }
 }
 
-c-test-coarousel__indicator-container {
+.c-test-carousel__indicator-container {
     @include wrapper-size(4rem, 2rem);
     @include flex(row, nowrap, space-between, center);
     position: absolute;
@@ -37,7 +81,7 @@ c-test-coarousel__indicator-container {
     }
 }
 
-c-test-carousel__indicator {
+.c-test-carousel__indicator {
     @include wrapper-size(1.5rem, 1.5rem);
     border-radius: 50%;
     border: 0.1rem solid $colourCardShadow;
