@@ -72,7 +72,6 @@
     }
 
     &__test {
-        border-left: 0.1rem solid $colourCardShadow;
         @include responsive(mobile) {
             display: none;
         }
@@ -83,21 +82,24 @@
     }
 
     &-text-holder {
-        @include wrapper-size(40%, 20%);
-        @include flex(column, nowrap, space-between, flex-start);
         position: absolute;
         bottom: 0;
         right: 0;
         border-top: 0.1rem solid $colourCardShadow;
         border-left: 0.1rem solid $colourCardShadow;
-        @include responsive(mobile) {
-            @include wrapper-size(100%, 15%);
-            border: none;
-        }
 
-        @include responsive(tablet-land) {
-            @include wrapper-size(100%, 15%);
-            border: none;
+        &__test {
+            @include wrapper-size(40%, 20%);
+            @include flex(column, nowrap, space-between, flex-start);
+            @include responsive(mobile) {
+                @include wrapper-size(100%, 15%);
+                border: none;
+            }
+
+            @include responsive(tablet-land) {
+                @include wrapper-size(100%, 15%);
+                border: none;
+            }
         }
 
         &--bottom {

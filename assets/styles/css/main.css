@@ -580,9 +580,6 @@ a {
   bottom: 0;
   border-right: 0.1rem solid #b9b9b9;
 }
-.c-frame__test {
-  border-left: 0.1rem solid #b9b9b9;
-}
 @media screen and (max-width: 30em) {
   .c-frame__test {
     display: none;
@@ -594,6 +591,13 @@ a {
   }
 }
 .c-frame-text-holder {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 0.1rem solid #b9b9b9;
+  border-left: 0.1rem solid #b9b9b9;
+}
+.c-frame-text-holder__test {
   width: 40%;
   height: 20%;
   display: -webkit-box;
@@ -609,21 +613,16 @@ a {
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-top: 0.1rem solid #b9b9b9;
-  border-left: 0.1rem solid #b9b9b9;
 }
 @media screen and (max-width: 30em) {
-  .c-frame-text-holder {
+  .c-frame-text-holder__test {
     width: 100%;
     height: 15%;
     border: none;
   }
 }
 @media screen and (max-width: 75em) {
-  .c-frame-text-holder {
+  .c-frame-text-holder__test {
     width: 100%;
     height: 15%;
     border: none;
