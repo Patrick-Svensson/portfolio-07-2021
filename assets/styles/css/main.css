@@ -277,15 +277,50 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(90deg, #a2bece 0%, #dce9ee 100%);
+}
+.o-myself-content-wrapper {
+  width: 85%;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  background: linear-gradient(90deg, #a2bece 0%, #dce9ee 100%);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.o-myself-content-container {
+  width: 100%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
@@ -462,9 +497,11 @@ a {
 }
 
 /* ****** Header ****** */
-.c-header-top-left-frame:before {
+.c-header:before {
   width: 100%;
   height: 100%;
+}
+.c-header-top-left-frame:before {
   content: "";
   position: absolute;
   width: 0;
@@ -474,8 +511,6 @@ a {
   border-left: 0.1rem solid #494949;
 }
 .c-header-top-frame:before {
-  width: 100%;
-  height: 100%;
   content: "";
   position: absolute;
   width: 50%;
@@ -485,8 +520,6 @@ a {
   border-top: 0.1rem solid #494949;
 }
 .c-header-bottom-frame:before {
-  width: 100%;
-  height: 100%;
   content: "";
   position: absolute;
   width: 90%;
@@ -496,8 +529,6 @@ a {
   border-bottom: 0.1rem solid #494949;
 }
 .c-header-bottom-right-frame:before {
-  width: 100%;
-  height: 100%;
   content: "";
   position: absolute;
   width: 0;
@@ -508,30 +539,11 @@ a {
 }
 
 /* ****** Testamonials ****** */
-.c-test-top-left-frame:before {
+.c-frame:before {
   width: 100%;
   height: 100%;
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 50%;
-  left: 0;
-  top: 0;
-  border-left: 0.1rem solid #b9b9b9;
 }
-@media screen and (max-width: 30em) {
-  .c-test-top-left-frame:before {
-    display: none;
-  }
-}
-@media screen and (max-width: 75em) {
-  .c-test-top-left-frame:before {
-    display: none;
-  }
-}
-.c-test-top-frame:before {
-  width: 100%;
-  height: 100%;
+.c-frame-top:before {
   content: "";
   position: absolute;
   width: 70%;
@@ -540,19 +552,16 @@ a {
   top: 0;
   border-top: 0.1rem solid #b9b9b9;
 }
-@media screen and (max-width: 30em) {
-  .c-test-top-frame:before {
-    display: none;
-  }
+.c-frame-top-left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 50%;
+  left: 0;
+  top: 0;
+  border-left: 0.1rem solid #b9b9b9;
 }
-@media screen and (max-width: 75em) {
-  .c-test-top-frame:before {
-    display: none;
-  }
-}
-.c-test-bottom-frame:before {
-  width: 100%;
-  height: 100%;
+.c-frame-bottom:before {
   content: "";
   position: absolute;
   width: 70%;
@@ -561,19 +570,7 @@ a {
   bottom: 0;
   border-bottom: 0.1rem solid #b9b9b9;
 }
-@media screen and (max-width: 30em) {
-  .c-test-bottom-frame:before {
-    display: none;
-  }
-}
-@media screen and (max-width: 75em) {
-  .c-test-bottom-frame:before {
-    display: none;
-  }
-}
-.c-test-bottom-right-frame:before {
-  width: 100%;
-  height: 100%;
+.c-frame-bottom-right:before {
   content: "";
   position: absolute;
   width: 0;
@@ -582,13 +579,16 @@ a {
   bottom: 0;
   border-right: 0.1rem solid #b9b9b9;
 }
+.c-frame__test {
+  border-left: 0.1rem solid #b9b9b9;
+}
 @media screen and (max-width: 30em) {
-  .c-test-bottom-right-frame:before {
+  .c-frame__test {
     display: none;
   }
 }
 @media screen and (max-width: 75em) {
-  .c-test-bottom-right-frame:before {
+  .c-frame__test {
     display: none;
   }
 }

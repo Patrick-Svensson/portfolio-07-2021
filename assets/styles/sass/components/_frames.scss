@@ -3,8 +3,11 @@
 
 /* ****** Header ****** */
 .c-header {
-    &-top-left-frame:before {
+    &:before {
         @include wrapper-size(100%, 100%);
+    }
+
+    &-top-left-frame:before {
         @include frame(0, 40%);
         left: 0;
         top: 0;
@@ -12,7 +15,6 @@
     }
 
     &-top-frame:before {
-        @include wrapper-size(100%, 100%);
         @include frame(50%, 0);
         left: 0;
         top: 0;
@@ -20,7 +22,6 @@
     }
 
     &-bottom-frame:before {
-        @include wrapper-size(100%, 100%);
         @include frame(90%, 0);
         right: 0;
         bottom: 0;
@@ -28,7 +29,6 @@
     }
 
     &-bottom-right-frame:before {
-        @include wrapper-size(100%, 100%);
         @include frame(0, 40%);
         right: 0;
         bottom: 0;
@@ -37,58 +37,41 @@
 }
 
 /* ****** Testamonials ****** */
-.c-test {
-    &-top-left-frame:before {
+.c-frame {
+    &:before {
         @include wrapper-size(100%, 100%);
-        @include frame(0, 50%);
-        left: 0;
-        top: 0;
-        border-left: 0.1rem solid $colourCardShadow;
-        @include responsive(mobile) {
-            display: none;
-        }
-
-        @include responsive(tablet-land) {
-            display: none;
-        }
     }
 
-    &-top-frame:before {
-        @include wrapper-size(100%, 100%);
+    &-top:before {
         @include frame(70%, 0);
         left: 0;
         top: 0;
         border-top: 0.1rem solid $colourCardShadow;
-        @include responsive(mobile) {
-            display: none;
-        }
-
-        @include responsive(tablet-land) {
-            display: none;
-        }
     }
 
-    &-bottom-frame:before {
-        @include wrapper-size(100%, 100%);
+    &-top-left:before {
+        @include frame(0, 50%);
+        left: 0;
+        top: 0;
+        border-left: 0.1rem solid $colourCardShadow;
+    }
+
+    &-bottom:before {
         @include frame(70%, 0);
         right: 0;
         bottom: 0;
         border-bottom: 0.1rem solid $colourCardShadow;
-        @include responsive(mobile) {
-            display: none;
-        }
-
-        @include responsive(tablet-land) {
-            display: none;
-        }
     }
 
-    &-bottom-right-frame:before {
-        @include wrapper-size(100%, 100%);
+    &-bottom-right:before {
         @include frame(0, 50%);
         right: 0;
         bottom: 0;
         border-right: 0.1rem solid $colourCardShadow;
+    }
+
+    &__test {
+        border-left: 0.1rem solid $colourCardShadow;
         @include responsive(mobile) {
             display: none;
         }
