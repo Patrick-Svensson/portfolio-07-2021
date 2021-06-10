@@ -5,6 +5,7 @@
 .c-header {
     &:before {
         @include wrapper-size(100%, 100%);
+        border-width: 0.1rem;
     }
 
     &-top-left-frame:before {
@@ -80,60 +81,60 @@
             display: none;
         }
     }
-}
 
-.c-test__frame-text-holder {
-    @include wrapper-size(40%, 20%);
-    @include flex(column, nowrap, space-between, flex-start);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-top: 0.1rem solid $colourCardShadow;
-    border-left: 0.1rem solid $colourCardShadow;
-    @include responsive(mobile) {
-        @include wrapper-size(100%, 15%);
-        border: none;
-    }
-
-    @include responsive(tablet-land) {
-        @include wrapper-size(100%, 15%);
-        border: none;
-    }
-
-    &--bottom {
-        @include wrapper-size(100%, 50%);
-        @include flex(row, nowrap, flex-start, center);
+    &-text-holder {
+        @include wrapper-size(40%, 20%);
+        @include flex(column, nowrap, space-between, flex-start);
+        position: absolute;
+        bottom: 0;
+        right: 0;
         border-top: 0.1rem solid $colourCardShadow;
+        border-left: 0.1rem solid $colourCardShadow;
         @include responsive(mobile) {
+            @include wrapper-size(100%, 15%);
             border: none;
         }
 
         @include responsive(tablet-land) {
+            @include wrapper-size(100%, 15%);
             border: none;
+        }
+
+        &--bottom {
+            @include wrapper-size(100%, 50%);
+            @include flex(row, nowrap, flex-start, center);
+            border-top: 0.1rem solid $colourCardShadow;
+            @include responsive(mobile) {
+                border: none;
+            }
+
+            @include responsive(tablet-land) {
+                border: none;
+            }
+        }
+
+        &--top {
+            @include wrapper-size(100%, 50%);
+            @include flex(row, nowrap, flex-start, center);
+            @include responsive(mobile) {
+                border: none;
+            }
+
+            @include responsive(tablet-land) {
+                border: none;
+            }
         }
     }
 
-    &--top {
-        @include wrapper-size(100%, 50%);
-        @include flex(row, nowrap, flex-start, center);
-        @include responsive(mobile) {
-            border: none;
-        }
+    &__name {
+        padding-left: 1rem;
 
-        @include responsive(tablet-land) {
-            border: none;
-        }
-    }
-}
-
-.c-test__name {
-    padding-left: 1rem;
-
-    &--link {
-        font-size: 1.2rem;
-        color: $colourLinks;
-        @include responsive(mobile) {
-            font-size: 1rem;
+        &--link {
+            font-size: 1.2rem;
+            color: $colourLinks;
+            @include responsive(mobile) {
+                font-size: 1rem;
+            }
         }
     }
 }

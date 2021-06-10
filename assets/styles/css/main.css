@@ -500,6 +500,7 @@ a {
 .c-header:before {
   width: 100%;
   height: 100%;
+  border-width: 0.1rem;
 }
 .c-header-top-left-frame:before {
   content: "";
@@ -592,8 +593,7 @@ a {
     display: none;
   }
 }
-
-.c-test__frame-text-holder {
+.c-frame-text-holder {
   width: 40%;
   height: 20%;
   display: -webkit-box;
@@ -616,20 +616,20 @@ a {
   border-left: 0.1rem solid #b9b9b9;
 }
 @media screen and (max-width: 30em) {
-  .c-test__frame-text-holder {
+  .c-frame-text-holder {
     width: 100%;
     height: 15%;
     border: none;
   }
 }
 @media screen and (max-width: 75em) {
-  .c-test__frame-text-holder {
+  .c-frame-text-holder {
     width: 100%;
     height: 15%;
     border: none;
   }
 }
-.c-test__frame-text-holder--bottom {
+.c-frame-text-holder--bottom {
   width: 100%;
   height: 50%;
   display: -webkit-box;
@@ -648,16 +648,16 @@ a {
   border-top: 0.1rem solid #b9b9b9;
 }
 @media screen and (max-width: 30em) {
-  .c-test__frame-text-holder--bottom {
+  .c-frame-text-holder--bottom {
     border: none;
   }
 }
 @media screen and (max-width: 75em) {
-  .c-test__frame-text-holder--bottom {
+  .c-frame-text-holder--bottom {
     border: none;
   }
 }
-.c-test__frame-text-holder--top {
+.c-frame-text-holder--top {
   width: 100%;
   height: 50%;
   display: -webkit-box;
@@ -675,25 +675,24 @@ a {
   align-items: center;
 }
 @media screen and (max-width: 30em) {
-  .c-test__frame-text-holder--top {
+  .c-frame-text-holder--top {
     border: none;
   }
 }
 @media screen and (max-width: 75em) {
-  .c-test__frame-text-holder--top {
+  .c-frame-text-holder--top {
     border: none;
   }
 }
-
-.c-test__name {
+.c-frame__name {
   padding-left: 1rem;
 }
-.c-test__name--link {
+.c-frame__name--link {
   font-size: 1.2rem;
   color: #1461a8;
 }
 @media screen and (max-width: 30em) {
-  .c-test__name--link {
+  .c-frame__name--link {
     font-size: 1rem;
   }
 }
