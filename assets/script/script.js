@@ -28,7 +28,7 @@ function showTestCards() {
     }
     cards[cardIndex - 1].style.display = "flex";
     dots[cardIndex - 1].className += " activeDot";
-    setTimeout(showTestCards, 5000);
+    setTimeout(showTestCards, 10000);
 }
 
 showTestCards();
