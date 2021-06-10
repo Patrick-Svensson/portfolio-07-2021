@@ -54,9 +54,8 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
   font-weight: 700;
-  text-shadow: 0.1rem 0.05rem 0.2rem #636363;
 }
 
 h3 {
@@ -132,7 +131,7 @@ a {
 .o-header-bg-wrapper {
   width: 80%;
   height: 80%;
-  max-width: 200rem;
+  max-width: 180rem;
   max-height: 130rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,9 +467,6 @@ a {
   max-height: 15rem;
 }
 
-.c-header__heading {
-  text-shadow: 0.2rem 0.1rem 0.3rem #636363;
-}
 .c-header__heading--small {
   font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   display: block;
@@ -551,7 +547,7 @@ a {
   height: 0;
   left: 0;
   top: 0;
-  border-top: 0.1rem solid #b9b9b9;
+  border-top: 0.1rem solid #aaa;
 }
 .c-frame-top-left:before {
   content: "";
@@ -560,7 +556,7 @@ a {
   height: 50%;
   left: 0;
   top: 0;
-  border-left: 0.1rem solid #b9b9b9;
+  border-left: 0.1rem solid #aaa;
 }
 .c-frame-bottom:before {
   content: "";
@@ -569,7 +565,7 @@ a {
   height: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 0.1rem solid #b9b9b9;
+  border-bottom: 0.1rem solid #aaa;
 }
 .c-frame-bottom-right:before {
   content: "";
@@ -578,7 +574,7 @@ a {
   height: 50%;
   right: 0;
   bottom: 0;
-  border-right: 0.1rem solid #b9b9b9;
+  border-right: 0.1rem solid #aaa;
 }
 @media screen and (max-width: 30em) {
   .c-frame__test {
@@ -594,8 +590,9 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-top: 0.1rem solid #b9b9b9;
-  border-left: 0.1rem solid #b9b9b9;
+  border-top: 0.1rem solid #aaa;
+  border-left: 0.1rem solid #aaa;
+  /* ****** Myself ****** */
 }
 .c-frame-text-holder__test {
   width: 40%;
@@ -644,7 +641,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-top: 0.1rem solid #b9b9b9;
+  border-top: 0.1rem solid #aaa;
 }
 @media screen and (max-width: 30em) {
   .c-frame-text-holder--bottom {
@@ -683,8 +680,25 @@ a {
     border: none;
   }
 }
+.c-frame-text-holder__myself {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
+  height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
+}
 .c-frame__name {
-  padding-left: 1rem;
+  padding: 0 1rem 0 1rem;
 }
 .c-frame__name--link {
   font-size: 1.2rem;
@@ -698,7 +712,6 @@ a {
 
 .c-header__links {
   font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
-  text-shadow: 0.1rem 0.05rem 0.1rem #636363;
   padding-bottom: 2rem;
   margin-right: 2rem;
 }
@@ -783,7 +796,7 @@ a {
   max-width: 90rem;
   max-height: 40rem;
   background: linear-gradient(90deg, #dce9ee 0%, #effaff 50%, #dce9ee 100%);
-  box-shadow: 0.2rem 0.5rem 0.5rem 0 #b9b9b9;
+  box-shadow: 0.2rem 0.5rem 0.5rem 0 #aaa;
 }
 @media screen and (max-width: 30em) {
   .c-test-card {
@@ -850,7 +863,7 @@ a {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  box-shadow: 0.2rem 0.3rem 0.3rem 0 #b9b9b9;
+  box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
   overflow: hidden;
 }
 @media screen and (max-width: 75em) {
@@ -930,7 +943,7 @@ a {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  border: 0.1rem solid #b9b9b9;
+  border: 0.1rem solid #aaa;
   background-color: #effaff;
   transition: background-color 0.6s ease;
 }

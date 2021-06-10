@@ -2,8 +2,6 @@
 @use "../tools" as *;
 
 .c-header__heading {
-    text-shadow: 0.2rem 0.1rem 0.3rem $colourTextShadow;
-
     &--small {
         font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
         display: block;

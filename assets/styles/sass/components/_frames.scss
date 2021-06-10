@@ -126,10 +126,17 @@
                 border: none;
             }
         }
+
+        /* ****** Myself ****** */
+        &__myself {
+            @include flex(column, nowrap, center, center);
+            width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
+            height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
+        }
     }
 
     &__name {
-        padding-left: 1rem;
+        padding: 0 1rem 0 1rem;
 
         &--link {
             font-size: 1.2rem;
