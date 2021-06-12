@@ -353,9 +353,10 @@ img {
   align-items: flex-start;
 }
 .o-myself__img-container {
-  width: 28rem;
-  height: 28rem;
+  width: clamp(14rem, 10rem + 12.5vw, 28rem);
+  height: clamp(14rem, 10rem + 12.5vw, 28rem);
   box-shadow: 0.5rem 0.3rem 0.5rem 0 #636363;
+  margin-right: 3rem;
 }
 .o-myself__text-wrapper {
   width: 60%;
