@@ -756,20 +756,6 @@ a {
     left: -2rem;
   }
 }
-.c-logo__link:hover {
-  -webkit-transform: scale(1.1) translate(-0.5rem, -0.5rem);
-  -moz-transform: scale(1.1) translate(-0.5rem, -0.5rem);
-  -ms-transform: scale(1.1) translate(-0.5rem, -0.5rem);
-  -o-transform: scale(1.1) translate(-0.5rem, -0.5rem);
-  transform: scale(1.1) translate(-0.5rem, -0.5rem);
-}
-.c-logo__link:active {
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  -o-transform: scale(1.01);
-  transform: scale(1.01);
-}
 
 .c-test-card {
   width: 50%;
