@@ -1,7 +1,7 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.c-header__links {
+.c-navbar__links {
     font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
     padding-bottom: 2rem;
     margin-right: 2rem;

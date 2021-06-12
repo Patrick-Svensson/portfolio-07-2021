@@ -31,10 +31,6 @@
         }
     }
 
-    .testamonialCards {
-        display: none;
-    }
-
     &__content {
         @include wrapper-size(80%, 55%);
         @include flex(row, nowrap, space-between, center);
@@ -45,9 +41,6 @@
 
     &__img-container {
         @include wrapper-size(12rem, 12rem);
-        border-radius: 50%;
-        box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourCardShadow;
-        overflow: hidden;
         @include responsive(tablet-land) {
             position: absolute;
             top: -35%;
@@ -57,11 +50,6 @@
         @include responsive(tablet-port) {
             top: -25%;
         }
-    }
-
-    &__img {
-        @include wrapper-size(100%, 100%);
-        object-fit: contain;
     }
 
     &__qoute-container {
@@ -78,6 +66,18 @@
             line-height: 1.3rem;
         }
     }
+
+    &__link {
+        font-size: 1.2rem;
+        color: $colourLinks;
+        @include responsive(mobile) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.testamonialCards {
+    display: none;
 }
 
 .c-test-carousel__dot-container {

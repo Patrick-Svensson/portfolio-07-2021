@@ -108,6 +108,12 @@ a {
   background-color: #fcfcfc;
 }
 
+.o-img-wrapper {
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
+  overflow: hidden;
+}
+
 /* ****** Header ****** */
 .o-header-wrapper {
   width: 100vw;
@@ -182,7 +188,9 @@ a {
   -ms-flex-align: flex-start;
   align-items: flex-start;
 }
-.o-header-links-wrapper {
+
+/* ****** Navbar ****** */
+.o-navbar-links-wrapper {
   width: 90%;
   height: 25%;
   display: -webkit-box;
@@ -199,7 +207,7 @@ a {
   -ms-flex-align: flex-end;
   align-items: flex-end;
 }
-.o-header-links-container {
+.o-navbar-links-container {
   width: 100%;
   height: auto;
   max-width: 60rem;
@@ -303,8 +311,26 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
-.o-myself-content-container {
+.o-myself-frame-container {
   width: 100%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.o-myself-content-container {
+  width: 85%;
   height: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,13 +339,49 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+.o-myself__img-container {
+  width: 28rem;
+  height: 28rem;
+}
+.o-myself__text-wrapper {
+  width: 60%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
+}
+.o-myself__link-wrapper {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
@@ -340,6 +402,13 @@ a {
   margin-top: 3rem;
   background-color: #fcfcfc;
   border-top: 0.2rem solid #dce9ee;
+}
+
+/* ****** Portrait Images ****** */
+.o-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ****** Header ****** */
@@ -493,12 +562,12 @@ a {
 }
 
 /* ****** Header ****** */
-.c-header:before {
+.c-header-frame:before {
   width: 100%;
   height: 100%;
   border-width: 0.1rem;
 }
-.c-header-top-left-frame:before {
+.c-header-frame--top-left:before {
   content: "";
   position: absolute;
   width: 0;
@@ -507,7 +576,7 @@ a {
   top: 0;
   border-left: 0.1rem solid #494949;
 }
-.c-header-top-frame:before {
+.c-header-frame--top:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -516,7 +585,7 @@ a {
   top: 0;
   border-top: 0.1rem solid #494949;
 }
-.c-header-bottom-frame:before {
+.c-header-frame--bottom:before {
   content: "";
   position: absolute;
   width: 90%;
@@ -525,7 +594,7 @@ a {
   bottom: 0;
   border-bottom: 0.1rem solid #494949;
 }
-.c-header-bottom-right-frame:before {
+.c-header-frame--bottom-right:before {
   content: "";
   position: absolute;
   width: 0;
@@ -540,7 +609,7 @@ a {
   width: 100%;
   height: 100%;
 }
-.c-frame-top:before {
+.c-frame--top:before {
   content: "";
   position: absolute;
   width: 70%;
@@ -549,7 +618,7 @@ a {
   top: 0;
   border-top: 0.1rem solid #aaa;
 }
-.c-frame-top-left:before {
+.c-frame--top-left:before {
   content: "";
   position: absolute;
   width: 0;
@@ -558,7 +627,7 @@ a {
   top: 0;
   border-left: 0.1rem solid #aaa;
 }
-.c-frame-bottom:before {
+.c-frame--bottom:before {
   content: "";
   position: absolute;
   width: 70%;
@@ -567,7 +636,7 @@ a {
   bottom: 0;
   border-bottom: 0.1rem solid #aaa;
 }
-.c-frame-bottom-right:before {
+.c-frame--bottom-right:before {
   content: "";
   position: absolute;
   width: 0;
@@ -697,31 +766,22 @@ a {
   width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
   height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
 }
-.c-frame__name {
+.c-frame__text {
   padding: 0 1rem 0 1rem;
 }
-.c-frame__name--link {
-  font-size: 1.2rem;
-  color: #1461a8;
-}
-@media screen and (max-width: 30em) {
-  .c-frame__name--link {
-    font-size: 1rem;
-  }
-}
 
-.c-header__links {
+.c-navbar__links {
   font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
   padding-bottom: 2rem;
   margin-right: 2rem;
 }
 @media screen and (max-width: 30em) {
-  .c-header__links {
+  .c-navbar__links {
     margin-right: 1rem;
   }
 }
-.c-header__links:hover,
-.c-header__links focus {
+.c-navbar__links:hover,
+.c-navbar__links focus {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -729,7 +789,7 @@ a {
   transform: scale(1.2);
   color: #2c2c2c;
 }
-.c-header__links:active {
+.c-navbar__links:active {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -820,9 +880,6 @@ a {
     height: 90%;
   }
 }
-.c-test-card .testamonialCards {
-  display: none;
-}
 .c-test-card__content {
   width: 80%;
   height: 55%;
@@ -848,9 +905,6 @@ a {
 .c-test-card__img-container {
   width: 12rem;
   height: 12rem;
-  border-radius: 50%;
-  box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
-  overflow: hidden;
 }
 @media screen and (max-width: 75em) {
   .c-test-card__img-container {
@@ -863,11 +917,6 @@ a {
   .c-test-card__img-container {
     top: -25%;
   }
-}
-.c-test-card__img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 .c-test-card__qoute-container {
   width: 70%;
@@ -898,6 +947,19 @@ a {
   .c-test-card__quote {
     line-height: 1.3rem;
   }
+}
+.c-test-card__link {
+  font-size: 1.2rem;
+  color: #1461a8;
+}
+@media screen and (max-width: 30em) {
+  .c-test-card__link {
+    font-size: 1rem;
+  }
+}
+
+.testamonialCards {
+  display: none;
 }
 
 .c-test-carousel__dot-container {
@@ -960,6 +1022,10 @@ a {
 
 .scrollIcon {
   visibility: hidden;
+}
+
+.c-icon__linkedin {
+  font-size: 9rem;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

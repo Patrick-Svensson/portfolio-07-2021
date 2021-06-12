@@ -2,34 +2,34 @@
 @use "../tools" as *;
 
 /* ****** Header ****** */
-.c-header {
+.c-header-frame {
     &:before {
         @include wrapper-size(100%, 100%);
         border-width: 0.1rem;
     }
 
-    &-top-left-frame:before {
+    &--top-left:before {
         @include frame(0, 40%);
         left: 0;
         top: 0;
         border-left: 0.1rem solid $colourText;
     }
 
-    &-top-frame:before {
+    &--top:before {
         @include frame(50%, 0);
         left: 0;
         top: 0;
         border-top: 0.1rem solid $colourText;
     }
 
-    &-bottom-frame:before {
+    &--bottom:before {
         @include frame(90%, 0);
         right: 0;
         bottom: 0;
         border-bottom: 0.1rem solid $colourText;
     }
 
-    &-bottom-right-frame:before {
+    &--bottom-right:before {
         @include frame(0, 40%);
         right: 0;
         bottom: 0;
@@ -43,28 +43,28 @@
         @include wrapper-size(100%, 100%);
     }
 
-    &-top:before {
+    &--top:before {
         @include frame(70%, 0);
         left: 0;
         top: 0;
         border-top: 0.1rem solid $colourCardShadow;
     }
 
-    &-top-left:before {
+    &--top-left:before {
         @include frame(0, 50%);
         left: 0;
         top: 0;
         border-left: 0.1rem solid $colourCardShadow;
     }
 
-    &-bottom:before {
+    &--bottom:before {
         @include frame(70%, 0);
         right: 0;
         bottom: 0;
         border-bottom: 0.1rem solid $colourCardShadow;
     }
 
-    &-bottom-right:before {
+    &--bottom-right:before {
         @include frame(0, 50%);
         right: 0;
         bottom: 0;
@@ -135,15 +135,7 @@
         }
     }
 
-    &__name {
+    &__text {
         padding: 0 1rem 0 1rem;
-
-        &--link {
-            font-size: 1.2rem;
-            color: $colourLinks;
-            @include responsive(mobile) {
-                font-size: 1rem;
-            }
-        }
     }
 }
