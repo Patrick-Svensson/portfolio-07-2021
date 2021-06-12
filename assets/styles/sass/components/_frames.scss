@@ -47,28 +47,28 @@
         @include frame(70%, 0);
         left: 0;
         top: 0;
-        border-top: 0.1rem solid $colourCardShadow;
+        border-top: 0.1rem solid $colourLightShadow;
     }
 
     &--top-left:before {
         @include frame(0, 50%);
         left: 0;
         top: 0;
-        border-left: 0.1rem solid $colourCardShadow;
+        border-left: 0.1rem solid $colourLightShadow;
     }
 
     &--bottom:before {
         @include frame(70%, 0);
         right: 0;
         bottom: 0;
-        border-bottom: 0.1rem solid $colourCardShadow;
+        border-bottom: 0.1rem solid $colourLightShadow;
     }
 
     &--bottom-right:before {
         @include frame(0, 50%);
         right: 0;
         bottom: 0;
-        border-right: 0.1rem solid $colourCardShadow;
+        border-right: 0.1rem solid $colourLightShadow;
     }
 
     &__test {
@@ -85,8 +85,8 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        border-top: 0.1rem solid $colourCardShadow;
-        border-left: 0.1rem solid $colourCardShadow;
+        border-top: 0.1rem solid $colourLightShadow;
+        border-left: 0.1rem solid $colourLightShadow;
 
         &__test {
             @include wrapper-size(40%, 20%);
@@ -105,7 +105,7 @@
         &--bottom {
             @include wrapper-size(100%, 50%);
             @include flex(row, nowrap, flex-start, center);
-            border-top: 0.1rem solid $colourCardShadow;
+            border-top: 0.1rem solid $colourLightShadow;
             @include responsive(mobile) {
                 border: none;
             }

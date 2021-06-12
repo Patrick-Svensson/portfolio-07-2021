@@ -1,5 +1,35 @@
-.c-icon {
-    &__linkedin {
-        font-size: 9rem;
+@use "../settings" as *;
+@use "../tools" as *;
+
+.c-icon-base {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 6%;
+    background-color: $colourText;
+    @include flex(row, nowrap, center, center);
+    @include transform(rotate(-22deg));
+    box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
+    position: relative;
+
+    &:hover,
+    focus {
+        background-color: transparent;
+        border: 0.1rem solid $colourText;
     }
+}
+
+.c-icon__linkedin {
+    font-size: 4rem;
+    color: $colourWater;
+    padding: 1rem;
+    margin-top: 0.5rem;
+
+    &:hover,
+    focus {
+        color: $colourText;
+    }
+}
+
+.c-icon-subtext {
+    padding-left: 3rem;
 }

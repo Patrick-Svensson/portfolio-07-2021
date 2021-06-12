@@ -1,0 +1,6 @@
+@use "../tools/" as *;
+
+img {
+    @include wrapper-size(100%, 100%);
+    object-fit: contain;
+}

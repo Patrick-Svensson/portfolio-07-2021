@@ -13,7 +13,7 @@
     max-width: 90rem;
     max-height: 40rem;
     background: linear-gradient(90deg, $colourCloud 0%, $colourSky 50%, $colourCloud 100%);
-    box-shadow: 0.2rem 0.5rem 0.5rem 0 $colourCardShadow;
+    box-shadow: 0.2rem 0.5rem 0.5rem 0 $colourLightShadow;
     @include responsive(mobile) {
         @include wrapper-size(60%, 60%);
     }
@@ -93,7 +93,7 @@
 .c-test-carousel__dot {
     @include wrapper-size(1.5rem, 1.5rem);
     border-radius: 50%;
-    border: 0.1rem solid $colourCardShadow;
+    border: 0.1rem solid $colourLightShadow;
     background-color: $colourSky;
     transition: background-color 0.6s ease;
     @include responsive(mobile) {

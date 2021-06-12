@@ -9,7 +9,7 @@
 
 .o-img-wrapper {
     border-radius: 50%;
-    box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourCardShadow;
+    box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
     overflow: hidden;
 }
 
@@ -109,6 +109,7 @@
 
     &__img-container {
         @include wrapper-size(28rem, 28rem);
+        box-shadow: 0.5rem 0.3rem 0.5rem 0 $colourDarkShadow;
     }
 
     &__text-wrapper {
@@ -118,8 +119,9 @@
     }
 
     &__link-wrapper {
-        width: 85%;
+        width: 82%;
         @include flex(row, nowrap, flex-start, flex-end);
+        padding-bottom: 2rem;
     }
 }
 

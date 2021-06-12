@@ -1,11 +1,5 @@
 @use "../tools" as *;
 
-/* ****** Portrait Images ****** */
-.o-img {
-    @include wrapper-size(100%, 100%);
-    object-fit: contain;
-}
-
 /* ****** Header ****** */
 .o-bg-video {
     @include wrapper-size(100vw, 100vh);
