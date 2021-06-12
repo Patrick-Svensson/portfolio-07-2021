@@ -103,7 +103,7 @@
     }
 
     &-content-container {
-        @include wrapper-size(85%, 75%);
+        @include wrapper-size(85%, 70%);
         @include flex(row, wrap, space-between, flex-start);
     }
 
@@ -112,8 +112,9 @@
     }
 
     &__text-wrapper {
-        @include wrapper-size(60%, 70%);
+        @include wrapper-size(60%, 85%);
         @include flex(column, nowrap, space-between, center);
+        padding-top: 3rem;
     }
 
     &__link-wrapper {

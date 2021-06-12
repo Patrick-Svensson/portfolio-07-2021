@@ -86,6 +86,10 @@ p {
   line-height: 1.6rem;
 }
 
+i {
+  color: #494949;
+}
+
 a {
   text-decoration: none;
 }
@@ -331,7 +335,7 @@ a {
 }
 .o-myself-content-container {
   width: 85%;
-  height: 75%;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +356,7 @@ a {
 }
 .o-myself__text-wrapper {
   width: 60%;
-  height: 70%;
+  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,6 +370,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 3rem;
 }
 .o-myself__link-wrapper {
   width: 85%;
@@ -1078,6 +1083,16 @@ a {
     transform: translate3d(85px, 0, 0);
   }
 }
+@-moz-keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+    transform: translate3d(85px, 0, 0);
+  }
+}
 @keyframes move-forever {
   0% {
     -webkit-transform: translate3d(-90px, 0, 0);
@@ -1096,6 +1111,38 @@ a {
   animation: bounce 0.5s linear 1s infinite alternate;
 }
 
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(0.8rem);
+    -moz-transform: translateY(0.8rem);
+    -ms-transform: translateY(0.8rem);
+    -o-transform: translateY(0.8rem);
+    transform: translateY(0.8rem);
+  }
+}
+@-moz-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(0.8rem);
+    -moz-transform: translateY(0.8rem);
+    -ms-transform: translateY(0.8rem);
+    -o-transform: translateY(0.8rem);
+    transform: translateY(0.8rem);
+  }
+}
 @keyframes bounce {
   from {
     -webkit-transform: translateY(0);
@@ -1133,14 +1180,6 @@ a {
   }
 }
 @-moz-keyframes u-test--fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes u-test--fade {
   from {
     opacity: 0.4;
   }
