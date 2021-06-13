@@ -385,11 +385,11 @@ img {
   height: clamp(14rem, 10rem + 12.5vw, 28rem);
   box-shadow: 0.5rem 0.3rem 0.5rem 0 #636363;
   align-self: flex-start;
+  margin: 0 2rem 2rem 0;
 }
 .o-myself__text-wrapper {
-  width: 40rem;
+  width: 52rem;
   height: 75%;
-  max-width: 80rem;
   max-height: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
