@@ -17,6 +17,7 @@
 }
 
 /* ****** Header ****** */
+
 .o-header {
     &-wrapper {
         @include wrapper-size(100vw, 100vh);
@@ -56,6 +57,7 @@
 }
 
 /* ****** Navbar ****** */
+
 .o-navbar {
     &-links-wrapper {
         @include wrapper-size(90%, 25%);

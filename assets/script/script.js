@@ -1,3 +1,8 @@
+/* ****** Variables ****** */
+
+let cardIndex = 0;
+const myselfImage = document.querySelector(".o-myself__img-container");
+
 /* ****** Scroll Down Icon ****** */
 
 window.addEventListener("scroll", () => {
@@ -9,8 +14,6 @@ window.addEventListener("scroll", () => {
 });
 
 /* ****** Testamonial Carousel ****** */
-
-let cardIndex = 0;
 
 function showTestCards() {
     let i;
@@ -32,3 +35,15 @@ function showTestCards() {
 }
 
 showTestCards();
+
+/* ****** Myself Images ****** */
+
+myselfImage.addEventListener("mouseover", () => {
+    document.querySelector(".o-img__myself").classList.add("o-img__myself--hide");
+    document.querySelector(".o-img__flicka").classList.add("o-img__flicka--show");
+});
+
+myselfImage.addEventListener("mouseleave", () => {
+    document.querySelector(".o-img__myself").classList.remove("o-img__myself--hide");
+    document.querySelector(".o-img__flicka").classList.remove("o-img__flicka--show");
+});

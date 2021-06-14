@@ -2,6 +2,7 @@
 @use "../tools" as *;
 
 /* ****** Header ****** */
+
 .c-header-frame {
     &:before {
         @include wrapper-size(100%, 100%);
@@ -38,6 +39,7 @@
 }
 
 /* ****** Testamonials ****** */
+
 .c-frame {
     &:before {
         @include wrapper-size(100%, 100%);
@@ -128,6 +130,7 @@
         }
 
         /* ****** Myself ****** */
+
         &__myself {
             @include flex(column, nowrap, center, center);
             width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);

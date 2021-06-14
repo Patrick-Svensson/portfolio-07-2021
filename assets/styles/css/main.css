@@ -576,6 +576,18 @@ img {
   height: 50%;
 }
 
+/* ****** Myself ****** */
+.o-img__myself--hide {
+  display: none;
+}
+
+.o-img__flicka {
+  display: none;
+}
+.o-img__flicka--show {
+  display: block;
+}
+
 /* ****** Contact ****** */
 .o-contact-bg {
   background-image: url("../../images/certificate.jpg");

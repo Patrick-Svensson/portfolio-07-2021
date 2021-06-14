@@ -1,6 +1,7 @@
 @use "../tools" as *;
 
 /* ****** Header ****** */
+
 .o-bg-video {
     @include wrapper-size(100vw, 100vh);
     object-fit: cover;
@@ -19,6 +20,7 @@
 }
 
 /* ****** Testamonials ****** */
+
 .o-test-bg {
     background-image: url("../../images/polar-chart.png");
     @include wrapper-size(100%, 83%);
@@ -34,6 +36,7 @@
 }
 
 /* ****** My Projects ****** */
+
 .o-projects-bg-top {
     @include background-image(url("../../images/my-work-bg-top.jpg"), cover, center);
     @include wrapper-size(100%, 50%);
@@ -44,7 +47,23 @@
     @include wrapper-size(100%, 50%);
 }
 
+/* ****** Myself ****** */
+
+.o-img__myself {
+    &--hide {
+        display: none;
+    }
+}
+
+.o-img__flicka {
+    display: none;
+    &--show {
+        display: block;
+    }
+}
+
 /* ****** Contact ****** */
+
 .o-contact-bg {
     @include background-image(url("../../images/certificate.jpg"), contain, center);
     @include wrapper-size(100%, 100%);
