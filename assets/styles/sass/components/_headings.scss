@@ -1,26 +1,38 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.c-header__heading {
-    &--small {
-        font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-        display: block;
-        text-shadow: none;
-        padding-top: 3rem;
+.c-header {
+    &__mobile-land {
+        display: none;
         @include responsive(mobile-land) {
-            display: none;
+            display: block;
+            font-size: clamp(1.2rem, 0.5846rem + 1.9231vw, 2.2rem);
+            padding-left: 5rem;
+            line-height: 3rem;
         }
     }
 
-    &--medium {
-        font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
-        display: block;
-        text-shadow: none;
-        padding-top: 1rem;
-        margin-bottom: 3rem;
-        @include responsive(mobile-land) {
-            font-size: 2rem;
-            padding-top: 2rem;
+    &__heading {
+        &--small {
+            font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+            display: block;
+            text-shadow: none;
+            padding-top: 3rem;
+            @include responsive(mobile-land) {
+                display: none;
+            }
+        }
+
+        &--medium {
+            font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+            display: block;
+            text-shadow: none;
+            padding-top: 1rem;
+            margin-bottom: 3rem;
+            @include responsive(mobile-land) {
+                font-size: 2rem;
+                padding-top: 2rem;
+            }
         }
     }
 }

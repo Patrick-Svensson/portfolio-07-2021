@@ -1,35 +1,50 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.c-icon-base {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 6%;
-    background-color: $colourText;
-    @include flex(row, nowrap, center, center);
-    @include transform(rotate(-22deg));
-    box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
-    position: relative;
+.c-icon {
+    &-base {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 6%;
+        background-color: $colourText;
+        @include flex(row, nowrap, center, center);
+        @include transform(rotate(-22deg));
+        box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
+        position: relative;
 
-    &:hover,
-    focus {
-        background-color: transparent;
-        border: 0.1rem solid $colourText;
+        &:hover,
+        focus {
+            background-color: transparent;
+            border: 0.1rem solid $colourText;
+        }
     }
-}
 
-.c-icon__linkedin {
-    font-size: 4rem;
-    color: $colourWater;
-    padding: 1rem;
-    margin-top: 0.5rem;
+    &__linkedin {
+        font-size: 4rem;
+        color: $colourWater;
+        padding: 1rem;
+        margin-top: 0.5rem;
 
-    &:hover,
-    focus {
-        color: $colourText;
+        &:hover,
+        focus {
+            color: $colourText;
+        }
     }
-}
 
-.c-icon-subtext {
-    padding-left: 3rem;
+    &__subtext {
+        font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
+        padding-left: 3rem;
+
+        &-link {
+            @include responsive(mobile) {
+                @include transform(translate(-2rem, -4rem));
+                padding: 0;
+            }
+
+            &:hover,
+            focus {
+                @include transform(translateX(-1rem));
+            }
+        }
+    }
 }

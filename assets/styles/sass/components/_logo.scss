@@ -5,14 +5,20 @@
     top: 0rem;
     left: 2rem;
     @include responsive(mobile) {
-        transform: scale(0.8);
+        @include transform(scale(0.8));
         top: -1rem;
         left: -1rem;
     }
 
-    @include responsive(mobile-land) {
-        transform: scale(0.8);
-        top: -2rem;
-        left: -2rem;
+    &--mobile-land {
+        display: none;
+        @include responsive(mobile-land) {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 4rem;
+            left: 8rem;
+            @include transform(scale(1.2));
+        }
     }
 }
