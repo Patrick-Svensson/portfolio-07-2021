@@ -51,6 +51,13 @@
     height: $height;
 }
 
+/* ***** Hover, Focus ***** */
+
+@mixin hover($colour) {
+    @include transform(translateX(1rem));
+    color: scale-color($colour, $lightness: -40%);
+}
+
 /* ***** Media Queries ***** */
 
 /*
