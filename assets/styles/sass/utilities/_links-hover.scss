@@ -16,3 +16,16 @@
         @include hover($colourLinks);
     }
 }
+
+.u-icon {
+    &-base:hover,
+    focus {
+        background-color: transparent;
+        border: 0.1rem solid $colourText;
+    }
+
+    &__linkedin:hover,
+    focus {
+        color: $colourText;
+    }
+}

@@ -11,12 +11,6 @@
         @include transform(rotate(-22deg));
         box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
         position: relative;
-
-        &:hover,
-        focus {
-            background-color: transparent;
-            border: 0.1rem solid $colourText;
-        }
     }
 
     &__linkedin {
@@ -24,11 +18,6 @@
         color: $colourWater;
         padding: 1rem;
         margin-top: 0.5rem;
-
-        &:hover,
-        focus {
-            color: $colourText;
-        }
     }
 
     &__subtext {
@@ -39,15 +28,6 @@
             @include responsive(mobile) {
                 @include transform(translate(-2rem, -4rem));
                 padding: 0;
-            }
-
-            &:hover,
-            focus {
-                @include hover($colourText);
-            }
-
-            &:active {
-                @include transform(translate(1rem) scale(0.95));
             }
         }
     }
