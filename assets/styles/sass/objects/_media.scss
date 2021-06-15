@@ -67,7 +67,7 @@
 .o-contact-bg {
     @include background-image(url("../../images/certificate.jpg"), contain, center);
     @include wrapper-size(100%, 100%);
-    @include transform(rotate(-20deg) matrix(1.6, -0.3, -0.1, 1.6, 150, 40));
+    @include transform(rotate(-25deg) matrix(1.6, -0.3, -0.1, 1.6, 250, 40));
     opacity: 8%;
     position: absolute;
 }

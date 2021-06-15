@@ -20,12 +20,16 @@
 .u-icon {
     &-base:hover,
     focus {
-        background-color: transparent;
-        border: 0.1rem solid $colourText;
+        background-color: $colourText;
     }
 
-    &__linkedin:hover,
+    &--myself:hover,
     focus {
-        color: $colourText;
+        color: $colourWater;
+    }
+
+    &--contact:hover,
+    focus {
+        color: $colourBgLight;
     }
 }

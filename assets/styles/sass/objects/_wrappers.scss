@@ -36,18 +36,9 @@
             @include wrapper-size(85%, 85%);
         }
 
-        @include responsive(mobile) {
-            @include wrapper-size(100%, 100%);
-        }
-
         @include responsive(mobile-land) {
             display: none;
         }
-    }
-
-    &-content-wrapper {
-        @include wrapper-size(100%, 100%);
-        display: flex;
     }
 
     &-text-container {
@@ -191,7 +182,11 @@
     }
 
     &-content-wrapper {
-        @include wrapper-size(80%, 50%);
+        @include wrapper-size(80%, 70%);
         @include flex(column, nowrap, space-between, flex-start);
+    }
+
+    &__link-wrapper {
+        display: flex;
     }
 }

@@ -37,26 +37,30 @@
                 please turn the device to portrait mode!
             </h1>
             <div class="o-header-bg-wrapper">
-                <div class="o-header-content-wrapper">
-                    <div class="o-header-drawing-bg">
-                        <svg class="c-logo" aria-hidden="true">
-                            <use xlink:href="assets/images/personal-logo.svg#personalLogo"></use>
-                        </svg>
-                        <div class="o-header-text-container">
-                            <h1 class="c-header__heading">
-                                Hi there,<br />I'm Patrick
-                                <span class="c-header__heading--small">From boatbuilder to</span>
-                                <span class="c-header__heading--medium">Front-End Developer</span>
-                                <span class="c-header__heading--small">Let me show you a little bit of...</span>
-                            </h1>
-                        </div>
-                        <div class="o-navbar-links-wrapper">
-                            <div class="o-navbar-links-container">
-                                <a class="c-navbar__links u-links" href="#">...my projects</a>
-                                <a class="c-navbar__links u-links" href="#">...myself</a>
-                                <a class="c-navbar__links u-links" href="#">...how to contact me</a>
-                            </div>
-                        </div>
+                <div class="o-header-drawing-bg">
+                    <svg class="c-logo" aria-hidden="true">
+                        <use xlink:href="assets/images/personal-logo.svg#personalLogo"></use>
+                    </svg>
+                    <div class="o-header-text-container">
+                        <h1 class="c-header__heading">
+                            Hi there,<br />I'm Patrick
+                            <span class="c-header__heading--small">From boatbuilder to</span>
+                            <span class="c-header__heading--medium">Front-End Developer</span>
+                            <span class="c-header__heading--small">Let me show you a little bit of...</span>
+                        </h1>
+                    </div>
+                    <div class="o-navbar-links-wrapper">
+                        <ul class="o-navbar-links-container">
+                            <li class="c-navbar__links u-links">
+                                <a href="#">...my projects</a>
+                            </li>
+                            <li class="c-navbar__links u-links">
+                                <a href="#">...myself</a>
+                            </li>
+                            <li class="c-navbar__links u-links">
+                                <a href="#">...how to contact me</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="c-header-frame--top-left"></div>
@@ -201,7 +205,7 @@
                         <div class="o-myself__link-wrapper">
                             <div class="c-icon-base u-icon-base">
                                 <a href="https://www.linkedin.com/in/patrick-svensson-cmist33/">
-                                    <i class="fab fa-linkedin-in c-icon__linkedin u-icon__linkedin"></i>
+                                    <i class="fab fa-linkedin-in c-icon c-icon--linkedin u-icon--myself"></i>
                                 </a>
                             </div>
                             <a class="c-icon__subtext-link u-links" href="https://www.linkedin.com/in/patrick-svensson-cmist33/">
@@ -250,8 +254,24 @@
                 <div class="o-contact-bg"></div>
                 <div class="o-contact-content-wrapper">
                     <h2>...how to contact me</h2>
-                    <a class="u-links" href="#">ps.digitalepost@gmail.com</a>
-                    <a class="u-links" href="#">linkedin.com/in/patrick-svensson-cmist33</a>
+                    <div class="o-contact__link-wrapper">
+                        <div class="c-icon-base u-icon-base">
+                            <a href="#">
+                                <i class="far fa-envelope c-icon u-icon u-icon--contact"></i>
+                            </a>
+                        </div>
+                        <a class="c-contact__links u-links" href="#">ps.digitalepost@gmail.com</a>
+                    </div>
+                    <div class="o-contact__link-wrapper">
+                        <div class="c-icon-base u-icon-base">
+                            <a href="https://www.linkedin.com/in/patrick-svensson-cmist33/">
+                                <i class="fab fa-linkedin-in c-icon c-icon--linkedin u-icon u-icon--contact"></i>
+                            </a>
+                        </div>
+                        <a class="c-contact__links u-links" href="https://www.linkedin.com/in/patrick-svensson-cmist33/"
+                            >linkedin.com/in/patrick-svensson-cmist33</a
+                        >
+                    </div>
                     <h3>Together we can reach even higher.</h3>
                 </div>
             </section>
