@@ -1367,12 +1367,23 @@ img {
 }
 .u-links:hover,
 .u-links focus {
+  color: #2c2c2c;
+  transition: ease 0.5s;
   -webkit-transform: translateX(1rem);
   -moz-transform: translateX(1rem);
   -ms-transform: translateX(1rem);
   -o-transform: translateX(1rem);
   transform: translateX(1rem);
-  color: #2c2c2c;
+  position: relative;
+}
+.u-links:hover:after,
+.u-links focus:after {
+  content: "";
+  width: calc(100% + 1rem);
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  left: -1rem;
 }
 .u-links:active {
   -webkit-transform: translate(1rem) scale(0.95);
@@ -1380,15 +1391,18 @@ img {
   -ms-transform: translate(1rem) scale(0.95);
   -o-transform: translate(1rem) scale(0.95);
   transform: translate(1rem) scale(0.95);
+  transition: linear;
 }
 .u-links--frame:hover,
 .u-links focus {
+  color: #0c3a65;
+  transition: ease 0.5s;
   -webkit-transform: translateX(1rem);
   -moz-transform: translateX(1rem);
   -ms-transform: translateX(1rem);
   -o-transform: translateX(1rem);
   transform: translateX(1rem);
-  color: #0c3a65;
+  position: relative;
 }
 
 .u-icon-base:hover,

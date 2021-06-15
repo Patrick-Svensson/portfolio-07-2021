@@ -5,10 +5,20 @@
     &:hover,
     focus {
         @include hover($colourText);
+
+        &:after {
+            content: "";
+            width: calc(100% + 1rem);
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+            left: -1rem;
+        }
     }
 
     &:active {
         @include transform(translate(1rem) scale(0.95));
+        transition: linear;
     }
 
     &--frame:hover,
