@@ -73,15 +73,6 @@
         @include responsive(mobile) {
             font-size: 1rem;
         }
-
-        &:hover,
-        focus {
-            @include hover($colourLinks);
-        }
-
-        &:active {
-            @include transform(translate(1rem) scale(0.95));
-        }
     }
 }
 

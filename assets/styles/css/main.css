@@ -89,6 +89,7 @@ p {
 
 a {
   text-decoration: none;
+  font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
 }
 
 img {
@@ -472,11 +473,41 @@ img {
 .o-contact-wrapper {
   width: 100vw;
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
   margin-top: 3rem;
   background-color: #fcfcfc;
   border-top: 0.2rem solid #dce9ee;
+}
+.o-contact-content-wrapper {
+  width: 80%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 /* ****** Header ****** */
@@ -862,7 +893,6 @@ img {
 }
 
 .c-navbar__links {
-  font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
   padding-bottom: 2rem;
   margin-right: 2rem;
 }
@@ -870,22 +900,6 @@ img {
   .c-navbar__links {
     margin-right: 1rem;
   }
-}
-.c-navbar__links:hover,
-.c-navbar__links focus {
-  -webkit-transform: translateX(1rem);
-  -moz-transform: translateX(1rem);
-  -ms-transform: translateX(1rem);
-  -o-transform: translateX(1rem);
-  transform: translateX(1rem);
-  color: #2c2c2c;
-}
-.c-navbar__links:active {
-  -webkit-transform: translate(1rem) scale(0.95);
-  -moz-transform: translate(1rem) scale(0.95);
-  -ms-transform: translate(1rem) scale(0.95);
-  -o-transform: translate(1rem) scale(0.95);
-  transform: translate(1rem) scale(0.95);
 }
 
 .c-logo {
@@ -1061,22 +1075,6 @@ img {
   .c-test-card__link {
     font-size: 1rem;
   }
-}
-.c-test-card__link:hover,
-.c-test-card__link focus {
-  -webkit-transform: translateX(1rem);
-  -moz-transform: translateX(1rem);
-  -ms-transform: translateX(1rem);
-  -o-transform: translateX(1rem);
-  transform: translateX(1rem);
-  color: #0c3a65;
-}
-.c-test-card__link:active {
-  -webkit-transform: translate(1rem) scale(0.95);
-  -moz-transform: translate(1rem) scale(0.95);
-  -ms-transform: translate(1rem) scale(0.95);
-  -o-transform: translate(1rem) scale(0.95);
-  transform: translate(1rem) scale(0.95);
 }
 
 .testamonialCards {
@@ -1387,6 +1385,31 @@ img {
   to {
     opacity: 1;
   }
+}
+.u-links:hover,
+.u-links focus {
+  -webkit-transform: translateX(1rem);
+  -moz-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  -o-transform: translateX(1rem);
+  transform: translateX(1rem);
+  color: #2c2c2c;
+}
+.u-links:active {
+  -webkit-transform: translate(1rem) scale(0.95);
+  -moz-transform: translate(1rem) scale(0.95);
+  -ms-transform: translate(1rem) scale(0.95);
+  -o-transform: translate(1rem) scale(0.95);
+  transform: translate(1rem) scale(0.95);
+}
+.u-links--frame:hover,
+.u-links focus {
+  -webkit-transform: translateX(1rem);
+  -moz-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  -o-transform: translateX(1rem);
+  transform: translateX(1rem);
+  color: #0c3a65;
 }
 
 /*# sourceMappingURL=main.css.map */

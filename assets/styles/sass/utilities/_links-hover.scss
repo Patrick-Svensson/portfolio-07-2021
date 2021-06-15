@@ -1,0 +1,18 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.u-links {
+    &:hover,
+    focus {
+        @include hover($colourText);
+    }
+
+    &:active {
+        @include transform(translate(1rem) scale(0.95));
+    }
+
+    &--frame:hover,
+    focus {
+        @include hover($colourLinks);
+    }
+}

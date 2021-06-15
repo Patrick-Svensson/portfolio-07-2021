@@ -179,11 +179,19 @@
 
 /* ****** Contact ****** */
 
-.o-contact-wrapper {
-    @include wrapper-size(100vw, 80vh);
-    position: relative;
-    overflow: hidden;
-    margin-top: 3rem;
-    background-color: $colourBgLight;
-    border-top: 0.2rem solid $colourCloud;
+.o-contact {
+    &-wrapper {
+        @include wrapper-size(100vw, 80vh);
+        @include flex(row, nowrap, center, center);
+        position: relative;
+        overflow: hidden;
+        margin-top: 3rem;
+        background-color: $colourBgLight;
+        border-top: 0.2rem solid $colourCloud;
+    }
+
+    &-content-wrapper {
+        @include wrapper-size(80%, 50%);
+        @include flex(column, nowrap, space-between, flex-start);
+    }
 }
