@@ -28,7 +28,7 @@
 
     &-bg-wrapper {
         @include wrapper-size(80%, 80%);
-        max-width: 180rem;
+        max-width: 140rem;
         max-height: 130rem;
         @include flex(row, nowrap, flex-start, flex-start);
         position: relative;
@@ -182,11 +182,17 @@
     }
 
     &-content-wrapper {
+        max-width: 140rem;
         @include wrapper-size(80%, 70%);
         @include flex(column, nowrap, space-between, flex-start);
     }
 
-    &__link-wrapper {
+    &__links-wrapper {
+        @include wrapper-size(100%, 35%);
+        @include flex(column, nowrap, space-between, flex-start);
+    }
+
+    &__link-container {
         display: flex;
     }
 }
