@@ -1,0 +1,7 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.c-projects__subheading {
+    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+    text-transform: initial;
+}

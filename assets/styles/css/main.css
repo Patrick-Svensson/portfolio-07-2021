@@ -59,6 +59,13 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-family: "Spinnaker", sans-serif;
+  font-size: clamp(3.8rem, 2.5636rem + 3.8636vw, 7.2rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 h4 {
   font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
   font-weight: 600;
@@ -333,7 +340,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
-.o-projects-content-container {
+.o-projects-content-wrapper {
   width: 80%;
   height: 80%;
   display: -webkit-box;
@@ -349,6 +356,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow-y: scroll;
 }
 
 /* ****** Myself ****** */
@@ -1283,6 +1291,11 @@ img {
 .c-contact__links {
   margin: 2rem 0 0 4rem;
   z-index: 1;
+}
+
+.c-projects__subheading {
+  font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+  text-transform: initial;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

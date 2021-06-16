@@ -104,9 +104,10 @@
         @include flex(row, nowrap, center, center);
     }
 
-    &-content-container {
+    &-content-wrapper {
         @include wrapper-size(80%, 80%);
         @include flex(column, nowrap, center, center);
+        overflow-y: scroll;
     }
 }
 /* ****** Myself ****** */
