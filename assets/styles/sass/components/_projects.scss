@@ -1,7 +1,17 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.c-projects__subheading {
-    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
-    text-transform: initial;
+.c-projects {
+    height: 20rem;
+    @include flex(column, nowrap, center, center);
+
+    &__heading {
+        letter-spacing: 1rem;
+    }
+
+    &__subheading {
+        font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+        text-transform: initial;
+        color: $colourDarkShadow;
+    }
 }
