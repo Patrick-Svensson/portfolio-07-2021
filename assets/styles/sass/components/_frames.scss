@@ -13,32 +13,32 @@
         @include frame(0, 40%);
         left: 0;
         top: 0;
-        border-left: 0.1rem solid $colourText;
+        border-left: 0.1rem solid $colourFrame;
     }
 
     &--top:before {
         @include frame(50%, 0);
         left: 0;
         top: 0;
-        border-top: 0.1rem solid $colourText;
+        border-top: 0.1rem solid $colourFrame;
     }
 
     &--bottom:before {
         @include frame(90%, 0);
         right: 0;
         bottom: 0;
-        border-bottom: 0.1rem solid $colourText;
+        border-bottom: 0.1rem solid $colourFrame;
     }
 
     &--bottom-right:before {
         @include frame(0, 40%);
         right: 0;
         bottom: 0;
-        border-right: 0.1rem solid $colourText;
+        border-right: 0.1rem solid $colourFrame;
     }
 }
 
-/* ****** Testamonials ****** */
+/* ****** Testamonials and Myself Sections ****** */
 
 .c-frame {
     &:before {
@@ -49,28 +49,28 @@
         @include frame(70%, 0);
         left: 0;
         top: 0;
-        border-top: 0.1rem solid $colourLightShadow;
+        border-top: 0.1rem solid $colourFrame;
     }
 
     &--top-left:before {
         @include frame(0, 50%);
         left: 0;
         top: 0;
-        border-left: 0.1rem solid $colourLightShadow;
+        border-left: 0.1rem solid $colourFrame;
     }
 
     &--bottom:before {
         @include frame(70%, 0);
         right: 0;
         bottom: 0;
-        border-bottom: 0.1rem solid $colourLightShadow;
+        border-bottom: 0.1rem solid $colourFrame;
     }
 
     &--bottom-right:before {
         @include frame(0, 50%);
         right: 0;
         bottom: 0;
-        border-right: 0.1rem solid $colourLightShadow;
+        border-right: 0.1rem solid $colourFrame;
     }
 
     &__test {
@@ -83,12 +83,20 @@
         }
     }
 
+    &__text {
+        padding: 0 1rem 0 1rem;
+    }
+
     &-text-holder {
         position: absolute;
         bottom: 0;
-        right: 0;
-        border-top: 0.1rem solid $colourLightShadow;
-        border-left: 0.1rem solid $colourLightShadow;
+        border-top: 0.1rem solid $colourFrame;
+
+        &-container {
+            @include flex(column, nowrap, center, center);
+            width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
+            height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
+        }
 
         &__test {
             @include wrapper-size(40%, 20%);
@@ -104,10 +112,15 @@
             }
         }
 
+        &--right {
+            right: 0;
+            border-left: 0.1rem solid $colourFrame;
+        }
+
         &--bottom {
             @include wrapper-size(100%, 50%);
             @include flex(row, nowrap, flex-start, center);
-            border-top: 0.1rem solid $colourLightShadow;
+            border-top: 0.1rem solid $colourFrame;
             @include responsive(mobile) {
                 border: none;
             }
@@ -129,16 +142,39 @@
             }
         }
 
-        /* ****** Myself ****** */
+        /* ****** My Projects ****** */
 
-        &__myself {
-            @include flex(column, nowrap, center, center);
-            width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
-            height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
+        &--left {
+            left: 0;
+            border-right: 0.1rem solid $colourFrame;
         }
     }
 
-    &__text {
-        padding: 0 1rem 0 1rem;
+    &__projects--top:before {
+        @include frame(70%, 0);
+        right: 0;
+        top: 0;
+        border-top: 0.1rem solid $colourFrame;
+    }
+
+    &__projects--top-left:before {
+        @include frame(0, 50%);
+        right: 0;
+        top: 0;
+        border-left: 0.1rem solid $colourFrame;
+    }
+
+    &__projects--bottom:before {
+        @include frame(70%, 0);
+        left: 0;
+        bottom: 0;
+        border-bottom: 0.1rem solid $colourFrame;
+    }
+
+    &__projects--bottom-right:before {
+        @include frame(0, 50%);
+        left: 0;
+        bottom: 0;
+        border-right: 0.1rem solid $colourFrame;
     }
 }

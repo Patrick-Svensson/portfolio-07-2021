@@ -10,10 +10,28 @@
     }
 }
 
+.o-section-container {
+    @include wrapper-size(85%, 100%);
+    @include flex(row, nowrap, center, center);
+}
+
 .o-img-wrapper {
     border-radius: 50%;
     box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
     overflow: hidden;
+}
+
+.o-frame-container {
+    @include wrapper-size(100%, 75%);
+    max-width: 140rem;
+    position: relative;
+    @include responsive(tablet-port) {
+        height: 80%;
+    }
+
+    @include responsive(mobile) {
+        height: 85%;
+    }
 }
 
 /* ****** Header ****** */
@@ -75,9 +93,15 @@
 
 /* ****** My Projects ****** */
 
-.o-projects-wrapper {
-    @include wrapper-size(100vw, 367rem);
-    @include flex(column, nowrap, flex-start, center);
+.o-projects {
+    &-wrapper {
+        @include wrapper-size(100vw, 100vh);
+        @include flex(column, nowrap, flex-start, center);
+        background: linear-gradient(45deg, $colourEarth, $colourBeach);
+    }
+
+    &-frame-container {
+    }
 }
 /* ****** Myself ****** */
 
@@ -92,23 +116,8 @@
         }
     }
 
-    &-container {
-        @include wrapper-size(85%, 100%);
-        @include flex(row, nowrap, center, center);
-    }
-
     &-frame-container {
-        @include wrapper-size(100%, 75%);
-        max-width: 140rem;
         @include flex(column, nowrap, flex-end, center);
-        position: relative;
-        @include responsive(tablet-port) {
-            height: 80%;
-        }
-
-        @include responsive(mobile) {
-            height: 85%;
-        }
     }
 
     &-content-wrapper {
