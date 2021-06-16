@@ -84,7 +84,7 @@
     }
 
     &__text {
-        padding: 0 1rem 0 1rem;
+        padding: 0 2rem 0 2rem;
     }
 
     &-text-holder {
@@ -94,13 +94,15 @@
 
         &-container {
             @include flex(column, nowrap, center, center);
-            width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
+            // width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
             height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
         }
 
         &__test {
             @include wrapper-size(40%, 20%);
             @include flex(column, nowrap, space-between, flex-start);
+            right: 0;
+            border-left: 0.1rem solid $colourFrame;
             @include responsive(mobile) {
                 @include wrapper-size(100%, 15%);
                 border: none;

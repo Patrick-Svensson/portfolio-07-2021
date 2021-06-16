@@ -101,6 +101,12 @@
     }
 
     &-frame-container {
+        @include flex(row, nowrap, center, center);
+    }
+
+    &-content-container {
+        @include wrapper-size(80%, 80%);
+        @include flex(column, nowrap, center, center);
     }
 }
 /* ****** Myself ****** */

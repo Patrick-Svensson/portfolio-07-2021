@@ -16,14 +16,14 @@ h2 {
     font-weight: 700;
 }
 
-h3 {
+h4 {
     font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
     font-weight: 600;
     font-style: italic;
     letter-spacing: 0.08rem;
 }
 
-h4 {
+h5 {
     font-size: 0.8rem;
     font-weight: 400;
     @include responsive(mobile) {
@@ -31,7 +31,7 @@ h4 {
     }
 }
 
-h4 > span {
+h5 > span {
     @include responsive(mobile) {
         display: block;
     }

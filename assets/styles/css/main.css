@@ -59,25 +59,25 @@ h2 {
   font-weight: 700;
 }
 
-h3 {
+h4 {
   font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
   font-weight: 600;
   font-style: italic;
   letter-spacing: 0.08rem;
 }
 
-h4 {
+h5 {
   font-size: 0.8rem;
   font-weight: 400;
 }
 @media screen and (max-width: 30em) {
-  h4 {
+  h5 {
     font-size: 0.6rem;
   }
 }
 
 @media screen and (max-width: 30em) {
-  h4 > span {
+  h5 > span {
     display: block;
   }
 }
@@ -318,6 +318,39 @@ img {
   align-items: center;
   background: linear-gradient(45deg, #ceb6a0, #fce8d8);
 }
+.o-projects-frame-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.o-projects-content-container {
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 /* ****** Myself ****** */
 .o-myself-wrapper {
   width: 100vw;
@@ -780,7 +813,7 @@ img {
   }
 }
 .c-frame__text {
-  padding: 0 1rem 0 1rem;
+  padding: 0 2rem 0 2rem;
 }
 .c-frame-text-holder {
   position: absolute;
@@ -802,7 +835,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
   height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
 }
 .c-frame-text-holder__test {
@@ -821,6 +853,8 @@ img {
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  right: 0;
+  border-left: 0.1rem solid #979797;
 }
 @media screen and (max-width: 30em) {
   .c-frame-text-holder__test {
