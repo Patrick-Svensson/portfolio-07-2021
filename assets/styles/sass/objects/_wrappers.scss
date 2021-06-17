@@ -96,8 +96,9 @@
 .o-projects {
     &-wrapper {
         @include wrapper-size(100vw, 100vh);
-        @include flex(column, nowrap, flex-start, center);
-        background: linear-gradient(45deg, $colourEarth, $colourBeach);
+        // background-color: $colourBgLight;
+        background: linear-gradient(45deg, $colourCloud 0%, $colourBgLight 100%);
+        @include flex(row, nowrap, center, center);
     }
 
     &-frame-container {
