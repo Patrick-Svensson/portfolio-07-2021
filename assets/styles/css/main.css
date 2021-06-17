@@ -340,58 +340,6 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
-.o-projects-content-wrapper {
-  width: 60%;
-  height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 1px solid #979797;
-  overflow-y: scroll;
-}
-.o-projects-content-container {
-  height: 100rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.o-projects__subheading-wrapper {
-  width: 40rem;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 
 /* ****** Myself ****** */
 .o-myself-wrapper {
@@ -1325,31 +1273,6 @@ img {
 .c-contact__links {
   margin: 2rem 0 0 4rem;
   z-index: 1;
-}
-
-.c-projects {
-  height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.c-projects__heading {
-  letter-spacing: 1rem;
-}
-.c-projects__subheading {
-  font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
-  text-transform: initial;
-  color: #636363;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

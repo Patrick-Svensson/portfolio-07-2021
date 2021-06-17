@@ -103,24 +103,6 @@
     &-frame-container {
         @include flex(row, nowrap, center, center);
     }
-
-    &-content-wrapper {
-        @include wrapper-size(60%, 20rem);
-        @include flex(column, nowrap, center, center);
-        border: 1px solid $colourFrame;
-        overflow-y: scroll;
-    }
-
-    &-content-container {
-        height: 100rem;
-        @include flex(column, nowrap, center, center);
-        // padding-top: 20rem;
-    }
-
-    &__subheading-wrapper {
-        @include wrapper-size(40rem, auto);
-        @include flex(row, nowrap, space-around, center);
-    }
 }
 /* ****** Myself ****** */
 
