@@ -104,6 +104,13 @@
     &-frame-container {
         @include flex(row, nowrap, center, center);
     }
+
+    &__group-container {
+        @include wrapper-size(70%, 65%);
+        @include flex(row, nowrap, space-between, center);
+        background-color: cadetblue;
+        margin-bottom: 5rem;
+    }
 }
 /* ****** Myself ****** */
 
