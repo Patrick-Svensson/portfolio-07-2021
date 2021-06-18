@@ -309,7 +309,7 @@ img {
 /* ****** My Projects ****** */
 .o-projects-wrapper {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(45deg, #dce9ee 0%, #fcfcfc 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,9 +340,19 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
-.o-projects__group-container {
-  width: 75%;
-  height: 65%;
+@media screen and (max-width: 75em) {
+  .o-projects-frame-container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .o-projects-frame-container {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+}
+.o-projects__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,32 +360,47 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: cadetblue;
-  margin-bottom: 5rem;
-}
-.o-projects__subgroup-container {
-  width: 47%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: burlywood;
+  margin-bottom: 5rem;
+  padding: 10rem;
+  gap: 3rem;
+}
+.o-projects__group-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+.o-projects__subgroup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 /* ****** Myself ****** */
@@ -1310,6 +1335,13 @@ img {
 .c-contact__links {
   margin: 2rem 0 0 4rem;
   z-index: 1;
+}
+
+.c-projects__img-container {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  border: 0.1rem solid #494949;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

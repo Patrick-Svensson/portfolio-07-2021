@@ -1,2 +1,8 @@
 @use "../settings" as *;
 @use "../tools" as *;
+
+.c-projects__img-container {
+    @include wrapper-size(18rem, 18rem);
+    border-radius: 50%;
+    border: 0.1rem solid $colourText;
+}
