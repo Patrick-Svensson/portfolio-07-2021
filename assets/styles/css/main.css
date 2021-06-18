@@ -341,15 +341,15 @@ img {
   align-items: center;
 }
 .o-projects__group-container {
-  width: 70%;
+  width: 75%;
   height: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
@@ -358,6 +358,24 @@ img {
   align-items: center;
   background-color: cadetblue;
   margin-bottom: 5rem;
+}
+.o-projects__subgroup-container {
+  width: 47%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: burlywood;
 }
 
 /* ****** Myself ****** */
