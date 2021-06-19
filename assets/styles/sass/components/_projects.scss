@@ -18,29 +18,19 @@
         &-heading {
             color: $colourBgLight;
             position: absolute;
-            top: 35%;
-            left: 20%;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
             text-align: center;
 
-            &--figma {
-                top: 40%;
-                left: 23%;
-            }
-
-            &--react {
-                left: 10%;
-            }
-
             &--bhromaon {
-                top: 32%;
-                left: 27%;
                 line-height: 3.5rem;
             }
         }
 
         &-subheading {
             color: $colourBgLight;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
         &-overlay {

@@ -1355,25 +1355,21 @@ img {
 .c-projects__img-heading {
   color: #fcfcfc;
   position: absolute;
-  top: 35%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-.c-projects__img-heading--figma {
-  top: 40%;
-  left: 23%;
-}
-.c-projects__img-heading--react {
-  left: 10%;
-}
 .c-projects__img-heading--bhromaon {
-  top: 32%;
-  left: 27%;
   line-height: 3.5rem;
 }
 .c-projects__img-subheading {
   color: #fcfcfc;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .c-projects__img-overlay {
   width: 100%;
