@@ -7,9 +7,9 @@ const myselfImage = document.querySelector(".o-myself__img-container");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
-        document.querySelector(".c-scroll-icon").classList.add("scrollIcon");
+        document.querySelector(".c-scroll-icon-container").classList.add("scrollIcon");
     } else {
-        document.querySelector(".c-scroll-icon").classList.remove("scrollIcon");
+        document.querySelector(".c-scroll-icon-container").classList.remove("scrollIcon");
     }
 });
 

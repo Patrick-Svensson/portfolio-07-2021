@@ -53,6 +53,9 @@ h1 {
     font-size: 3.8rem;
   }
 }
+h1 > span {
+  letter-spacing: 0.1rem;
+}
 
 h2 {
   font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
@@ -104,6 +107,12 @@ li {
 a {
   text-decoration: none;
   font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 30em) {
+  a {
+    letter-spacing: normal;
+  }
 }
 
 img {
@@ -1256,18 +1265,42 @@ img {
   background-color: #a2bece;
 }
 
-.c-scroll-icon {
+.c-scroll-icon-container {
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.1rem solid #494949;
   position: absolute;
-  bottom: 4rem;
+  bottom: 3.5rem;
   left: 50%;
   right: 50%;
   font-size: clamp(0.8rem, 0.5091rem + 0.9091vw, 1.6rem);
-  color: #494949;
+}
+@media screen and (max-width: 30em) {
+  .c-scroll-icon-container {
+    bottom: 2rem;
+  }
 }
 @media (min-width: 25em) and (max-height: 42em) {
-  .c-scroll-icon {
+  .c-scroll-icon-container {
     display: none;
   }
+}
+.c-scroll-icon {
+  color: #494949;
 }
 
 .scrollIcon {
@@ -1348,7 +1381,7 @@ img {
 .c-projects__img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 50%;
   border: 0.1rem solid #494949;
 }
@@ -1364,7 +1397,7 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.c-projects__img-heading--bhromaon {
+.c-projects__img-heading--multi {
   line-height: 3.5rem;
 }
 .c-projects__img-subheading {

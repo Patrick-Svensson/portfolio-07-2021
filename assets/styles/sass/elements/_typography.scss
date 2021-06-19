@@ -9,6 +9,10 @@ h1 {
     @include responsive(mobile-land) {
         font-size: 3.8rem;
     }
+
+    & > span {
+        letter-spacing: 0.1rem;
+    }
 }
 
 h2 {
