@@ -1,8 +1,66 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
-.c-projects__img-container {
-    @include wrapper-size(18rem, 18rem);
-    border-radius: 50%;
-    border: 0.1rem solid $colourText;
+.c-projects {
+    &__img-container {
+        @include wrapper-size(18rem, 18rem);
+        border-radius: 50%;
+        border: 0.1rem solid $colourText;
+        position: relative;
+    }
+
+    &__img {
+        @include wrapper-size(100%, 100%);
+        object-fit: fill;
+        border-radius: 50%;
+        border: 0.1rem solid $colourText;
+
+        &-heading {
+            color: $colourBgLight;
+            position: absolute;
+            top: 35%;
+            left: 20%;
+            text-align: center;
+
+            &--figma {
+                top: 40%;
+                left: 23%;
+            }
+
+            &--react {
+                left: 10%;
+            }
+
+            &--bhromaon {
+                top: 32%;
+                left: 27%;
+                line-height: 3.5rem;
+            }
+        }
+
+        &-subheading {
+            color: $colourBgLight;
+            font-size: 1.8rem;
+        }
+
+        &-overlay {
+            @include wrapper-size(100%, 100%);
+            position: absolute;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+
+            &--dark {
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+
+            &--medium {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            &--light {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
 }

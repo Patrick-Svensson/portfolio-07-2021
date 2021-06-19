@@ -116,7 +116,6 @@
     }
 
     &__container {
-        // @include wrapper-size(75%, 65%);
         @include flex(row, wrap, center, center);
         margin-bottom: 5rem;
         padding: 10rem;
