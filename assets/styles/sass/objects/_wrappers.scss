@@ -11,7 +11,7 @@
 }
 
 .o-section-container {
-    @include wrapper-size(85%, 100%);
+    width: 85%;
     @include flex(row, nowrap, center, center);
 }
 
@@ -22,15 +22,17 @@
 }
 
 .o-frame-container {
-    @include wrapper-size(100%, 75%);
+    width: 100%;
     max-width: 140rem;
     position: relative;
-    @include responsive(tablet-port) {
-        height: 80%;
+    @include responsive(tablet-land) {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
 
     @include responsive(mobile) {
-        height: 85%;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
     }
 }
 
@@ -95,7 +97,6 @@
 
 .o-projects {
     &-wrapper {
-        // @include wrapper-size(100vw, 100vh);
         width: 100vw;
         min-height: 100vh;
         background: linear-gradient(45deg, $colourCloud 0%, $colourBgLight 100%);
@@ -104,15 +105,6 @@
 
     &-frame-container {
         @include flex(row, nowrap, center, center);
-        @include responsive(tablet-land) {
-            margin-top: 10rem;
-            margin-bottom: 10rem;
-        }
-
-        @include responsive(mobile) {
-            margin-top: 7rem;
-            margin-bottom: 7rem;
-        }
     }
 
     &__container {
@@ -137,33 +129,39 @@
 .o-myself {
     &-wrapper {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         @include flex(column, nowrap, flex-end, center);
+        gap: 5rem;
         background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
-        @include responsive(mobile) {
-            height: 100rem;
-        }
     }
 
     &-frame-container {
         @include flex(column, nowrap, flex-end, center);
+        margin-top: 10rem;
+        @include responsive(tablet-land) {
+            margin-bottom: 0;
+        }
     }
 
     &-content-wrapper {
-        @include wrapper-size(80%, 85%);
         @include flex(row, nowrap, space-between, center);
-        @include responsive(tablet-port) {
-            height: 100%;
-        }
-
         @include responsive(mobile) {
             align-items: flex-start;
         }
     }
 
     &-content-container {
-        @include wrapper-size(100%, 90%);
-        @include flex(column, wrap, space-evenly, center);
+        @include flex(row, wrap, space-between, center);
+        gap: 5rem;
+        padding: 10rem 10rem;
+        @include responsive(tablet-land) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        @include responsive(mobile) {
+            padding: 4rem;
+        }
     }
 
     &__img-container {
@@ -171,18 +169,12 @@
         height: clamp(14rem, 10rem + 12.5vw, 28rem);
         box-shadow: 0.5rem 0.3rem 0.5rem 0 $colourDarkShadow;
         align-self: flex-start;
-        margin: 0 2rem 2rem 0;
     }
 
     &__text-wrapper {
-        @include wrapper-size(52rem, 75%);
-        max-height: 30rem;
+        @include wrapper-size(50rem, auto);
         @include flex(column, nowrap, space-between, center);
         @include responsive(tablet-land) {
-            width: 40rem;
-        }
-
-        @include responsive(mobile) {
             width: 100%;
         }
     }
