@@ -9,6 +9,7 @@
     }
 
     &__img {
+        filter: blur(1.4px);
         &-heading {
             color: $colourBgLight;
             position: absolute;
@@ -16,6 +17,7 @@
             left: 50%;
             @include transform(translate(-50%, -50%));
             text-align: center;
+            z-index: 2;
 
             &--multi {
                 line-height: 3.5rem;
@@ -33,6 +35,7 @@
             border-radius: 50%;
             top: 0;
             left: 0;
+            z-index: 1;
 
             &--dark {
                 background-color: rgba(0, 0, 0, 0.6);

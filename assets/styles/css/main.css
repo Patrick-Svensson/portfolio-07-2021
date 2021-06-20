@@ -1379,6 +1379,9 @@ img {
   border-radius: 50%;
   position: relative;
 }
+.c-projects__img {
+  filter: blur(1.4px);
+}
 .c-projects__img-heading {
   color: #fcfcfc;
   position: absolute;
@@ -1390,6 +1393,7 @@ img {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 2;
 }
 .c-projects__img-heading--multi {
   line-height: 3.5rem;
@@ -1405,6 +1409,7 @@ img {
   border-radius: 50%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .c-projects__img-overlay--dark {
   background-color: rgba(0, 0, 0, 0.6);
