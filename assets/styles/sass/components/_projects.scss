@@ -5,16 +5,10 @@
     &__img-container {
         @include wrapper-size(18rem, 18rem);
         border-radius: 50%;
-        border: 0.1rem solid $colourText;
         position: relative;
     }
 
     &__img {
-        @include wrapper-size(100%, 100%);
-        object-fit: cover;
-        border-radius: 50%;
-        border: 0.1rem solid $colourText;
-
         &-heading {
             color: $colourBgLight;
             position: absolute;

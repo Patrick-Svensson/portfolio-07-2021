@@ -1,6 +1,9 @@
+@use "../settings" as *;
 @use "../tools/" as *;
 
 img {
     @include wrapper-size(100%, 100%);
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.1rem solid $colourText;
 }

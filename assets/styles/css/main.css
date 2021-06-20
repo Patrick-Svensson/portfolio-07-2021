@@ -118,7 +118,9 @@ a {
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.1rem solid #494949;
 }
 
 .o-main-wrapper {
@@ -1375,15 +1377,7 @@ img {
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
-  border: 0.1rem solid #494949;
   position: relative;
-}
-.c-projects__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 0.1rem solid #494949;
 }
 .c-projects__img-heading {
   color: #fcfcfc;
