@@ -1,0 +1,51 @@
+.c-project-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(124, 124, 124);
+    width: 60vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__content {
+        width: 85%;
+        height: 70%;
+        background-color: rgb(228, 228, 228);
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        overflow: scroll;
+        padding: 3rem;
+    }
+
+    &__X-wrapper {
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        align-items: center;
+        margin-top: 2rem;
+        margin-right: 3rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 1.5rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: rgb(228, 228, 228);
+    }
+
+    &__X-wrapper:hover {
+        background-color: rgb(206, 206, 206);
+    }
+
+    &__text {
+        text-transform: initial;
+    }
+
+    &__X {
+        font-size: 3rem;
+        color: rgb(34, 34, 34);
+    }
+}

@@ -616,6 +616,28 @@ img {
   display: flex;
 }
 
+/* ****** Project Modal ****** */
+.o-project-modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 3;
+}
+
+.activateModalContainer {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 /* ****** Header ****** */
 .o-bg-video {
   width: 100vw;
@@ -1408,6 +1430,53 @@ img {
 }
 .c-projects__img-overlay--light {
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.c-project-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #7c7c7c;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.c-project-modal__content {
+  width: 85%;
+  height: 70%;
+  background-color: #e4e4e4;
+  box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  overflow: scroll;
+  padding: 3rem;
+}
+.c-project-modal__X-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #e4e4e4;
+}
+.c-project-modal__X-wrapper:hover {
+  background-color: #cecece;
+}
+.c-project-modal__text {
+  text-transform: initial;
+}
+.c-project-modal__X {
+  font-size: 3rem;
+  color: #222222;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

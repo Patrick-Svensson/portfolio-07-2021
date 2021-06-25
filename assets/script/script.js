@@ -2,6 +2,9 @@
 
 let cardIndex = 0;
 const myselfImage = document.querySelector(".o-myself__img-container");
+const showProjects = document.querySelectorAll(".c-projects__img-container");
+const modal = document.querySelector(".o-project-modal-container");
+const closeButton = document.querySelector(".c-project-modal__X-wrapper");
 
 /* ****** Scroll Down Icon ****** */
 
@@ -46,4 +49,22 @@ myselfImage.addEventListener("mouseover", () => {
 myselfImage.addEventListener("mouseleave", () => {
     document.querySelector(".o-img__myself").classList.remove("o-img__myself--hide");
     document.querySelector(".o-img__flicka").classList.remove("o-img__flicka--show");
+});
+
+// ***** Toggle Modal *****
+
+for (const showProject of showProjects) {
+    showProject.addEventListener("click", () => {
+        modal.classList.toggle("activateModalContainer");
+    });
+}
+
+closeButton.addEventListener("click", () => {
+    modal.classList.toggle("activateModalContainer");
+});
+
+page.addEventListener("click", function (closeModal) {
+    if (closeModal.target === modal) {
+        modal.classList.toggle("activateModalContainer");
+    }
 });
