@@ -8,7 +8,7 @@
     transform: translate(-50%, -50%);
     background-color: $colourProjectCardText;
     width: 60vw;
-    height: 60vh;
+    height: 70vh;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -16,15 +16,26 @@
     align-items: center;
 
     &__content {
-        @include wrapper-size(85%, 75%);
+        @include wrapper-size(90%, 70%);
         @include flex(row, wrap, space-around, center);
+        gap: 3rem;
+    }
+
+    &__heading {
+        color: $colourBgLight;
+        text-transform: uppercase;
+        letter-spacing: 0.8rem;
+    }
+
+    &__img-container {
+        width: clamp(14rem, 10rem + 12.5vw, 28rem);
+        height: clamp(14rem, 10rem + 12.5vw, 28rem);
     }
 
     &__text-box {
-        width: 50%;
-        height: 70%;
+        @include wrapper-size(50%, 60%);
         border-radius: 0.5rem;
-        background-color: $colourBgLight;
+        background-color: $colourLightShadow;
         box-shadow: $colourLightShadow 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
         overflow: scroll;
         padding: 3rem;
@@ -59,6 +70,24 @@
 
         &:hover {
             color: $colourText;
+        }
+    }
+
+    &__button-container {
+        @include wrapper-size(80%, 15%);
+        @include flex(row, wrap, space-around, center);
+        gap: 3rem;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: 1px solid $colourBgLight;
+        border-radius: 0.25rem;
+
+        &-text {
+            color: $colourBgLight;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
         }
     }
 }
