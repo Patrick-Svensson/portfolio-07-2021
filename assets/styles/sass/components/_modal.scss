@@ -1,0 +1,64 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.c-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $colourProjectCardText;
+    width: 60vw;
+    height: 60vh;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__content {
+        @include wrapper-size(85%, 75%);
+        @include flex(row, wrap, space-around, center);
+    }
+
+    &__text-box {
+        width: 50%;
+        height: 70%;
+        border-radius: 0.5rem;
+        background-color: $colourBgLight;
+        box-shadow: $colourLightShadow 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        overflow: scroll;
+        padding: 3rem;
+    }
+
+    &__X-wrapper {
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        align-items: center;
+        margin-top: 2rem;
+        margin-right: 3rem;
+        line-height: 1.5rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        border: 1px solid $colourBgLight;
+
+        &:hover {
+            background-color: $colourBgLight;
+        }
+    }
+
+    &__text {
+        text-transform: initial;
+    }
+
+    &__X {
+        font-size: 2.5rem;
+        color: $colourBgLight;
+
+        padding: 0.7rem 0.9rem 0.5rem;
+
+        &:hover {
+            color: $colourText;
+        }
+    }
+}

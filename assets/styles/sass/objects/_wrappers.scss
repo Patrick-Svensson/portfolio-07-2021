@@ -19,12 +19,6 @@
     }
 }
 
-.o-img-wrapper {
-    border-radius: 50%;
-    box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
-    overflow: hidden;
-}
-
 .o-frame-container {
     width: 100%;
     max-width: 140rem;
@@ -167,7 +161,6 @@
     &__img-container {
         width: clamp(14rem, 10rem + 12.5vw, 28rem);
         height: clamp(14rem, 10rem + 12.5vw, 28rem);
-        box-shadow: 0.5rem 0.3rem 0.5rem 0 $colourDarkShadow;
         align-self: flex-start;
     }
 
@@ -229,7 +222,7 @@
 
 /* ****** Project Modal ****** */
 
-.o-project-modal-container {
+.o-modal-container {
     position: fixed;
     left: 0;
     top: 0;
