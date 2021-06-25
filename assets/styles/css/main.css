@@ -161,6 +161,12 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 10rem 0;
+}
+@media screen and (max-width: 75em) {
+  .o-section-container {
+    margin: 5rem 0;
+  }
 }
 
 .o-img-wrapper {
@@ -321,7 +327,6 @@ img {
 /* ****** My Projects ****** */
 .o-projects-wrapper {
   width: 100vw;
-  min-height: 100vh;
   background: linear-gradient(45deg, #dce9ee 0%, #fcfcfc 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,7 +411,6 @@ img {
 /* ****** Myself ****** */
 .o-myself-wrapper {
   width: 100vw;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +424,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 5rem;
   background: linear-gradient(90deg, #a2bece 0%, #dce9ee 100%);
 }
 .o-myself-frame-container {
@@ -437,7 +440,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 10rem;
 }
 @media screen and (max-width: 75em) {
   .o-myself-frame-container {

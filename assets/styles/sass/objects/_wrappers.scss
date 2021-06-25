@@ -13,6 +13,10 @@
 .o-section-container {
     width: 85%;
     @include flex(row, nowrap, center, center);
+    margin: 10rem 0;
+    @include responsive(tablet-land) {
+        margin: 5rem 0;
+    }
 }
 
 .o-img-wrapper {
@@ -98,7 +102,6 @@
 .o-projects {
     &-wrapper {
         width: 100vw;
-        min-height: 100vh;
         background: linear-gradient(45deg, $colourCloud 0%, $colourBgLight 100%);
         @include flex(row, nowrap, center, center);
     }
@@ -129,15 +132,12 @@
 .o-myself {
     &-wrapper {
         width: 100vw;
-        min-height: 100vh;
         @include flex(column, nowrap, flex-end, center);
-        gap: 5rem;
         background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
     }
 
     &-frame-container {
         @include flex(column, nowrap, flex-end, center);
-        margin-top: 10rem;
         @include responsive(tablet-land) {
             margin-bottom: 0;
         }
