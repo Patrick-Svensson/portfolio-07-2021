@@ -5,6 +5,7 @@ const myselfImage = document.querySelector(".o-myself__img-container");
 const showProjects = document.querySelectorAll(".c-projects__img-container");
 const modal = document.querySelector(".o-modal-container");
 const closeButton = document.querySelector(".c-modal__X-wrapper");
+const page = document.querySelector(".page");
 
 /* ****** Scroll Down Icon ****** */
 
