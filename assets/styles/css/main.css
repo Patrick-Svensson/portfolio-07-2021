@@ -1436,6 +1436,7 @@ img {
   background-color: #525252;
   width: 60vw;
   height: 70vh;
+  max-width: 100rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1450,6 +1451,16 @@ img {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 1rem;
+}
+@media screen and (max-width: 75em) {
+  .c-modal {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 30em) {
+  .c-modal {
+    height: 85vh;
+  }
 }
 .c-modal__content-wrapper {
   width: 85%;
@@ -1509,6 +1520,23 @@ img {
   align-items: center;
   gap: 3rem;
 }
+@media screen and (max-width: 48em) {
+  .c-modal__main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
 .c-modal__img-container {
   width: clamp(14rem, 10rem + 12.5vw, 28rem);
   height: clamp(14rem, 10rem + 12.5vw, 28rem);
@@ -1522,6 +1550,11 @@ img {
   box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
   overflow: scroll;
   padding: 3rem;
+}
+@media screen and (max-width: 48em) {
+  .c-modal__text-box {
+    width: 100%;
+  }
 }
 .c-modal__X-wrapper {
   line-height: 1.5rem;
@@ -1560,6 +1593,16 @@ img {
   -ms-flex-align: center;
   align-items: center;
   gap: 5rem;
+}
+@media screen and (max-width: 48em) {
+  .c-modal__link-container {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 30em) {
+  .c-modal__link-container {
+    gap: 2rem;
+  }
 }
 .c-modal__link-text {
   color: #fcfcfc;

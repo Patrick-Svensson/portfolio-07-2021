@@ -8,8 +8,16 @@
     transform: translate(-50%, -50%);
     background-color: $colourProjectCardText;
     @include wrapper-size(60vw, 70vh);
+    max-width: 100rem;
     @include flex(row, nowrap, center, center);
     border-radius: 1rem;
+    @include responsive(tablet-land) {
+        width: 80vw;
+    }
+
+    @include responsive(mobile) {
+        height: 85vh;
+    }
 
     &__content-wrapper {
         @include wrapper-size(85%, 85%);
@@ -33,6 +41,9 @@
         @include wrapper-size(100%, 70%);
         @include flex(row, wrap, space-between, center);
         gap: 3rem;
+        @include responsive(tablet-port) {
+            @include flex(column, nowrap, space-between, center);
+        }
     }
 
     &__img-container {
@@ -48,6 +59,9 @@
         box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
         overflow: scroll;
         padding: 3rem;
+        @include responsive(tablet-port) {
+            width: 100%;
+        }
     }
 
     &__X-wrapper {
@@ -79,6 +93,13 @@
         @include wrapper-size(100%, 15%);
         @include flex(row, wrap, flex-end, center);
         gap: 5rem;
+        @include responsive(tablet-port) {
+            justify-content: space-between;
+        }
+
+        @include responsive(mobile) {
+            gap: 2rem;
+        }
     }
 
     &__link-text {
