@@ -53,8 +53,7 @@
 
 /* ***** Hover, Focus ***** */
 
-@mixin hover($colour) {
-    color: scale-color($colour, $lightness: -40%);
+@mixin hover {
     transition: ease 0.5s;
     @include transform(translateX(1rem));
     position: relative;

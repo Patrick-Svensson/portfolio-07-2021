@@ -5,6 +5,8 @@ a {
     text-decoration: none;
     font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
     letter-spacing: 0.1rem;
+    color: $colourLinks;
+    font-weight: 700;
     @include responsive(mobile) {
         letter-spacing: normal;
     }

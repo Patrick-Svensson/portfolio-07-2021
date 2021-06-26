@@ -4,7 +4,7 @@
 .u-links {
     &:hover,
     focus {
-        @include hover($colourText);
+        @include hover;
 
         &:after {
             content: "";
@@ -23,7 +23,7 @@
 
     &--frame:hover,
     focus {
-        @include hover($colourLinks);
+        @include hover;
     }
 }
 

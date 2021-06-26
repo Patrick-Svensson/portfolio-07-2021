@@ -108,6 +108,8 @@ a {
   text-decoration: none;
   font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
   letter-spacing: 0.1rem;
+  color: #a81414;
+  font-weight: 700;
 }
 @media screen and (max-width: 30em) {
   a {
@@ -1217,7 +1219,6 @@ img {
 }
 .c-test-card__link {
   font-size: 1.2rem;
-  color: #1461a8;
 }
 @media screen and (max-width: 30em) {
   .c-test-card__link {
@@ -1355,7 +1356,7 @@ img {
   padding-left: 3rem;
 }
 @media screen and (max-width: 30em) {
-  .c-icon__subtext-link {
+  .c-icon__subtext {
     -webkit-transform: translate(-2rem, -4rem);
     -moz-transform: translate(-2rem, -4rem);
     -ms-transform: translate(-2rem, -4rem);
@@ -1435,25 +1436,51 @@ img {
   background-color: #525252;
   width: 60vw;
   height: 70vh;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.c-modal__content {
-  width: 90%;
-  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.c-modal__content-wrapper {
+  width: 85%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   -webkit-box-pack: space-around;
   -ms-flex-pack: space-around;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.c-modal__heading-container {
+  width: 100%;
+  align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap-reverse;
+  flex-flow: row wrap-reverse;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1464,6 +1491,24 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.8rem;
 }
+.c-modal__main-content {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3rem;
+}
 .c-modal__img-container {
   width: clamp(14rem, 10rem + 12.5vw, 28rem);
   height: clamp(14rem, 10rem + 12.5vw, 28rem);
@@ -1472,18 +1517,13 @@ img {
   width: 50%;
   height: 60%;
   border-radius: 0.5rem;
+  border: 0.1rem solid #494949;
   background-color: #aaa;
-  box-shadow: #aaa 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
   overflow: scroll;
   padding: 3rem;
 }
 .c-modal__X-wrapper {
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-  align-items: center;
-  margin-top: 2rem;
-  margin-right: 3rem;
   line-height: 1.5rem;
   cursor: pointer;
   border-radius: 0.25rem;
@@ -1501,10 +1541,10 @@ img {
   padding: 0.7rem 0.9rem 0.5rem;
 }
 .c-modal__X:hover {
-  color: #494949;
+  color: #525252;
 }
-.c-modal__button-container {
-  width: 80%;
+.c-modal__link-container {
+  width: 100%;
   height: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1513,22 +1553,16 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
 }
-.c-modal__button {
-  background-color: transparent;
-  border: 1px solid #fcfcfc;
-  border-radius: 0.25rem;
-}
-.c-modal__button-text {
+.c-modal__link-text {
   color: #fcfcfc;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 
@@ -1696,7 +1730,6 @@ img {
 }
 .u-links:hover,
 .u-links focus {
-  color: #2c2c2c;
   transition: ease 0.5s;
   -webkit-transform: translateX(1rem);
   -moz-transform: translateX(1rem);
@@ -1724,7 +1757,6 @@ img {
 }
 .u-links--frame:hover,
 .u-links focus {
-  color: #0c3a65;
   transition: ease 0.5s;
   -webkit-transform: translateX(1rem);
   -moz-transform: translateX(1rem);

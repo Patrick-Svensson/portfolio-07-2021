@@ -7,17 +7,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: $colourProjectCardText;
-    width: 60vw;
-    height: 70vh;
+    @include wrapper-size(60vw, 70vh);
+    @include flex(row, nowrap, center, center);
     border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 
-    &__content {
-        @include wrapper-size(90%, 70%);
-        @include flex(row, wrap, space-around, center);
+    &__content-wrapper {
+        @include wrapper-size(85%, 85%);
+        @include flex(column, nowrap, space-around, center);
+    }
+
+    &__heading-container {
+        width: 100%;
+        align-self: flex-end;
+        @include flex(row, wrap-reverse, space-between, center);
         gap: 3rem;
     }
 
@@ -25,6 +27,12 @@
         color: $colourBgLight;
         text-transform: uppercase;
         letter-spacing: 0.8rem;
+    }
+
+    &__main-content {
+        @include wrapper-size(100%, 70%);
+        @include flex(row, wrap, space-between, center);
+        gap: 3rem;
     }
 
     &__img-container {
@@ -35,19 +43,14 @@
     &__text-box {
         @include wrapper-size(50%, 60%);
         border-radius: 0.5rem;
+        border: 0.1rem solid $colourText;
         background-color: $colourLightShadow;
-        box-shadow: $colourLightShadow 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
         overflow: scroll;
         padding: 3rem;
     }
 
     &__X-wrapper {
-        display: flex;
-        justify-content: center;
-        align-self: flex-end;
-        align-items: center;
-        margin-top: 2rem;
-        margin-right: 3rem;
         line-height: 1.5rem;
         cursor: pointer;
         border-radius: 0.25rem;
@@ -65,29 +68,21 @@
     &__X {
         font-size: 2.5rem;
         color: $colourBgLight;
-
         padding: 0.7rem 0.9rem 0.5rem;
 
         &:hover {
-            color: $colourText;
+            color: $colourProjectCardText;
         }
     }
 
-    &__button-container {
-        @include wrapper-size(80%, 15%);
-        @include flex(row, wrap, space-around, center);
-        gap: 3rem;
+    &__link-container {
+        @include wrapper-size(100%, 15%);
+        @include flex(row, wrap, flex-end, center);
+        gap: 5rem;
     }
 
-    &__button {
-        background-color: transparent;
-        border: 1px solid $colourBgLight;
-        border-radius: 0.25rem;
-
-        &-text {
-            color: $colourBgLight;
-            text-transform: uppercase;
-            letter-spacing: 0.2rem;
-        }
+    &__link-text {
+        color: $colourBgLight;
+        letter-spacing: 0.2rem;
     }
 }
