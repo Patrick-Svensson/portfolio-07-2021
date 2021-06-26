@@ -123,7 +123,6 @@ img {
   object-fit: cover;
   border-radius: 50%;
   border: 0.1rem solid #494949;
-  box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
   overflow: hidden;
 }
 
@@ -1383,8 +1382,13 @@ img {
 .c-projects__img-container {
   width: 18rem;
   height: 18rem;
-  border-radius: 50%;
   position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.c-projects__img-container:hover,
+.c-projects__img-container focus {
+  box-shadow: 0 0 0 5px #a81414;
 }
 .c-projects__img {
   filter: blur(1.4px);
@@ -1540,6 +1544,9 @@ img {
 .c-modal__img-container {
   width: clamp(14rem, 10rem + 12.5vw, 28rem);
   height: clamp(14rem, 10rem + 12.5vw, 28rem);
+}
+.c-modal__img {
+  box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
 }
 .c-modal__text-box {
   width: 50%;

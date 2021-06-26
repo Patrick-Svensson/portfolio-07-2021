@@ -4,12 +4,19 @@
 .c-projects {
     &__img-container {
         @include wrapper-size(18rem, 18rem);
-        border-radius: 50%;
         position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover,
+        focus {
+            box-shadow: 0 0 0 5px $colourLinks;
+        }
     }
 
     &__img {
         filter: blur(1.4px);
+
         &-heading {
             color: $colourBgLight;
             position: absolute;
