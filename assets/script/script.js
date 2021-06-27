@@ -1,13 +1,14 @@
 /* ****** Variables ****** */
 
-let cardIndex = 0;
 const myselfImage = document.querySelector(".o-myself__img-container");
 const showProjects = document.querySelectorAll(".c-projects__img-container");
 const modal = document.querySelector(".o-modal-container");
 const closeButton = document.querySelector(".c-modal__X-wrapper");
 const page = document.querySelector(".page");
 
-/* ****** Scroll Down Icon ****** */
+let cardIndex = 0;
+
+/* ****** Show/Hide Scroll Down Icon ****** */
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
@@ -40,7 +41,7 @@ function showTestCards() {
 
 showTestCards();
 
-/* ****** Myself Images ****** */
+/* ****** Toggle Myself Images ****** */
 
 myselfImage.addEventListener("mouseover", () => {
     document.querySelector(".o-img__myself").classList.add("o-img__myself--hide");
@@ -52,7 +53,7 @@ myselfImage.addEventListener("mouseleave", () => {
     document.querySelector(".o-img__flicka").classList.remove("o-img__flicka--show");
 });
 
-// ***** Toggle Modal *****
+// ***** Toggle Projects Modal *****
 
 for (const showProject of showProjects) {
     showProject.addEventListener("click", () => {
