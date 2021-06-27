@@ -1,65 +1,89 @@
 [
     {
+        "projectNumber": 1,
         "heading": "time paradox",
         "image": "../images/time-paradox.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "",
-        "link2": "...view image"
+        "link2": "../images/time-paradox.png",
+        "linkText1": "",
+        "linkText2": "...view image"
     },
 
     {
+        "projectNumber": 2,
         "heading": "movie theatre logo",
         "image": "../images/movie-theatre.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "...view source code",
-        "link2": "...view website"
+        "link1": "",
+        "link2": "../images/movie-theatre.png",
+        "linkText1": "",
+        "linkText2": "...view design"
     },
 
     {
+        "projectNumber": 3,
         "heading": "the portfolio",
         "image": "../images/portfolio.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "",
-        "link2": "...view source code"
+        "link2": "https://github.com/Patrick-Svensson/portfolio-05-2021",
+        "linkText1": "",
+        "linkText2": "...view source code"
     },
 
     {
+        "projectNumber": 4,
         "heading": "colourix",
         "image": "../images/colourix.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "...view source code",
-        "link2": "...view website"
+        "link1": "https://github.com/Patrick-Svensson/colourix",
+        "link2": "",
+        "linkText1": "...view source code",
+        "linkText2": "...view website"
     },
 
     {
+        "projectNumber": 5,
         "heading": "sean connery quiz",
         "image": "../images/sean-connery-quiz.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "...view source code",
-        "link2": "...view website"
+        "link1": "https://github.com/Patrick-Svensson/sean-connery-quiz",
+        "link2": "https://patrick-svensson.github.io/sean-connery-quiz/",
+        "linkText1": "...view source code",
+        "linkText2": "...view website"
     },
 
     {
+        "projectNumber": 6,
         "heading": "gaffer's dock",
         "image": "../images/gaffers-dock.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "...view source code",
-        "link2": "...view website"
+        "link1": "https://github.com/Patrick-Svensson/gaffers-dock",
+        "link2": "https://patrick-svensson.github.io/gaffers-dock/",
+        "linkText1": "...view source code",
+        "linkText2": "...view website"
     },
 
     {
+        "projectNumber": 7,
         "heading": "bhromaon",
         "image": "../images/bhromaon.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "...view source code",
-        "link2": "...view website"
+        "link1": "https://github.com/Patrick-Svensson/bhromaon",
+        "link2": "https://patrick-svensson.github.io/bhromaon/",
+        "linkText1": "...view source code",
+        "linkText2": "...view website"
     },
 
     {
+        "projectNumber": 8,
         "heading": "emoji mischief",
         "image": "../images/emoji-mischief.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "...view source code",
-        "link2": "...view website"
+        "link1": "https://github.com/Patrick-Svensson/svg-in-play",
+        "link2": "",
+        "linkText1": "...view source code",
+        "linkText2": "...view website"
     }
 ]

@@ -1,12 +1,13 @@
 /* ****** Variables ****** */
 
 const myselfImage = document.querySelector(".o-myself__img-container");
-const showProjects = document.querySelectorAll(".c-projects__img-container");
 const modal = document.querySelector(".o-modal-container");
 const closeButton = document.querySelector(".c-modal__X-wrapper");
 const page = document.querySelector(".page");
+const projectsHeading = document.querySelector(".c-modal__heading");
 
 let cardIndex = 0;
+let projects = [];
 
 /* ****** Show/Hide Scroll Down Icon ****** */
 
@@ -53,12 +54,23 @@ myselfImage.addEventListener("mouseleave", () => {
     document.querySelector(".o-img__flicka").classList.remove("o-img__flicka--show");
 });
 
-// ***** Toggle Projects Modal *****
+// ***** Projects Modal *****
 
-for (const showProject of showProjects) {
-    showProject.addEventListener("click", () => {
-        modal.classList.toggle("activateModalContainer");
+fetch("assets/script/projects.json")
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedProjects) => {
+        projects = loadedProjects;
+        // console.log(projects[2].projectNumber);
     });
+
+function projectImgId(clicked) {
+    // console.log(clicked);
+    if (clicked == projects[6].projectNumber) {
+        modal.classList.toggle("activateModalContainer");
+        projectsHeading.innerText = `bhromaon`;
+    }
 }
 
 closeButton.addEventListener("click", () => {
