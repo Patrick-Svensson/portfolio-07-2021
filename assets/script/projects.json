@@ -1,30 +1,8 @@
 [
     {
         "projectNumber": 1,
-        "heading": "time paradox",
-        "image": "../images/time-paradox.png",
-        "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "",
-        "link2": "../images/time-paradox.png",
-        "linkText1": "",
-        "linkText2": "...view image"
-    },
-
-    {
-        "projectNumber": 2,
-        "heading": "movie theatre logo",
-        "image": "../images/movie-theatre.png",
-        "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
-        "link1": "",
-        "link2": "../images/movie-theatre.png",
-        "linkText1": "",
-        "linkText2": "...view design"
-    },
-
-    {
-        "projectNumber": 3,
         "heading": "the portfolio",
-        "image": "../images/portfolio.png",
+        "image": "../../assets/images/portfolio.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "",
         "link2": "https://github.com/Patrick-Svensson/portfolio-05-2021",
@@ -33,9 +11,9 @@
     },
 
     {
-        "projectNumber": 4,
+        "projectNumber": 2,
         "heading": "colourix",
-        "image": "../images/colourix.png",
+        "image": "../../assets/images/colourix.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "https://github.com/Patrick-Svensson/colourix",
         "link2": "",
@@ -44,9 +22,9 @@
     },
 
     {
-        "projectNumber": 5,
+        "projectNumber": 3,
         "heading": "sean connery quiz",
-        "image": "../images/sean-connery-quiz.png",
+        "image": "../../assets/images/sean-connery-quiz.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "https://github.com/Patrick-Svensson/sean-connery-quiz",
         "link2": "https://patrick-svensson.github.io/sean-connery-quiz/",
@@ -55,9 +33,9 @@
     },
 
     {
-        "projectNumber": 6,
+        "projectNumber": 4,
         "heading": "gaffer's dock",
-        "image": "../images/gaffers-dock.png",
+        "image": "../../assets/images/gaffers-dock.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "https://github.com/Patrick-Svensson/gaffers-dock",
         "link2": "https://patrick-svensson.github.io/gaffers-dock/",
@@ -66,9 +44,9 @@
     },
 
     {
-        "projectNumber": 7,
+        "projectNumber": 5,
         "heading": "bhromaon",
-        "image": "../images/bhromaon.png",
+        "image": "../../assets/images/bhromaon.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "https://github.com/Patrick-Svensson/bhromaon",
         "link2": "https://patrick-svensson.github.io/bhromaon/",
@@ -77,13 +55,35 @@
     },
 
     {
-        "projectNumber": 8,
+        "projectNumber": 6,
         "heading": "emoji mischief",
-        "image": "../images/emoji-mischief.png",
+        "image": "../../assets/images/emoji-mischief.png",
         "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
         "link1": "https://github.com/Patrick-Svensson/svg-in-play",
         "link2": "",
         "linkText1": "...view source code",
         "linkText2": "...view website"
+    },
+
+    {
+        "projectNumber": 7,
+        "heading": "time paradox",
+        "image": "../../assets/images/time-paradox.png",
+        "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
+        "link1": "",
+        "link2": "../images/time-paradox.png",
+        "linkText1": "",
+        "linkText2": "...view image"
+    },
+
+    {
+        "projectNumber": 8,
+        "heading": "movie theatre logo",
+        "image": "../assets/images/movie-theatre.png",
+        "description": "hahdh ad jklaldskjfhkj kjkjhlasdfiwurw slakjiipuhafl. hasdhfihdfado nkjf kbsad jk sakj. asfhklasdfia sdkj dkd  asdblksd dkjdi dikai. dasdiouijnsd d jnd o o disdouh. ",
+        "link1": "",
+        "link2": "../images/movie-theatre.png",
+        "linkText1": "",
+        "linkText2": "...view design"
     }
 ]
