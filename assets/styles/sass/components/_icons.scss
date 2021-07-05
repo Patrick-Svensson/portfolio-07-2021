@@ -25,9 +25,5 @@
     &__subtext {
         font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
         padding-left: 3rem;
-        @include responsive(mobile) {
-            @include transform(translate(-2rem, -4rem));
-            padding: 0;
-        }
     }
 }

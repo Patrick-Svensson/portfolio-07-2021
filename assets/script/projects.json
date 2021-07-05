@@ -3,7 +3,7 @@
         "projectNumber": 1,
         "heading": "my portfolio",
         "image": "../../assets/images/portfolio.png",
-        "description": "This is the project where I get the chance to show my qualities, interests and a piece of my personality.\n\nTechnologies:\nHTML, CSS, Sass, JavaScript, Clamp, ITCSS & BEMIT - working with @use and @forward since @import is about to be depricated. Wireframes made with Figma",
+        "description": "The project where I get the chance to show my qualities, interests and a piece of my personality.\n\nTechnologies:\nHTML, CSS, Sass, JavaScript, Clamp, ITCSS & BEMIT - working with @use and @forward since @import is about to be depricated. Wireframes made with Figma.",
         "link1": "",
         "link2": "https://github.com/Patrick-Svensson/portfolio-05-2021",
         "linkText1": "",

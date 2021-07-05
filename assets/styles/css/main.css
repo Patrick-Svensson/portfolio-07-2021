@@ -1354,19 +1354,14 @@ img {
   font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
   padding-left: 3rem;
 }
-@media screen and (max-width: 30em) {
-  .c-icon__subtext {
-    -webkit-transform: translate(-2rem, -4rem);
-    -moz-transform: translate(-2rem, -4rem);
-    -ms-transform: translate(-2rem, -4rem);
-    -o-transform: translate(-2rem, -4rem);
-    transform: translate(-2rem, -4rem);
-    padding: 0;
-  }
-}
 
 .c-myself__text {
   padding-bottom: 1rem;
+}
+@media screen and (max-width: 30em) {
+  .c-myself__text {
+    line-height: 1rem;
+  }
 }
 
 .c-text--smallCaps {
