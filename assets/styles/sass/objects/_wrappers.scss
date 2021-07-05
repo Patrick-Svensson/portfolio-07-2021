@@ -187,7 +187,7 @@
     background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
     color: $colourBgLight;
     @include responsive(tablet-land) {
-        height: 12vh;
+        height: 10vh;
     }
 }
 

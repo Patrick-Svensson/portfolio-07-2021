@@ -546,7 +546,7 @@ img {
 }
 @media screen and (max-width: 75em) {
   .o-waves-wrapper {
-    height: 12vh;
+    height: 10vh;
   }
 }
 
