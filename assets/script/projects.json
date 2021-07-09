@@ -12,11 +12,11 @@
 
     {
         "projectNumber": 2,
-        "heading": "colourix",
-        "image": "../../assets/images/colourix.png",
-        "description": "",
-        "link1": "https://github.com/Patrick-Svensson/colourix",
-        "link2": "",
+        "heading": "glasbrukit",
+        "image": "../../assets/images/glasbrukit.png",
+        "description": "A group assignment at the IT programming VT, Sundsgården's Folk High School.\n\nThe main goal was to learn how to collaborate with Git in a team. Secondly, to create a website that nests at least three levels deep in order to make us work with more complex file paths.\n\nMy contribution to the project was the landing-, and the contact page for which I made the design, wireframes, and code. The design was made using Photoshop and Figma. The website is responsive and built with HTML, Sass, and JavaScript.",
+        "link1": "https://github.com/Patrick-Svensson/glas-brukitgrup",
+        "link2": "https://he-2600.github.io/glas-brukitgrup/",
         "linkText1": "... view source code",
         "linkText2": "... view website"
     },
@@ -25,7 +25,7 @@
         "projectNumber": 3,
         "heading": "sean connery quiz",
         "image": "../../assets/images/sean-connery-quiz.png",
-        "description": "The Sean Connery Character Quotes Quiz, is a JavaScript project consisting of an interactive web application made with HTML, CSS, Bootstrap And JavaScript. The JavaScript is based on a quiz tutorial by James Q Quick. I made the design with the aid of Balsamiq wireframe tool. The application is fully resposive on all devices, and got excellent test results for SEO and accessibility.",
+        "description": "The Sean Connery Character Quotes Quiz, is a JavaScript project consisting of an interactive web application made with HTML, CSS, Bootstrap And JavaScript. The JavaScript is based on a quiz tutorial by James Q Quick. I made the design with the aid of Balsamiq wireframe tool. The application is fully resposive, and got excellent test results for SEO and accessibility.",
         "link1": "https://github.com/Patrick-Svensson/sean-connery-quiz",
         "link2": "https://patrick-svensson.github.io/sean-connery-quiz/",
         "linkText1": "... view source code",
