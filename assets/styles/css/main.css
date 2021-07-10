@@ -712,7 +712,6 @@ img {
   }
 }
 
-/* ****** My Projects ****** */
 /* ****** Myself ****** */
 .o-img__myself--hide {
   display: none;
@@ -753,11 +752,11 @@ img {
   max-height: 15rem;
 }
 
-.c-header__mobile-land {
+.c-header--mobile-land {
   display: none;
 }
 @media (min-width: 25em) and (max-height: 42em) {
-  .c-header__mobile-land {
+  .c-header--mobile-land {
     display: block;
     font-size: clamp(1.2rem, 0.5846rem + 1.9231vw, 2.2rem);
     padding-left: 5rem;

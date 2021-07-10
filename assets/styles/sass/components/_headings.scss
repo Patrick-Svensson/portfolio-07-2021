@@ -2,7 +2,7 @@
 @use "../tools" as *;
 
 .c-header {
-    &__mobile-land {
+    &--mobile-land {
         display: none;
         @include responsive(mobile-land) {
             display: block;
