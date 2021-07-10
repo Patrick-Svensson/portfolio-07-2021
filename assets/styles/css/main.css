@@ -1350,10 +1350,6 @@ img {
   box-shadow: 0.2rem 0.3rem 0.3rem 0 #636363;
   position: relative;
 }
-.c-icon__subtext {
-  font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
-  padding-left: 3rem;
-}
 
 .c-myself__text {
   padding-bottom: 1rem;
