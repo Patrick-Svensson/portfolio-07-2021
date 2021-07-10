@@ -3,12 +3,12 @@
 
 .c-scroll {
     &-icon-container {
-        @include wrapper-size(3rem, 3rem);
+        @include wrapper-size(3rem, 4rem);
         @include flex(row, nowrap, center, center);
         border-radius: 50%;
         border: 0.1rem solid $colourText;
         position: absolute;
-        bottom: 3.5rem;
+        bottom: 2.5rem;
         left: 50%;
         right: 50%;
         font-size: clamp(0.8rem, 0.5091rem + 0.9091vw, 1.6rem);
@@ -21,7 +21,8 @@
     }
 
     &-icon {
-        color: $colourText;
+        color: $colourLinks;
+        padding-bottom: 0.8rem;
     }
 }
 
