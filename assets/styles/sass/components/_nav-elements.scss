@@ -11,13 +11,17 @@
         bottom: 2.5rem;
         left: 50%;
         right: 50%;
-        font-size: clamp(0.8rem, 0.5091rem + 0.9091vw, 1.6rem);
         @include responsive(mobile) {
             @include wrapper-size(2.5rem, 2.5rem);
             bottom: 1rem;
         }
         @include responsive(mobile-land) {
             display: none;
+        }
+
+        &:hover,
+        focus {
+            background-color: rgba(0, 0, 0, 0.2);
         }
     }
 

@@ -1297,7 +1297,6 @@ img {
   bottom: 2.5rem;
   left: 50%;
   right: 50%;
-  font-size: clamp(0.8rem, 0.5091rem + 0.9091vw, 1.6rem);
 }
 @media screen and (max-width: 30em) {
   .c-scroll-icon-container {
@@ -1310,6 +1309,10 @@ img {
   .c-scroll-icon-container {
     display: none;
   }
+}
+.c-scroll-icon-container:hover,
+.c-scroll-icon-container focus {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .c-scroll-icon {
   color: #a81414;
