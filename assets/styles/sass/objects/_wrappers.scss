@@ -82,15 +82,22 @@
 
 /* ****** Testamonials ****** */
 
-.o-test-wrapper {
-    @include wrapper-size(100vw, 70vh);
-    @include flex(row, nowrap, center, center);
-    overflow: hidden;
-    @include responsive(mobile) {
-        height: 100vh;
+.o-test {
+    &-wrapper {
+        @include wrapper-size(100vw, 70vh);
+        @include flex(row, nowrap, center, center);
+        overflow: hidden;
+        @include responsive(mobile) {
+            height: 100vh;
+        }
+    }
+
+    &-carousel__control-panel {
+        @include wrapper-size(50vw, 5rem);
+        @include flex(row, nowrap, space-between, flex-start);
+        align-self: flex-end;
     }
 }
-
 /* ****** My Projects ****** */
 
 .o-projects {

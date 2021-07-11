@@ -54,6 +54,9 @@ p {
     font-weight: 400;
     letter-spacing: 0.06rem;
     line-height: 1.6rem;
+    @include responsive(mobile) {
+        line-height: 1rem;
+    }
 }
 
 li {
