@@ -106,7 +106,7 @@ li {
 
 a {
   text-decoration: none;
-  font-size: clamp(1rem, 0.7091rem + 0.9091vw, 1.8rem);
+  font-size: clamp(0.8rem, 0.05rem + 2.0833vw, 1.8rem);
   letter-spacing: 0.1rem;
   color: #a81414;
   font-weight: 700;
@@ -1041,13 +1041,16 @@ img {
 }
 
 .c-navbar__links {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-right: 2rem;
 }
 @media screen and (max-width: 30em) {
   .c-navbar__links {
     margin-right: 1rem;
   }
+}
+.c-navbar__links-item {
+  padding-top: 2rem;
 }
 
 .c-logo {
@@ -1273,7 +1276,7 @@ img {
 }
 
 .c-scroll-icon-container {
-  width: 3rem;
+  width: 4rem;
   height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1289,7 +1292,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  border: 0.1rem solid #494949;
+  border: 0.1rem solid #979797;
   position: absolute;
   bottom: 2.5rem;
   left: 50%;
@@ -1298,7 +1301,9 @@ img {
 }
 @media screen and (max-width: 30em) {
   .c-scroll-icon-container {
-    bottom: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 1rem;
   }
 }
 @media (min-width: 25em) and (max-height: 42em) {
@@ -1309,6 +1314,14 @@ img {
 .c-scroll-icon {
   color: #a81414;
   padding-bottom: 0.8rem;
+}
+.c-scroll-link {
+  padding: 0 1rem;
+}
+@media screen and (max-width: 30em) {
+  .c-scroll-link {
+    padding: 0.5rem 3rem;
+  }
 }
 
 .scrollIcon {

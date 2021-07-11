@@ -2,9 +2,13 @@
 @use "../tools" as *;
 
 .c-navbar__links {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin-right: 2rem;
     @include responsive(mobile) {
         margin-right: 1rem;
+    }
+
+    &-item {
+        padding-top: 2rem;
     }
 }
