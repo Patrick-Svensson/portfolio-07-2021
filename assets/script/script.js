@@ -10,7 +10,7 @@ const projectsDescription = document.querySelector(".c-modal__text");
 const projectslink1 = document.querySelector(".modalLink1");
 const projectslink2 = document.querySelector(".modalLink2");
 
-let cardIndex = 0;
+let cardIndex = 1;
 let projects = [];
 
 /* ****** Show/Hide Scroll Down Icon ****** */
@@ -25,26 +25,31 @@ window.addEventListener("scroll", () => {
 
 /* ****** Testamonial Carousel ****** */
 
-function showTestCards() {
-    let i;
-    const cards = document.getElementsByClassName("testamonialCards");
-    const dots = document.getElementsByClassName("c-test-carousel__dot");
+function slideTestCards(num) {
+    showTestCards((cardIndex += num));
+}
+
+function showTestCards(num) {
+    var i;
+    var cards = document.getElementsByClassName("testamonialCards");
+    var dots = document.getElementsByClassName("c-test-carousel__dot");
+    if (num > cards.length) {
+        cardIndex = 1;
+    }
+    if (num < 1) {
+        cardIndex = cards.length;
+    }
     for (i = 0; i < cards.length; i++) {
         cards[i].style.display = "none";
-    }
-    cardIndex++;
-    if (cardIndex > cards.length) {
-        cardIndex = 1;
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" activeDot", "");
     }
     cards[cardIndex - 1].style.display = "flex";
     dots[cardIndex - 1].className += " activeDot";
-    setTimeout(showTestCards, 10000);
 }
 
-showTestCards();
+showTestCards(cardIndex);
 
 /* ****** Toggle Myself Images ****** */
 

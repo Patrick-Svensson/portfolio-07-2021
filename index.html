@@ -153,12 +153,20 @@
 
                     <!-- ****** Carousel Dots ****** -->
                     <div class="o-test-carousel__control-panel">
-                        <div class="c-test-carousel__control-button c-test-carousel__control-button--left">&#12298;</div>
+                        <a
+                            class="c-test-carousel__control-button c-test-carousel__control-button--left"
+                            onclick="slideTestCards(-1)"
+                            >&#12298;</a
+                        >
                         <div class="c-test-carousel__dot-container">
                             <div class="c-test-carousel__dot"></div>
                             <div class="c-test-carousel__dot"></div>
                         </div>
-                        <div class="c-test-carousel__control-button c-test-carousel__control-button--right">&#12299;</div>
+                        <a
+                            class="c-test-carousel__control-button c-test-carousel__control-button--right"
+                            onclick="slideTestCards(1)"
+                            >&#12299;</a
+                        >
                     </div>
                 </div>
             </section>

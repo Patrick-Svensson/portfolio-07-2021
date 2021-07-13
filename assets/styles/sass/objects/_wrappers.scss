@@ -93,7 +93,8 @@
     }
 
     &-carousel__control-panel {
-        @include wrapper-size(50vw, 5rem);
+        @include wrapper-size(50vw, 6rem);
+        max-width: 50rem;
         @include flex(row, nowrap, space-between, flex-start);
         align-self: flex-end;
     }
