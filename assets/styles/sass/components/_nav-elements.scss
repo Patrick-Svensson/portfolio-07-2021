@@ -2,21 +2,37 @@
 @use "../tools" as *;
 
 .c-scroll {
-    &-icon-container {
+    &-symbol-container {
         @include wrapper-size(4rem, 4rem);
         @include flex(row, nowrap, center, center);
         border-radius: 50%;
         border: 0.1rem solid $colourFrame;
         position: absolute;
-        bottom: 2.5rem;
-        left: 50%;
-        right: 50%;
-        @include responsive(mobile) {
-            @include wrapper-size(2.5rem, 2.5rem);
-            bottom: 1rem;
+
+        &--down {
+            bottom: 2.5rem;
+            left: 50%;
+            right: 50%;
+            @include responsive(mobile) {
+                @include wrapper-size(2.5rem, 2.5rem);
+                bottom: 1rem;
+            }
+
+            @include responsive(mobile-land) {
+                display: none;
+            }
         }
-        @include responsive(mobile-land) {
-            display: none;
+
+        &--up {
+            bottom: 4rem;
+            right: 3.5em;
+            padding-bottom: 1rem;
+            position: fixed;
+            z-index: 3;
+            visibility: hidden;
+            @include responsive(tablet-port) {
+                display: none;
+            }
         }
 
         &:hover,
@@ -25,7 +41,7 @@
         }
     }
 
-    &-icon {
+    &-symbol {
         color: $colourLinks;
         padding-bottom: 0.8rem;
     }
@@ -38,6 +54,10 @@
     }
 }
 
-.scrollIcon {
+.scrollDownSymbol {
     visibility: hidden;
+}
+
+.scrollUpSymbol {
+    visibility: visible;
 }

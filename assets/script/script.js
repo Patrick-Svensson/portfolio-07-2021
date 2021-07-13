@@ -13,13 +13,23 @@ const projectslink2 = document.querySelector(".modalLink2");
 let cardIndex = 1;
 let projects = [];
 
-/* ****** Show/Hide Scroll Down Icon ****** */
+/* ****** Show/Hide Scroll Down Symbol ****** */
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
-        document.querySelector(".c-scroll-icon-container").classList.add("scrollIcon");
+        document.querySelector(".c-scroll-symbol-container--down").classList.add("scrollDownSymbol");
     } else {
-        document.querySelector(".c-scroll-icon-container").classList.remove("scrollIcon");
+        document.querySelector(".c-scroll-symbol-container--down").classList.remove("scrollDownSymbol");
+    }
+});
+
+/* ****** Show/Hide Scroll Up Symbol ****** */
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 700) {
+        document.querySelector(".c-scroll-symbol-container--up").classList.add("scrollUpSymbol");
+    } else {
+        document.querySelector(".c-scroll-symbol-container--up").classList.remove("scrollUpSymbol");
     }
 });
 

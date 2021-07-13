@@ -1326,7 +1326,7 @@ img {
   background-color: #a2bece;
 }
 
-.c-scroll-icon-container {
+.c-scroll-symbol-container {
   width: 4rem;
   height: 4rem;
   display: -webkit-box;
@@ -1345,27 +1345,42 @@ img {
   border-radius: 50%;
   border: 0.1rem solid #979797;
   position: absolute;
+}
+.c-scroll-symbol-container--down {
   bottom: 2.5rem;
   left: 50%;
   right: 50%;
 }
 @media screen and (max-width: 30em) {
-  .c-scroll-icon-container {
+  .c-scroll-symbol-container--down {
     width: 2.5rem;
     height: 2.5rem;
     bottom: 1rem;
   }
 }
 @media (min-width: 25em) and (max-height: 42em) {
-  .c-scroll-icon-container {
+  .c-scroll-symbol-container--down {
     display: none;
   }
 }
-.c-scroll-icon-container:hover,
-.c-scroll-icon-container focus {
+.c-scroll-symbol-container--up {
+  bottom: 4rem;
+  right: 3.5em;
+  padding-bottom: 1rem;
+  position: fixed;
+  z-index: 3;
+  visibility: hidden;
+}
+@media screen and (max-width: 48em) {
+  .c-scroll-symbol-container--up {
+    display: none;
+  }
+}
+.c-scroll-symbol-container:hover,
+.c-scroll-symbol-container focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.c-scroll-icon {
+.c-scroll-symbol {
   color: #a81414;
   padding-bottom: 0.8rem;
 }
@@ -1378,8 +1393,12 @@ img {
   }
 }
 
-.scrollIcon {
+.scrollDownSymbol {
   visibility: hidden;
+}
+
+.scrollUpSymbol {
+  visibility: visible;
 }
 
 .c-icon {
@@ -1739,7 +1758,7 @@ img {
   }
 }
 /* ****** Scroll Icon ****** */
-.u-scroll-icon {
+.u-scroll-symbol {
   -webkit-animation: bounce 0.5s linear 1s infinite alternate;
   -moz-animation: bounce 0.5s linear 1s infinite alternate;
   -o-animation: bounce 0.5s linear 1s infinite alternate;
