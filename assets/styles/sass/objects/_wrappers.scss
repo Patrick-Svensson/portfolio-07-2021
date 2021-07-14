@@ -214,12 +214,14 @@
 
     &-content-wrapper {
         max-width: 140rem;
+        max-height: 50rem;
         @include wrapper-size(80%, 70%);
         @include flex(column, nowrap, space-between, flex-start);
     }
 
     &__links-wrapper {
         @include wrapper-size(100%, 35%);
+        min-height: 14rem;
         @include flex(column, nowrap, space-between, flex-start);
     }
 
