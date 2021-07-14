@@ -1367,7 +1367,7 @@ img {
 }
 .c-scroll-symbol-container--up {
   bottom: 4rem;
-  right: 3.5em;
+  right: 3.5rem;
   padding-bottom: 1rem;
   position: fixed;
   z-index: 3;
@@ -1381,25 +1381,41 @@ img {
 .c-scroll-symbol-container:hover,
 .c-scroll-symbol-container focus {
   background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
-.c-scroll-symbol {
+.c-scroll__symbol {
   color: #a81414;
   padding-bottom: 0.8rem;
 }
-.c-scroll-link {
+.c-scroll__link {
   padding: 0 1rem;
 }
 @media screen and (max-width: 30em) {
-  .c-scroll-link {
+  .c-scroll__link {
     padding: 0.5rem 3rem;
   }
 }
+.c-scroll__text {
+  visibility: hidden;
+}
+.c-scroll__text--down {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  margin-left: 5rem;
+}
+.c-scroll__text--up {
+  position: fixed;
+  bottom: 10rem;
+  right: 2.5rem;
+  z-index: 3;
+}
 
-.scrollDownSymbol {
+.hideElement {
   visibility: hidden;
 }
 
-.scrollUpSymbol {
+.showElement {
   visibility: visible;
 }
 
@@ -1782,7 +1798,7 @@ img {
   }
 }
 /* ****** Scroll Icon ****** */
-.u-scroll-symbol {
+.u-scroll__symbol {
   -webkit-animation: bounce 0.5s linear 1s infinite alternate;
   -moz-animation: bounce 0.5s linear 1s infinite alternate;
   -o-animation: bounce 0.5s linear 1s infinite alternate;

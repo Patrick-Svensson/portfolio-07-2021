@@ -1,5 +1,7 @@
 /* ****** Variables ****** */
 
+const scrollDownText = document.querySelector(".c-scroll-symbol-container--down");
+const scrollUpText = document.querySelector(".c-scroll-symbol-container--up");
 const myselfImage = document.querySelector(".o-myself__img-container");
 const modal = document.querySelector(".o-modal-container");
 const closeButton = document.querySelector(".c-modal__X-wrapper");
@@ -17,9 +19,9 @@ let projects = [];
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
-        document.querySelector(".c-scroll-symbol-container--down").classList.add("scrollDownSymbol");
+        document.querySelector(".c-scroll-symbol-container--down").classList.add("hideElement");
     } else {
-        document.querySelector(".c-scroll-symbol-container--down").classList.remove("scrollDownSymbol");
+        document.querySelector(".c-scroll-symbol-container--down").classList.remove("hideElement");
     }
 });
 
@@ -27,10 +29,28 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 700) {
-        document.querySelector(".c-scroll-symbol-container--up").classList.add("scrollUpSymbol");
+        document.querySelector(".c-scroll-symbol-container--up").classList.add("showElement");
     } else {
-        document.querySelector(".c-scroll-symbol-container--up").classList.remove("scrollUpSymbol");
+        document.querySelector(".c-scroll-symbol-container--up").classList.remove("showElement");
     }
+});
+
+/* ****** Show/Hide Scroll Navigation Text ****** */
+
+scrollDownText.addEventListener("mouseover", () => {
+    document.querySelector(".c-scroll__text--down").classList.add("showElement");
+});
+
+scrollDownText.addEventListener("mouseleave", () => {
+    document.querySelector(".c-scroll__text--down").classList.remove("showElement");
+});
+
+scrollUpText.addEventListener("mouseover", () => {
+    document.querySelector(".c-scroll__text--up").classList.add("showElement");
+});
+
+scrollUpText.addEventListener("mouseleave", () => {
+    document.querySelector(".c-scroll__text--up").classList.remove("showElement");
 });
 
 /* ****** Testamonial Carousel ****** */

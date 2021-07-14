@@ -25,7 +25,7 @@
 
         &--up {
             bottom: 4rem;
-            right: 3.5em;
+            right: 3.5rem;
             padding-bottom: 1rem;
             position: fixed;
             z-index: 3;
@@ -38,26 +38,45 @@
         &:hover,
         focus {
             background-color: rgba(0, 0, 0, 0.2);
+            cursor: pointer;
         }
     }
 
-    &-symbol {
+    &__symbol {
         color: $colourLinks;
         padding-bottom: 0.8rem;
     }
 
-    &-link {
+    &__link {
         padding: 0 1rem;
         @include responsive(mobile) {
             padding: 0.5rem 3rem;
         }
     }
+
+    &__text {
+        visibility: hidden;
+
+        &--down {
+            position: absolute;
+            bottom: 3.5rem;
+            left: 50%;
+            margin-left: 5rem;
+        }
+
+        &--up {
+            position: fixed;
+            bottom: 10rem;
+            right: 2.5rem;
+            z-index: 3;
+        }
+    }
 }
 
-.scrollDownSymbol {
+.hideElement {
     visibility: hidden;
 }
 
-.scrollUpSymbol {
+.showElement {
     visibility: visible;
 }
