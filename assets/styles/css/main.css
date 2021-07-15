@@ -1361,7 +1361,7 @@ img {
     bottom: 1rem;
   }
 }
-@media (min-width: 25em) and (max-height: 42em) {
+@media screen and (max-width: 75em) {
   .c-scroll-symbol-container--down {
     display: none;
   }
@@ -1374,7 +1374,7 @@ img {
   z-index: 3;
   visibility: hidden;
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 75em) {
   .c-scroll-symbol-container--up {
     display: none;
   }

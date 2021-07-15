@@ -18,7 +18,7 @@
                 bottom: 1rem;
             }
 
-            @include responsive(mobile-land) {
+            @include responsive(tablet-land) {
                 display: none;
             }
         }
@@ -30,7 +30,7 @@
             position: fixed;
             z-index: 3;
             visibility: hidden;
-            @include responsive(tablet-port) {
+            @include responsive(tablet-land) {
                 display: none;
             }
         }
