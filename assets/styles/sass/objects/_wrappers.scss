@@ -50,6 +50,7 @@
         max-height: 130rem;
         @include flex(row, nowrap, flex-start, flex-start);
         position: relative;
+        margin-bottom: 4rem;
         @include responsive(tablet-port) {
             @include wrapper-size(85%, 85%);
         }

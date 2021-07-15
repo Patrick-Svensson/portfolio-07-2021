@@ -234,6 +234,7 @@ img {
   -ms-flex-align: flex-start;
   align-items: flex-start;
   position: relative;
+  margin-bottom: 4rem;
 }
 @media screen and (max-width: 48em) {
   .o-header-bg-wrapper {
