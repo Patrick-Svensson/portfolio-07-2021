@@ -46,7 +46,7 @@
     {
         "projectNumber": 5,
         "heading": "bhromaon",
-        "image": "../../assets/images/bhromaon.png",
+        "image": "../../assets/images/bhromaon.jpg",
         "description": "Bhromaon, a coding challenge to recreate the design of a static website from a Figma desktop wireframe. Making it fully responsive on all devices. Tablet and mobile design free of choice. For this assignment I have used HTML, CSS, Bootstrap, and Sass, being mindful of semantics and accessibility.",
         "link1": "https://github.com/Patrick-Svensson/bhromaon",
         "link2": "https://patrick-svensson.github.io/bhromaon/",
