@@ -39,9 +39,13 @@
 .o-header {
     &-wrapper {
         @include wrapper-size(100vw, 100vh);
-        @include flex(row, nowrap, center, center);
+        @include flex(column, nowrap, center, center);
         position: relative;
         text-align: center;
+        gap: 2rem;
+        @include responsive(mobile) {
+            gap: 1rem;
+        }
     }
 
     &-bg-wrapper {
@@ -50,9 +54,10 @@
         max-height: 130rem;
         @include flex(row, nowrap, flex-start, flex-start);
         position: relative;
-        margin-bottom: 4rem;
+        margin-top: 4rem;
         @include responsive(tablet-port) {
             @include wrapper-size(85%, 85%);
+            margin-top: 0;
         }
 
         @include responsive(mobile-land) {
@@ -78,6 +83,14 @@
         @include wrapper-size(100%, auto);
         max-width: 60rem;
         @include flex(row, nowrap, space-between, flex-end);
+    }
+}
+
+.o-scroll-nav-wrapper {
+    @include wrapper-size(100%, 6rem);
+    @include flex(row, nowrap, center, center);
+    @include responsive(mobile) {
+        height: 3rem;
     }
 }
 

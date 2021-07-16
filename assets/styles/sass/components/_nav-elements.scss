@@ -7,23 +7,19 @@
         @include flex(row, nowrap, center, center);
         border-radius: 50%;
         border: 0.1rem solid $colourFrame;
-        position: absolute;
 
         &--down {
-            bottom: 2.5rem;
-            left: 50%;
-            right: 50%;
+            margin-left: 17rem;
+            @include responsive(tablet-land) {
+                margin-left: 0;
+            }
             @include responsive(mobile) {
                 @include wrapper-size(2.5rem, 2.5rem);
-                bottom: 1rem;
-            }
-
-            @include responsive(tablet-land) {
-                display: none;
             }
         }
 
         &--up {
+            position: absolute;
             bottom: 4rem;
             right: 3.5rem;
             padding-bottom: 1rem;
@@ -31,6 +27,9 @@
             z-index: 3;
             visibility: hidden;
             @include responsive(tablet-land) {
+                right: 2rem;
+            }
+            @include responsive(mobile) {
                 display: none;
             }
         }
@@ -56,12 +55,12 @@
 
     &__text {
         visibility: hidden;
+        @include responsive(tablet-land) {
+            display: none;
+        }
 
         &--down {
-            position: absolute;
-            bottom: 3.5rem;
-            left: 50%;
-            margin-left: 5rem;
+            margin-left: 1rem;
         }
 
         &--up {
