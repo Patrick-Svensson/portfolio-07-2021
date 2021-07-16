@@ -214,11 +214,6 @@ img {
   text-align: center;
   gap: 2rem;
 }
-@media screen and (max-width: 30em) {
-  .o-header-wrapper {
-    gap: 1rem;
-  }
-}
 .o-header-bg-wrapper {
   width: 80%;
   height: 75%;
@@ -832,7 +827,7 @@ img {
   display: block;
   text-shadow: none;
   padding-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 25em) and (max-height: 42em) {
   .c-header__heading--medium {
@@ -1113,13 +1108,13 @@ img {
 }
 @media screen and (max-width: 30em) {
   .c-logo {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    transform: scale(0.8);
-    top: -1rem;
-    left: -1rem;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+    top: -2rem;
+    left: -3rem;
   }
 }
 .c-logo--mobile-land {

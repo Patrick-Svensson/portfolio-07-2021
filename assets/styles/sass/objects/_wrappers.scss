@@ -41,9 +41,6 @@
         position: relative;
         text-align: center;
         gap: 2rem;
-        @include responsive(mobile) {
-            gap: 1rem;
-        }
     }
 
     &-bg-wrapper {
