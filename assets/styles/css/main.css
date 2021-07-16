@@ -1408,11 +1408,6 @@ img {
     display: none;
   }
 }
-.c-scroll-symbol-container:hover,
-.c-scroll-symbol-container focus {
-  background-color: rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
 .c-scroll__symbol {
   color: #a81414;
   padding-bottom: 0.8rem;
@@ -1451,6 +1446,20 @@ img {
   visibility: visible;
 }
 
+/* ****** Hover styles for none touch devices ****** */
+@media (hover: hover) {
+  .c-scroll-symbol-container:hover,
+focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+}
+/* ****** Hover styles for touch devices ****** */
+@media (hover: none) {
+  .c-scroll-symbol-container:hover {
+    background-color: inherit;
+  }
+}
 .c-icon {
   font-size: 4rem;
   color: #494949;

@@ -33,12 +33,6 @@
                 display: none;
             }
         }
-
-        &:hover,
-        focus {
-            background-color: rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-        }
     }
 
     &__symbol {
@@ -78,4 +72,22 @@
 
 .showElement {
     visibility: visible;
+}
+
+/* ****** Hover styles for none touch devices ****** */
+
+@media (hover: hover) {
+    .c-scroll-symbol-container:hover,
+    focus {
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+}
+
+/* ****** Hover styles for touch devices ****** */
+
+@media (hover: none) {
+    .c-scroll-symbol-container:hover {
+        background-color: inherit;
+    }
 }
