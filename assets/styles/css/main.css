@@ -1351,11 +1351,6 @@ img {
   padding-left: 1rem;
   color: #a81414;
 }
-.c-test-carousel__control-button:hover,
-.c-test-carousel__control-button focus {
-  background-color: rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
 
 .activeDot {
   background-color: #a2bece;
@@ -1451,20 +1446,6 @@ img {
   visibility: visible;
 }
 
-/* ****** Hover styles for none touch devices ****** */
-@media (hover: hover) {
-  .c-scroll-symbol-container:hover,
-focus {
-    background-color: rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-  }
-}
-/* ****** Hover styles for touch devices ****** */
-@media (hover: none) {
-  .c-scroll-symbol-container:hover {
-    background-color: inherit;
-  }
-}
 .c-icon {
   font-size: 4rem;
   color: #494949;
@@ -1973,17 +1954,45 @@ focus {
   position: relative;
 }
 
-.u-icon-base:hover,
+/* ****** Hover styles for none touch devices ****** */
+@media (hover: hover) {
+  .u-btn-hover:hover,
+focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .u-icon-base:hover,
 .u-icon focus {
-  background-color: #494949;
+    background-color: #494949;
+  }
+  .u-icon--myself:hover,
+.u-icon focus {
+    color: #a2bece;
+  }
+  .u-icon--contact:hover,
+.u-icon focus {
+    color: #fcfcfc;
+  }
 }
-.u-icon--myself:hover,
+/* ****** Hover styles for touch devices ****** */
+@media (hover: none) {
+  .u-btn-hover:hover {
+    background-color: transparent;
+  }
+
+  .u-icon-base:hover,
 .u-icon focus {
-  color: #a2bece;
-}
-.u-icon--contact:hover,
+    background-color: transparent;
+  }
+  .u-icon--myself:hover,
 .u-icon focus {
-  color: #fcfcfc;
+    color: #494949;
+  }
+  .u-icon--contact:hover,
+.u-icon focus {
+    color: #494949;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

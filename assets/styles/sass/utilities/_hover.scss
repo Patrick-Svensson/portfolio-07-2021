@@ -1,0 +1,80 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.u-links {
+    &:hover,
+    focus {
+        @include hover;
+
+        &:after {
+            content: "";
+            width: calc(100% + 1rem);
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+            left: -1rem;
+        }
+    }
+
+    &:active {
+        @include transform(translate(1rem) scale(0.95));
+        transition: linear;
+    }
+
+    &--frame:hover,
+    focus {
+        @include hover;
+    }
+}
+
+/* ****** Hover styles for none touch devices ****** */
+
+@media (hover: hover) {
+    .u-btn-hover:hover,
+    focus {
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .u-icon {
+        &-base:hover,
+        focus {
+            background-color: $colourText;
+        }
+
+        &--myself:hover,
+        focus {
+            color: $colourWater;
+        }
+
+        &--contact:hover,
+        focus {
+            color: $colourBgLight;
+        }
+    }
+}
+
+/* ****** Hover styles for touch devices ****** */
+
+@media (hover: none) {
+    .u-btn-hover:hover {
+        background-color: transparent;
+    }
+
+    .u-icon {
+        &-base:hover,
+        focus {
+            background-color: transparent;
+        }
+
+        &--myself:hover,
+        focus {
+            color: $colourText;
+        }
+
+        &--contact:hover,
+        focus {
+            color: $colourText;
+        }
+    }
+}
