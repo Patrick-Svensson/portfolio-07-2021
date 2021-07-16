@@ -155,7 +155,7 @@ img {
 }
 
 .o-section-container {
-  width: 85%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,14 +184,12 @@ img {
 }
 @media screen and (max-width: 75em) {
   .o-frame-container {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin: 4rem 0;
   }
 }
 @media screen and (max-width: 30em) {
   .o-frame-container {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin: 0;
   }
 }
 
@@ -422,7 +420,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 5rem;
-  padding: 10rem;
+  padding: 10rem 0;
   gap: 3rem;
 }
 .o-projects__group-container {
