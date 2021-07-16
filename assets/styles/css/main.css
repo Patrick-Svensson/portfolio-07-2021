@@ -1413,6 +1413,9 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+.c-scroll-symbol-container:active {
+  background-color: transparent;
+}
 .c-scroll__symbol {
   color: #a81414;
   padding-bottom: 0.8rem;
