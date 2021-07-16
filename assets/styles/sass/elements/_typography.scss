@@ -3,7 +3,7 @@
 
 h1 {
     font-family: $fontProfile;
-    font-size: clamp(3.8rem, 2.5636rem + 3.8636vw, 7.2rem);
+    font-size: clamp(3.5rem, 2.7857rem + 2.2321vw, 6rem);
     font-weight: 400;
     text-align: left;
     @include responsive(mobile-land) {
