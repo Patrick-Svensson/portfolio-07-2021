@@ -54,12 +54,7 @@
         position: relative;
         margin-top: 4rem;
         @include responsive(tablet-port) {
-            height: 70%;
             margin-top: 0;
-        }
-
-        @include responsive(mobile) {
-            height: 80%;
         }
 
         @include responsive(mobile-land) {

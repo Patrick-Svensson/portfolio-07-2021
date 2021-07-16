@@ -242,13 +242,7 @@ img {
 }
 @media screen and (max-width: 48em) {
   .o-header-bg-wrapper {
-    height: 70%;
     margin-top: 0;
-  }
-}
-@media screen and (max-width: 30em) {
-  .o-header-bg-wrapper {
-    height: 80%;
   }
 }
 @media (min-width: 25em) and (max-height: 42em) {
