@@ -244,8 +244,6 @@ img {
 }
 @media screen and (max-width: 48em) {
   .o-header-bg-wrapper {
-    width: 85%;
-    height: 85%;
     margin-top: 0;
   }
 }
