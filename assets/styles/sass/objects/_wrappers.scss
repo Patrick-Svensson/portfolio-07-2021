@@ -104,6 +104,7 @@
         @include wrapper-size(50vw, 6rem);
         max-width: 50rem;
         @include flex(row, nowrap, space-between, flex-start);
+        -ms-flex-item-align: end;
         align-self: flex-end;
     }
 }
@@ -112,6 +113,7 @@
 .o-projects {
     &-wrapper {
         width: 100vw;
+        background: -o-linear-gradient(45deg, $colourCloud 0%, $colourBgLight 100%);
         background: linear-gradient(45deg, $colourCloud 0%, $colourBgLight 100%);
         @include flex(row, nowrap, center, center);
     }
@@ -143,6 +145,8 @@
     &-wrapper {
         width: 100vw;
         @include flex(column, nowrap, flex-end, center);
+        background: -webkit-gradient(linear, left top, right top, from($colourWater), to($colourCloud));
+        background: -o-linear-gradient(left, $colourWater 0%, $colourCloud 100%);
         background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
     }
 
@@ -156,6 +160,8 @@
     &-content-wrapper {
         @include flex(row, nowrap, space-between, center);
         @include responsive(mobile) {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
         }
     }
@@ -177,6 +183,7 @@
     &__img-container {
         width: clamp(14rem, 10rem + 12.5vw, 28rem);
         height: clamp(14rem, 10rem + 12.5vw, 28rem);
+        -ms-flex-item-align: start;
         align-self: flex-start;
     }
 
@@ -200,6 +207,8 @@
 .o-waves-wrapper {
     @include wrapper-size(100vw, 15vh);
     position: relative;
+    background: -webkit-gradient(linear, left top, right top, from($colourWater), to($colourCloud));
+    background: -o-linear-gradient(left, $colourWater 0%, $colourCloud 100%);
     background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
     color: $colourBgLight;
     @include responsive(tablet-land) {
@@ -234,6 +243,8 @@
     }
 
     &__link-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -249,7 +260,11 @@
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
-    transform: scale(1.1);
+    @include transform(scale(1.1));
+    -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    -o-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     z-index: 3;
 }
@@ -257,6 +272,10 @@
 .activateModalContainer {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    @include transform(scale(1));
+    -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    -o-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }

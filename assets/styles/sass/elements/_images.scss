@@ -3,6 +3,7 @@
 
 img {
     @include wrapper-size(100%, 100%);
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 50%;
     border: 0.1rem solid $colourText;

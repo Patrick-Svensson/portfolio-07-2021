@@ -19,6 +19,7 @@
         @include flex(row, nowrap, center, center);
         @include transform(rotate(-22deg));
         border: 0.1rem solid $colourText;
+        -webkit-box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
         box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
         position: relative;
         @include responsive(mobile) {

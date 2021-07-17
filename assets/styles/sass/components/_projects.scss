@@ -7,14 +7,10 @@
         position: relative;
         border-radius: 50%;
         cursor: pointer;
-
-        &:hover,
-        focus {
-            box-shadow: 0 0 0 5px $colourLinks;
-        }
     }
 
     &__img {
+        -webkit-filter: blur(1.4px);
         filter: blur(1.4px);
 
         &-heading {

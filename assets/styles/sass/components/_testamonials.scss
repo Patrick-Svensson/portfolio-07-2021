@@ -12,7 +12,10 @@
     right: 0;
     max-width: 90rem;
     max-height: 40rem;
+    background: -webkit-gradient(linear, left top, right top, from($colourCloud), color-stop(50%, $colourSky), to($colourCloud));
+    background: -o-linear-gradient(left, $colourCloud 0%, $colourSky 50%, $colourCloud 100%);
     background: linear-gradient(90deg, $colourCloud 0%, $colourSky 50%, $colourCloud 100%);
+    -webkit-box-shadow: 0.2rem 0.5rem 0.5rem 0 $colourLightShadow;
     box-shadow: 0.2rem 0.5rem 0.5rem 0 $colourLightShadow;
     @include responsive(mobile) {
         @include wrapper-size(60%, 60%);
@@ -35,6 +38,8 @@
         @include wrapper-size(80%, 55%);
         @include flex(row, nowrap, space-between, center);
         @include responsive(tablet-land) {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
         }
     }
@@ -93,6 +98,8 @@
         border-radius: 50%;
         border: 0.1rem solid $colourLightShadow;
         background-color: $colourBgLight;
+        -webkit-transition: background-color 0.6s ease;
+        -o-transition: background-color 0.6s ease;
         transition: background-color 0.6s ease;
         @include responsive(mobile) {
             @include wrapper-size(1rem, 1rem);

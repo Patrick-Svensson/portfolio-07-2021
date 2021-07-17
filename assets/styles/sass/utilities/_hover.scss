@@ -27,10 +27,16 @@
     }
 }
 
+.u-projects--hover:hover,
+focus {
+    -webkit-box-shadow: 0 0 0 5px $colourLinks;
+    box-shadow: 0 0 0 5px $colourLinks;
+}
+
 /* ****** Hover styles for none touch devices ****** */
 
 @media (hover: hover) {
-    .u-btn-hover:hover,
+    .u-btn--hover:hover,
     focus {
         background-color: rgba(0, 0, 0, 0.2);
         cursor: pointer;
