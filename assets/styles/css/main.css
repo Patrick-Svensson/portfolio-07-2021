@@ -1966,7 +1966,7 @@ focus {
 /* ****** Hover styles for touch devices ****** */
 @media (hover: none) {
   .u-btn-hover:hover {
-    background-color: none;
+    background-color: transparent;
   }
 
   .u-icon-base:hover,
