@@ -2,6 +2,14 @@
 @use "../tools" as *;
 
 .c-projects {
+    &__img-container {
+        @include wrapper-size(18rem, 18rem);
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 1.5rem;
+    }
+
     &__img {
         -webkit-filter: blur(1.4px);
         filter: blur(1.4px);

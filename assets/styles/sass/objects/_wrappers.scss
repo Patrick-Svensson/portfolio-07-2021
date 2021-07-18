@@ -135,14 +135,6 @@
     &__subgroup-container {
         @include flex(column, nowrap, space-between, center);
     }
-
-    &__img-container {
-        @include wrapper-size(18rem, 18rem);
-        position: relative;
-        border-radius: 50%;
-        cursor: pointer;
-        margin: 1.5rem;
-    }
 }
 /* ****** Myself ****** */
 
