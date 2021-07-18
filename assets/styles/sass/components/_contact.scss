@@ -1,13 +1,22 @@
 @use "../tools" as *;
 
 .c-contact__address {
-    font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
     margin: 1rem 0 0 3rem;
     letter-spacing: 2px;
     z-index: 1;
+    font-size: 2.4rem;
+    @include responsive(tablet-port) {
+        font-size: 1.8rem;
+    }
+
     @include responsive(mobile) {
+        font-size: 1.2rem;
         margin-left: 2rem;
         letter-spacing: 1px;
+    }
+
+    @supports (font-size: clamp) {
+        font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
     }
 
     &--email {

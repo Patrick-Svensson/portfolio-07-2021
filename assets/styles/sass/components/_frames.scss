@@ -108,8 +108,14 @@
 
         &-container {
             @include flex(column, nowrap, center, center);
-            // width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
-            height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
+            height: 6rem;
+            @include responsive(tablet-port) {
+                height: 5rem;
+            }
+
+            @include responsive(mobile) {
+                height: 4rem;
+            }
         }
 
         &__test {
@@ -192,5 +198,11 @@
         left: 0;
         bottom: 0;
         border-right: 0.1rem solid $colourFrame;
+    }
+}
+
+@supports (height: clamp) {
+    .c-frame-text-holder-container {
+        height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
     }
 }

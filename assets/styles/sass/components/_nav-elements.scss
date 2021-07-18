@@ -7,6 +7,9 @@
         @include flex(row, nowrap, center, center);
         border-radius: 50%;
         border: 0.1rem solid $colourFrame;
+        @include responsive(mobile-land) {
+            display: none;
+        }
 
         &--down {
             margin-left: 17rem;

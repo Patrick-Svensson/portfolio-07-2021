@@ -46,9 +46,24 @@ html {
 
 h1 {
   font-family: "Spinnaker", sans-serif;
-  font-size: clamp(3.5rem, 2.7857rem + 2.2321vw, 6rem);
   font-weight: 400;
   text-align: left;
+  font-size: 6rem;
+}
+@media screen and (max-width: 75em) {
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 @media (min-width: 25em) and (max-height: 42em) {
   h1 {
@@ -60,8 +75,18 @@ h1 > span {
 }
 
 h2 {
-  font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
   font-weight: 700;
+  font-size: 3.2rem;
+}
+@media screen and (max-width: 48em) {
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 h3 {
@@ -73,20 +98,36 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   font-weight: 600;
   font-style: italic;
   letter-spacing: 0.08rem;
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 48em) {
+  h4 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  h4 {
+    font-size: 1.4rem;
+  }
 }
 
 p {
-  font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
   font-weight: 400;
   letter-spacing: 0.06rem;
   line-height: 1.6rem;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 48em) {
+  p {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 30em) {
   p {
+    font-size: 0.8rem;
     line-height: 1rem;
   }
 }
@@ -95,6 +136,23 @@ li {
   list-style: none;
 }
 
+@supports (font-size: clamp) {
+  h1 {
+    font-size: clamp(3.5rem, 2.7857rem + 2.2321vw, 6rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+  }
+
+  h4 {
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+  }
+
+  p {
+    font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
+  }
+}
 a {
   text-decoration: none;
   font-size: clamp(0.8rem, 0.05rem + 2.0833vw, 1.8rem);
@@ -533,8 +591,6 @@ img {
 .o-myself__img-container {
   width: 28rem;
   height: 28rem;
-  width: clamp(14rem, 10rem + 12.5vw, 28rem);
-  height: clamp(14rem, 10rem + 12.5vw, 28rem);
   -ms-flex-item-align: start;
   align-self: flex-start;
   margin: 0 3rem 2rem 0;
@@ -591,6 +647,16 @@ img {
   padding-bottom: 2rem;
 }
 
+@supports (width: clamp) {
+  .o-myself__img-container {
+    width: clamp(14rem, 10rem + 12.5vw, 28rem);
+  }
+}
+@supports (height: clamp) {
+  .o-myself__img-container {
+    height: clamp(14rem, 10rem + 12.5vw, 28rem);
+  }
+}
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 .o-waves-wrapper {
   width: 100vw;
@@ -998,7 +1064,17 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
+  height: 6rem;
+}
+@media screen and (max-width: 48em) {
+  .c-frame-text-holder-container {
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .c-frame-text-holder-container {
+    height: 4rem;
+  }
 }
 .c-frame-text-holder__test {
   width: 40%;
@@ -1133,6 +1209,11 @@ img {
   border-right: 0.1rem solid #979797;
 }
 
+@supports (height: clamp) {
+  .c-frame-text-holder-container {
+    height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
+  }
+}
 .c-navbar__links {
   padding-bottom: 1rem;
   margin-right: 2rem;
@@ -1417,6 +1498,11 @@ img {
   border-radius: 50%;
   border: 0.1rem solid #979797;
 }
+@media (min-width: 25em) and (max-height: 42em) {
+  .c-scroll-symbol-container {
+    display: none;
+  }
+}
 .c-scroll-symbol-container--down {
   margin-left: 17rem;
 }
@@ -1544,15 +1630,26 @@ img {
 }
 
 .c-contact__address {
-  font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
   margin: 1rem 0 0 3rem;
   letter-spacing: 2px;
   z-index: 1;
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 48em) {
+  .c-contact__address {
+    font-size: 1.8rem;
+  }
 }
 @media screen and (max-width: 30em) {
   .c-contact__address {
+    font-size: 1.2rem;
     margin-left: 2rem;
     letter-spacing: 1px;
+  }
+}
+@supports (font-size: clamp) {
+  .c-contact__address {
+    font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
   }
 }
 .c-contact__address--email {
