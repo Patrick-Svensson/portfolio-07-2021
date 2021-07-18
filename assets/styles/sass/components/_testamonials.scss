@@ -110,6 +110,7 @@
         @include wrapper-size(4rem, 4rem);
         @include flex(row, nowrap, center, center);
         border-radius: 50%;
+        background-color: $colourBgLight;
         border: 0.19rem solid $colourFrame;
         font-size: 1.8rem;
 

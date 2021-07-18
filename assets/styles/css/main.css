@@ -1368,6 +1368,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
+  background-color: #fcfcfc;
   border: 0.19rem solid #979797;
   font-size: 1.8rem;
 }
