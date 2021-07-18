@@ -1585,13 +1585,13 @@ img {
   z-index: 1;
 }
 .c-projects__img-overlay--dark {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .c-projects__img-overlay--medium {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .c-projects__img-overlay--light {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .c-modal {
