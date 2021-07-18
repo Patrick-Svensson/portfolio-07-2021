@@ -405,6 +405,7 @@ img {
   align-items: center;
   margin-bottom: 5rem;
   padding: 10rem 0;
+  gap: 1.5rem;
 }
 .o-projects__group-container {
   display: -webkit-box;
@@ -420,6 +421,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 1.5rem;
 }
 .o-projects__subgroup-container {
   display: -webkit-box;
@@ -435,6 +437,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 /* ****** Myself ****** */
@@ -532,6 +535,7 @@ img {
   height: clamp(14rem, 10rem + 12.5vw, 28rem);
   -ms-flex-item-align: start;
   align-self: flex-start;
+  margin-bottom: 2rem;
 }
 .o-myself__text-wrapper {
   width: 50rem;
