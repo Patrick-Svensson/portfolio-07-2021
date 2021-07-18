@@ -182,6 +182,7 @@
         height: clamp(14rem, 10rem + 12.5vw, 28rem);
         -ms-flex-item-align: start;
         align-self: flex-start;
+        margin-bottom: 2rem;
     }
 
     &__text-wrapper {
