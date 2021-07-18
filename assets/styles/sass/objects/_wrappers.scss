@@ -209,13 +209,13 @@
     }
 }
 
-@supports (width: clamp) {
+@supports (width: clamp()) {
     .o-myself__img-container {
         width: clamp(14rem, 10rem + 12.5vw, 28rem);
     }
 }
 
-@supports (height: clamp) {
+@supports (height: clamp()) {
     .o-myself__img-container {
         height: clamp(14rem, 10rem + 12.5vw, 28rem);
     }

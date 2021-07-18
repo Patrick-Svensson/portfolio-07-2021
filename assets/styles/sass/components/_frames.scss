@@ -201,7 +201,7 @@
     }
 }
 
-@supports (height: clamp) {
+@supports (height: clamp()) {
     .c-frame-text-holder-container {
         height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
     }

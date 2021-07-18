@@ -3,11 +3,22 @@
 
 a {
     text-decoration: none;
-    font-size: clamp(0.8rem, 0.05rem + 2.0833vw, 1.8rem);
     letter-spacing: 0.1rem;
     color: $colourLinks;
     font-weight: 700;
+    font-size: 1.8rem;
+    @include responsive(tablet-port) {
+        font-size: 1.4rem;
+    }
+
     @include responsive(mobile) {
+        font-size: 0.8rem;
         letter-spacing: normal;
+    }
+}
+
+@supports (font-size: clamp()) {
+    a {
+        font-size: clamp(0.8rem, 0.05rem + 2.0833vw, 1.8rem);
     }
 }
