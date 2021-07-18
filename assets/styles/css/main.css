@@ -724,7 +724,7 @@ img {
 }
 
 .o-header-drawing-bg {
-  background-image: url("../../images/flicka-drawing.png");
+  background-image: url("../../images/flicka-drawing-bg.png");
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
