@@ -84,7 +84,21 @@
     }
 
     &__text {
-        padding: 0 2rem 0 2rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        @include responsive(mobile) {
+            font-size: 0.6rem;
+        }
+
+        &--align {
+            padding: 0 2rem;
+        }
+    }
+
+    &__sub-text {
+        @include responsive(mobile) {
+            display: block;
+        }
     }
 
     &-text-holder {

@@ -79,22 +79,6 @@ h4 {
   letter-spacing: 0.08rem;
 }
 
-h5 {
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-@media screen and (max-width: 30em) {
-  h5 {
-    font-size: 0.6rem;
-  }
-}
-
-@media screen and (max-width: 30em) {
-  h5 > span {
-    display: block;
-  }
-}
-
 p {
   font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
   font-weight: 400;
@@ -963,7 +947,21 @@ img {
   }
 }
 .c-frame__text {
-  padding: 0 2rem 0 2rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 30em) {
+  .c-frame__text {
+    font-size: 0.6rem;
+  }
+}
+.c-frame__text--align {
+  padding: 0 2rem;
+}
+@media screen and (max-width: 30em) {
+  .c-frame__sub-text {
+    display: block;
+  }
 }
 .c-frame-text-holder {
   position: absolute;
