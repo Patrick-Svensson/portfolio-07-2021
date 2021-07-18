@@ -181,11 +181,18 @@
     }
 
     &__img-container {
+        @include wrapper-size(28rem, 28rem);
+        @include responsive(tablet-port) {
+            @include wrapper-size(20rem, 20rem);
+        }
+        @include responsive(mobile) {
+            @include wrapper-size(14rem, 14rem);
+        }
         width: clamp(14rem, 10rem + 12.5vw, 28rem);
         height: clamp(14rem, 10rem + 12.5vw, 28rem);
         -ms-flex-item-align: start;
         align-self: flex-start;
-        margin-bottom: 2rem;
+        margin: 0 3rem 2rem 0;
     }
 
     &__text-wrapper {
@@ -235,6 +242,7 @@
         max-height: 50rem;
         @include wrapper-size(80%, 70%);
         @include flex(column, nowrap, space-between, flex-start);
+        z-index: 1;
     }
 
     &__links-wrapper {

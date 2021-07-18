@@ -531,11 +531,25 @@ img {
   }
 }
 .o-myself__img-container {
+  width: 28rem;
+  height: 28rem;
   width: clamp(14rem, 10rem + 12.5vw, 28rem);
   height: clamp(14rem, 10rem + 12.5vw, 28rem);
   -ms-flex-item-align: start;
   align-self: flex-start;
-  margin-bottom: 2rem;
+  margin: 0 3rem 2rem 0;
+}
+@media screen and (max-width: 48em) {
+  .o-myself__img-container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .o-myself__img-container {
+    width: 14rem;
+    height: 14rem;
+  }
 }
 .o-myself__text-wrapper {
   width: 50rem;
@@ -634,6 +648,7 @@ img {
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  z-index: 1;
 }
 .o-contact__links-wrapper {
   width: 100%;
@@ -791,7 +806,7 @@ img {
 
 /* ****** Contact ****** */
 .o-contact-bg {
-  background-image: url("../../images/certificate.jpg");
+  background-image: url("../../images/certificate-faded.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -802,7 +817,6 @@ img {
   -ms-transform: rotate(-25deg) matrix(1.6, -0.3, -0.1, 1.6, 250, 40);
   -o-transform: rotate(-25deg) matrix(1.6, -0.3, -0.1, 1.6, 250, 40);
   transform: rotate(-25deg) matrix(1.6, -0.3, -0.1, 1.6, 250, 40);
-  opacity: 8%;
   position: absolute;
 }
 
