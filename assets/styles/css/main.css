@@ -405,7 +405,6 @@ img {
   align-items: center;
   margin-bottom: 5rem;
   padding: 10rem 0;
-  gap: 3rem;
 }
 .o-projects__group-container {
   display: -webkit-box;
@@ -421,7 +420,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 3rem;
 }
 .o-projects__subgroup-container {
   display: -webkit-box;
@@ -437,7 +435,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 3rem;
 }
 
 /* ****** Myself ****** */
@@ -1550,6 +1547,7 @@ img {
   position: relative;
   border-radius: 50%;
   cursor: pointer;
+  margin: 1.5rem;
 }
 .c-projects__img {
   -webkit-filter: blur(1.4px);

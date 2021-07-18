@@ -126,17 +126,14 @@
         @include flex(row, wrap, center, center);
         margin-bottom: 5rem;
         padding: 10rem 0;
-        gap: 3rem;
     }
 
     &__group-container {
         @include flex(row, wrap, center, center);
-        gap: 3rem;
     }
 
     &__subgroup-container {
         @include flex(column, nowrap, space-between, center);
-        gap: 3rem;
     }
 }
 /* ****** Myself ****** */
