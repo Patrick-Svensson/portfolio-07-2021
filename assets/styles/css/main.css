@@ -2000,18 +2000,18 @@ img {
   }
 }
 /* ****** Testamonial Fading Animation ****** */
-.u-test--fade {
-  -webkit-animation-name: u-test--fade;
-  -moz-animation-name: u-test--fade;
-  -o-animation-name: u-test--fade;
+.u-fade-in {
+  -webkit-animation-name: u-fade-in;
+  -moz-animation-name: u-fade-in;
+  -o-animation-name: u-fade-in;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   -o-animation-duration: 1.5s;
-  animation-name: u-test--fade;
+  animation-name: u-fade-in;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes u-test--fade {
+@-webkit-keyframes u-fade-in {
   from {
     opacity: 0.4;
   }
@@ -2019,7 +2019,7 @@ img {
     opacity: 1;
   }
 }
-@-moz-keyframes u-test--fade {
+@-moz-keyframes u-fade-in {
   from {
     opacity: 0.4;
   }
@@ -2027,7 +2027,7 @@ img {
     opacity: 1;
   }
 }
-@keyframes u-test--fade {
+@keyframes u-fade-in {
   from {
     opacity: 0.4;
   }
