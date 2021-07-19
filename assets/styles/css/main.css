@@ -77,8 +77,8 @@ h1 > span {
 
 h2 {
   font-weight: 700;
-  font-size: 3.2rem;
   padding: 1rem 3rem;
+  font-size: 3.2rem;
   font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
 }
 @media screen and (max-width: 48em) {
@@ -231,6 +231,25 @@ img {
 @media screen and (max-width: 30em) {
   .o-frame-container {
     margin: 0;
+  }
+}
+
+.o-img-container {
+  width: 28rem;
+  height: 28rem;
+  width: clamp(14rem, 10rem + 12.5vw, 28rem);
+  height: clamp(14rem, 10rem + 12.5vw, 28rem);
+}
+@media screen and (max-width: 48em) {
+  .o-img-container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .o-img-container {
+    width: 14rem;
+    height: 14rem;
   }
 }
 
@@ -585,25 +604,9 @@ img {
   }
 }
 .o-myself__img-container {
-  width: 28rem;
-  height: 28rem;
-  width: clamp(14rem, 10rem + 12.5vw, 28rem);
-  height: clamp(14rem, 10rem + 12.5vw, 28rem);
   -ms-flex-item-align: start;
   align-self: flex-start;
   margin: 0 3rem 2rem 0;
-}
-@media screen and (max-width: 48em) {
-  .o-myself__img-container {
-    width: 20rem;
-    height: 20rem;
-  }
-}
-@media screen and (max-width: 30em) {
-  .o-myself__img-container {
-    width: 14rem;
-    height: 14rem;
-  }
 }
 .o-myself__text-wrapper {
   width: 50rem;
@@ -900,14 +903,37 @@ img {
   display: block;
   text-shadow: none;
   padding-top: 2rem;
+  font-size: 2.4rem;
   font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+}
+@media screen and (max-width: 48em) {
+  .c-header__heading--small {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .c-header__heading--small {
+    font-size: 1.4rem;
+  }
 }
 .c-header__heading--medium {
   display: block;
   text-shadow: none;
   padding-top: 1rem;
   margin-bottom: 2rem;
+  font-size: 3.2rem;
   font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+}
+@media screen and (max-width: 48em) {
+  .c-header__heading--medium {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .c-header__heading--medium {
+    font-size: 2rem;
+    padding: 1rem 1rem;
+  }
 }
 
 /* ****** Header ****** */
@@ -1731,7 +1757,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 3rem;
 }
 .c-modal__heading {
   color: #fcfcfc;
@@ -1754,7 +1779,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 3rem;
 }
 @media screen and (max-width: 48em) {
   .c-modal__main-content {
@@ -1772,10 +1796,6 @@ img {
     -ms-flex-align: center;
     align-items: center;
   }
-}
-.c-modal__img-container {
-  width: clamp(14rem, 10rem + 12.5vw, 28rem);
-  height: clamp(14rem, 10rem + 12.5vw, 28rem);
 }
 .c-modal__img {
   -webkit-box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
@@ -1802,6 +1822,7 @@ img {
   cursor: pointer;
   border-radius: 0.25rem;
   border: 1px solid #fcfcfc;
+  margin-left: 3rem;
 }
 .c-modal__X-wrapper:hover {
   background-color: #fcfcfc;
@@ -1833,25 +1854,51 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 5rem;
 }
 @media screen and (max-width: 48em) {
   .c-modal__link-container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-}
-@media screen and (max-width: 30em) {
-  .c-modal__link-container {
-    gap: 2rem;
+    margin-top: 3rem;
   }
 }
 .c-modal__link-text {
   color: #fcfcfc;
   letter-spacing: 0.2rem;
 }
+.c-modal__link-text--left {
+  padding-right: 5rem;
+}
+@media screen and (max-width: 30em) {
+  .c-modal__link-text--left {
+    padding-right: 2rem;
+  }
+}
 
+@supports (gap: 0) {
+  .c-modal__heading-container {
+    gap: 3rem;
+  }
+  .c-modal__main-content {
+    gap: 3rem;
+  }
+  .c-modal__link-container {
+    gap: 5rem;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 30em) {
+    .c-modal__link-container {
+      gap: 2rem;
+    }
+  }
+  .c-modal__X-wrapper {
+    margin-left: 0;
+  }
+  .c-modal__link-text--left {
+    padding-right: 0;
+  }
+}
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 /*
 * Prefixed by https://autoprefixer.github.io
