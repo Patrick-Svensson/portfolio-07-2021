@@ -1696,6 +1696,11 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+@supports not (gap: 0) {
+  .c-projects__img-container {
+    margin: 1.5rem;
+  }
+}
 @supports (gap: 0) {
   .c-projects__img-container {
     margin: 0;
