@@ -86,12 +86,9 @@
     &__text {
         font-size: 0.8rem;
         font-weight: 400;
+        padding: 0 2rem;
         @include responsive(mobile) {
             font-size: 0.6rem;
-        }
-
-        &--align {
-            padding: 0 2rem;
         }
     }
 
@@ -108,14 +105,6 @@
 
         &-container {
             @include flex(column, nowrap, center, center);
-            height: 6rem;
-            @include responsive(tablet-port) {
-                height: 5rem;
-            }
-
-            @include responsive(mobile) {
-                height: 4rem;
-            }
         }
 
         &__test {
@@ -198,11 +187,5 @@
         left: 0;
         bottom: 0;
         border-right: 0.1rem solid $colourFrame;
-    }
-}
-
-@supports (height: clamp()) {
-    .c-frame-text-holder-container {
-        height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
     }
 }

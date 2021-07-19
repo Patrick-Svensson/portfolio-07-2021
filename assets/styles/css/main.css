@@ -77,6 +77,7 @@ h1 > span {
 h2 {
   font-weight: 700;
   font-size: 3.2rem;
+  padding: 1rem 3rem;
 }
 @media screen and (max-width: 48em) {
   h2 {
@@ -86,6 +87,7 @@ h2 {
 @media screen and (max-width: 30em) {
   h2 {
     font-size: 2rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -602,6 +604,8 @@ img {
 .o-myself__img-container {
   width: 28rem;
   height: 28rem;
+  width: clamp(14rem, 10rem + 12.5vw, 28rem);
+  height: clamp(14rem, 10rem + 12.5vw, 28rem);
   -ms-flex-item-align: start;
   align-self: flex-start;
   margin: 0 3rem 2rem 0;
@@ -658,16 +662,6 @@ img {
   padding-bottom: 2rem;
 }
 
-@supports (width: clamp()) {
-  .o-myself__img-container {
-    width: clamp(14rem, 10rem + 12.5vw, 28rem);
-  }
-}
-@supports (height: clamp()) {
-  .o-myself__img-container {
-    height: clamp(14rem, 10rem + 12.5vw, 28rem);
-  }
-}
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 .o-waves-wrapper {
   width: 100vw;
@@ -1041,14 +1035,12 @@ img {
 .c-frame__text {
   font-size: 0.8rem;
   font-weight: 400;
+  padding: 0 2rem;
 }
 @media screen and (max-width: 30em) {
   .c-frame__text {
     font-size: 0.6rem;
   }
-}
-.c-frame__text--align {
-  padding: 0 2rem;
 }
 @media screen and (max-width: 30em) {
   .c-frame__sub-text {
@@ -1075,17 +1067,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 6rem;
-}
-@media screen and (max-width: 48em) {
-  .c-frame-text-holder-container {
-    height: 5rem;
-  }
-}
-@media screen and (max-width: 30em) {
-  .c-frame-text-holder-container {
-    height: 4rem;
-  }
 }
 .c-frame-text-holder__test {
   width: 40%;
@@ -1220,11 +1201,6 @@ img {
   border-right: 0.1rem solid #979797;
 }
 
-@supports (height: clamp()) {
-  .c-frame-text-holder-container {
-    height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
-  }
-}
 .c-navbar__links {
   padding-bottom: 1rem;
   margin-right: 2rem;
@@ -1645,6 +1621,7 @@ img {
   letter-spacing: 2px;
   z-index: 1;
   font-size: 2.4rem;
+  font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
 }
 @media screen and (max-width: 48em) {
   .c-contact__address {
@@ -1656,11 +1633,6 @@ img {
     font-size: 1.2rem;
     margin-left: 2rem;
     letter-spacing: 1px;
-  }
-}
-@supports (font-size: clamp) {
-  .c-contact__address {
-    font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
   }
 }
 .c-contact__address--email {

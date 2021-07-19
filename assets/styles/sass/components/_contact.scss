@@ -15,9 +15,7 @@
         letter-spacing: 1px;
     }
 
-    @supports (font-size: clamp) {
-        font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
-    }
+    font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
 
     &--email {
         font-weight: 700;
