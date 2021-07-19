@@ -139,19 +139,33 @@
         @include flex(row, wrap, center, center);
         margin-bottom: 5rem;
         padding: 10rem 0;
-        gap: 1.5rem;
     }
 
     &__group-container {
         @include flex(row, wrap, center, center);
-        gap: 1.5rem;
     }
 
     &__subgroup-container {
         @include flex(column, nowrap, space-between, center);
-        gap: 1.5rem;
     }
 }
+
+@supports (gap: 0) {
+    .o-projects {
+        &__container {
+            gap: 3rem;
+        }
+
+        &__group-container {
+            gap: 3rem;
+        }
+
+        &__subgroup-container {
+            gap: 3rem;
+        }
+    }
+}
+
 /* ****** Myself ****** */
 
 .o-myself {

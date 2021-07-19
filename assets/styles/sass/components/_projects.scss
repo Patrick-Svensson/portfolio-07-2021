@@ -54,3 +54,9 @@
         }
     }
 }
+
+@supports (gap: 0) {
+    .c-projects__img-container {
+        margin: 0;
+    }
+}

@@ -478,7 +478,6 @@ img {
   align-items: center;
   margin-bottom: 5rem;
   padding: 10rem 0;
-  gap: 1.5rem;
 }
 .o-projects__group-container {
   display: -webkit-box;
@@ -494,7 +493,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 1.5rem;
 }
 .o-projects__subgroup-container {
   display: -webkit-box;
@@ -510,9 +508,19 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 1.5rem;
 }
 
+@supports (gap: 0) {
+  .o-projects__container {
+    gap: 3rem;
+  }
+  .o-projects__group-container {
+    gap: 3rem;
+  }
+  .o-projects__subgroup-container {
+    gap: 3rem;
+  }
+}
 /* ****** Myself ****** */
 .o-myself-wrapper {
   width: 100vw;
@@ -1688,6 +1696,11 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+@supports (gap: 0) {
+  .c-projects__img-container {
+    margin: 0;
+  }
+}
 .c-modal {
   position: absolute;
   top: 50%;
