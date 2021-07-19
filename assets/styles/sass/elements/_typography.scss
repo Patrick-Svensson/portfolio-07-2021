@@ -18,6 +18,7 @@ h1 {
         font-size: 3.5rem;
     }
 
+    font-size: clamp(3.5rem, 2.7857rem + 2.2321vw, 6rem);
     @include responsive(mobile-land) {
         font-size: 3.8rem;
     }
@@ -39,6 +40,7 @@ h2 {
         font-size: 2rem;
         padding: 1rem 1rem;
     }
+    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
 }
 
 h3 {
@@ -61,6 +63,7 @@ h4 {
     @include responsive(mobile) {
         font-size: 1.4rem;
     }
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
 }
 
 p {
@@ -76,26 +79,9 @@ p {
         font-size: 0.8rem;
         line-height: 1rem;
     }
+    font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
 }
 
 li {
     list-style: none;
-}
-
-@supports (font-size: clamp()) {
-    h1 {
-        font-size: clamp(3.5rem, 2.7857rem + 2.2321vw, 6rem);
-    }
-
-    h2 {
-        font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
-    }
-
-    h4 {
-        font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-    }
-
-    p {
-        font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
-    }
 }
