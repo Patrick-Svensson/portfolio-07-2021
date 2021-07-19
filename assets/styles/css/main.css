@@ -272,7 +272,6 @@ img {
   align-items: center;
   position: relative;
   text-align: center;
-  gap: 2rem;
 }
 .o-header-bg-wrapper {
   width: 80%;
@@ -376,6 +375,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: 2rem;
 }
 @media screen and (max-width: 30em) {
   .o-scroll-nav-wrapper {
@@ -510,17 +510,6 @@ img {
   align-items: center;
 }
 
-@supports (gap: 0) {
-  .o-projects__container {
-    gap: 3rem;
-  }
-  .o-projects__group-container {
-    gap: 3rem;
-  }
-  .o-projects__subgroup-container {
-    gap: 3rem;
-  }
-}
 /* ****** Myself ****** */
 .o-myself-wrapper {
   width: 100vw;
@@ -597,7 +586,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   padding: 10rem 10rem;
 }
 @media screen and (max-width: 75em) {
@@ -614,7 +603,7 @@ img {
 .o-myself__img-container {
   -ms-flex-item-align: start;
   align-self: flex-start;
-  margin: 0 3rem 2rem 0;
+  margin: 0 3rem 6rem 0;
 }
 .o-myself__text-wrapper {
   width: 50rem;
@@ -1696,16 +1685,6 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@supports not (gap: 0) {
-  .c-projects__img-container {
-    margin: 1.5rem;
-  }
-}
-@supports (gap: 0) {
-  .c-projects__img-container {
-    margin: 0;
-  }
-}
 .c-modal {
   position: absolute;
   top: 50%;
@@ -1894,29 +1873,6 @@ img {
   }
 }
 
-@supports (gap: 0) {
-  .c-modal__heading-container {
-    gap: 3rem;
-  }
-  .c-modal__main-content {
-    gap: 3rem;
-  }
-  .c-modal__link-container {
-    gap: 5rem;
-    margin-top: 0;
-  }
-  @media screen and (max-width: 30em) {
-    .c-modal__link-container {
-      gap: 2rem;
-    }
-  }
-  .c-modal__X-wrapper {
-    margin-left: 0;
-  }
-  .c-modal__link-text--left {
-    padding-right: 0;
-  }
-}
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
 /*
 * Prefixed by https://autoprefixer.github.io
@@ -2161,6 +2117,45 @@ focus {
   .u-icon--contact:hover,
 .u-icon focus {
     color: #494949;
+  }
+}
+@supports (gap: 0) {
+  /* ****** My Projects ****** */
+  .o-projects__container {
+    gap: 3rem;
+  }
+  .o-projects__group-container {
+    gap: 3rem;
+  }
+  .o-projects__subgroup-container {
+    gap: 3rem;
+  }
+
+  .c-projects__img-container {
+    margin: 0;
+  }
+
+  /* ****** Projects Modal ****** */
+  .c-modal__heading-container {
+    gap: 3rem;
+  }
+  .c-modal__main-content {
+    gap: 3rem;
+  }
+  .c-modal__link-container {
+    gap: 5rem;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 30em) {
+    .c-modal__link-container {
+      gap: 2rem;
+    }
+  }
+  .c-modal__X-wrapper {
+    margin-left: 0;
+  }
+  .c-modal__link-text--left {
+    padding-right: 0;
   }
 }
 

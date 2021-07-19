@@ -1,0 +1,51 @@
+@use "../tools" as *;
+
+@supports (gap: 0) {
+    /* ****** My Projects ****** */
+
+    .o-projects {
+        &__container {
+            gap: 3rem;
+        }
+
+        &__group-container {
+            gap: 3rem;
+        }
+
+        &__subgroup-container {
+            gap: 3rem;
+        }
+    }
+
+    .c-projects__img-container {
+        margin: 0;
+    }
+
+    /* ****** Projects Modal ****** */
+
+    .c-modal {
+        &__heading-container {
+            gap: 3rem;
+        }
+
+        &__main-content {
+            gap: 3rem;
+        }
+
+        &__link-container {
+            gap: 5rem;
+            margin-top: 0;
+            @include responsive(mobile) {
+                gap: 2rem;
+            }
+        }
+
+        &__X-wrapper {
+            margin-left: 0;
+        }
+
+        &__link-text--left {
+            padding-right: 0;
+        }
+    }
+}

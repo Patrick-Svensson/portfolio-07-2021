@@ -114,31 +114,3 @@
         }
     }
 }
-
-@supports (gap: 0) {
-    .c-modal {
-        &__heading-container {
-            gap: 3rem;
-        }
-
-        &__main-content {
-            gap: 3rem;
-        }
-
-        &__link-container {
-            gap: 5rem;
-            margin-top: 0;
-            @include responsive(mobile) {
-                gap: 2rem;
-            }
-        }
-
-        &__X-wrapper {
-            margin-left: 0;
-        }
-
-        &__link-text--left {
-            padding-right: 0;
-        }
-    }
-}
