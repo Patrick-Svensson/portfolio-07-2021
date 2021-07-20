@@ -1657,7 +1657,7 @@ img {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 2;
+  z-index: 20;
 }
 .c-projects__img-heading--multi {
   line-height: 3.5rem;

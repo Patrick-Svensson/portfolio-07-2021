@@ -21,7 +21,7 @@
             left: 50%;
             @include transform(translate(-50%, -50%));
             text-align: center;
-            z-index: 2;
+            z-index: 20;
 
             &--multi {
                 line-height: 3.5rem;
