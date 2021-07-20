@@ -1258,13 +1258,8 @@ img {
 }
 @media screen and (max-width: 30em) {
   .c-logo {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    transform: scale(0.7);
     top: -2rem;
-    left: -3rem;
+    left: 0.5rem;
   }
 }
 .c-logo--mobile-land {
@@ -1276,12 +1271,7 @@ img {
     margin: auto;
     position: absolute;
     top: 4rem;
-    left: 8rem;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+    left: 6rem;
   }
 }
 

@@ -5,9 +5,9 @@
     top: 0rem;
     left: 2rem;
     @include responsive(mobile) {
-        @include transform(scale(0.7));
+        //     @include transform(scale(0.7));
         top: -2rem;
-        left: -3rem;
+        left: 0.5rem;
     }
 
     &--mobile-land {
@@ -17,8 +17,8 @@
             margin: auto;
             position: absolute;
             top: 4rem;
-            left: 8rem;
-            @include transform(scale(1.2));
+            left: 6rem;
+            // @include transform(scale(1.2));
         }
     }
 }
