@@ -2119,7 +2119,7 @@ focus {
     color: #494949;
   }
 }
-@supports (gap: 0) {
+@supports (gap: 3rem) {
   /* ****** My Projects ****** */
   .o-projects__container {
     gap: 3rem;
