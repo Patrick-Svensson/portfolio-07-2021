@@ -27,6 +27,14 @@ dd {
   margin: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+li {
+  list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -176,12 +184,8 @@ p {
 @media screen and (max-width: 30em) {
   p {
     font-size: 0.8rem;
-    line-height: 1rem;
+    line-height: normal;
   }
-}
-
-li {
-  list-style: none;
 }
 
 a {
@@ -190,7 +194,7 @@ a {
   color: #a81414;
   font-weight: 700;
   font-size: 1.8rem;
-  font-size: clamp(0.8rem, 0.05rem + 2.0833vw, 1.8rem);
+  font-size: clamp(0.9rem, 0.6429rem + 0.8036vw, 1.8rem);
 }
 @media screen and (max-width: 48em) {
   a {
@@ -199,7 +203,7 @@ a {
 }
 @media screen and (max-width: 30em) {
   a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: normal;
   }
 }
@@ -971,7 +975,6 @@ img {
 @media screen and (max-width: 30em) {
   .c-header__heading--medium {
     font-size: 2rem;
-    padding: 1rem 1rem;
   }
 }
 

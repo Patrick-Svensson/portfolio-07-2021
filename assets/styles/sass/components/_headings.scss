@@ -40,7 +40,6 @@
 
             @include responsive(mobile) {
                 font-size: 2rem;
-                padding: 1rem 1rem;
             }
             font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
         }

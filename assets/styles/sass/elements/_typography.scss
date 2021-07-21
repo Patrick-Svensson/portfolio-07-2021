@@ -77,11 +77,7 @@ p {
 
     @include responsive(mobile) {
         font-size: 0.8rem;
-        line-height: 1rem;
+        line-height: normal;
     }
     font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
-}
-
-li {
-    list-style: none;
 }
