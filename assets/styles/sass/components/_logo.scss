@@ -5,9 +5,7 @@
     top: 0rem;
     left: 2rem;
     @include responsive(mobile) {
-        @include transform(scale(0.7));
-        top: -2rem;
-        left: -3rem;
+        display: none;
     }
 
     &--mobile-land {

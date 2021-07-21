@@ -29,6 +29,20 @@ h1 {
 }
 
 h2 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    padding-top: 1rem;
+    @include responsive(tablet-port) {
+        font-size: 1.8rem;
+    }
+
+    @include responsive(mobile) {
+        font-size: 1.4rem;
+    }
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+}
+
+h3 {
     font-weight: 700;
     padding: 1rem 3rem;
     font-size: 3.2rem;
@@ -43,7 +57,7 @@ h2 {
     font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
 }
 
-h3 {
+h4 {
     font-family: $fontProfile;
     font-size: 2.6rem;
     font-weight: 400;
@@ -51,7 +65,7 @@ h3 {
     letter-spacing: 0.2rem;
 }
 
-h4 {
+h5 {
     font-weight: 600;
     font-style: italic;
     letter-spacing: 0.08rem;

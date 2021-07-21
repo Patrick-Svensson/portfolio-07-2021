@@ -72,8 +72,9 @@
     }
 
     &-text-container {
-        @include wrapper-size(90%, 55%);
-        @include flex(column, wrap, space-between, flex-start);
+        @include wrapper-size(90%, 70%);
+        @include flex(column, wrap, space-evenly, flex-start);
+        margin-top: 3rem;
     }
 }
 
@@ -81,8 +82,11 @@
 
 .o-navbar {
     &-links-wrapper {
-        @include wrapper-size(90%, 25%);
+        @include wrapper-size(90%, 15%);
         @include flex(row, nowrap, flex-start, flex-end);
+        @include responsive(mobile) {
+            height: 25%;
+        }
     }
 
     &-links-container {
