@@ -1,26 +1,6 @@
 @use "../tools" as *;
 
 @supports (gap: 3rem) {
-    /* ****** My Projects ****** */
-
-    .o-projects {
-        &__container {
-            gap: 3rem;
-        }
-
-        &__group-container {
-            gap: 3rem;
-        }
-
-        &__subgroup-container {
-            gap: 3rem;
-        }
-    }
-
-    .c-projects__img-container {
-        margin: 0;
-    }
-
     /* ****** Projects Modal ****** */
 
     .c-modal {
