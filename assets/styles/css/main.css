@@ -146,7 +146,7 @@ h2 {
 
 h3 {
   font-weight: 700;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   font-size: 3.2rem;
   font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
 }
@@ -158,7 +158,7 @@ h3 {
 @media screen and (max-width: 30em) {
   h3 {
     font-size: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -212,17 +212,17 @@ a {
   letter-spacing: 0.1rem;
   color: #a81414;
   font-weight: 700;
-  font-size: 1.8rem;
-  font-size: clamp(0.9rem, 0.6429rem + 0.8036vw, 1.8rem);
+  font-size: 2rem;
+  font-size: clamp(1rem, 0.7143rem + 0.8929vw, 2rem);
 }
 @media screen and (max-width: 48em) {
   a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 30em) {
   a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: normal;
   }
 }
@@ -1696,6 +1696,9 @@ img {
 }
 .c-contact__address--email {
   font-weight: 700;
+}
+.c-contact__heading {
+  padding: 0;
 }
 
 .c-projects__img-container {
