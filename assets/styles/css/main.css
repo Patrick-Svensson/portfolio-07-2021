@@ -2110,6 +2110,7 @@ img {
   -ms-transform: translateX(1rem);
   -o-transform: translateX(1rem);
   transform: translateX(1rem);
+  text-decoration: underline;
   position: relative;
 }
 .u-links:hover:after,
@@ -2137,6 +2138,7 @@ img {
   -ms-transform: translateX(1rem);
   -o-transform: translateX(1rem);
   transform: translateX(1rem);
+  text-decoration: underline;
   position: relative;
 }
 
