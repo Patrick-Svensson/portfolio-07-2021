@@ -674,7 +674,7 @@ img {
 .o-myself__img-container {
   -ms-flex-item-align: start;
   align-self: flex-start;
-  margin: 0 3rem 6rem 0;
+  margin: 0 3rem 2rem 0;
 }
 .o-myself__text-wrapper {
   width: 50rem;
@@ -1670,6 +1670,12 @@ img {
 .c-myself__text {
   padding-bottom: 1rem;
 }
+@media screen and (max-width: 30em) {
+  .c-myself__text {
+    font-size: 1rem;
+  }
+}
+
 .c-text--smallCaps {
   font-variant: small-caps;
   font-weight: 600;

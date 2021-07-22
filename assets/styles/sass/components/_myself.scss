@@ -3,6 +3,7 @@
 .c-myself__text {
     padding-bottom: 1rem;
     @include responsive(mobile) {
+        font-size: 1rem;
     }
 }
 
