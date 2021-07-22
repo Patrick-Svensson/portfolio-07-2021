@@ -1,6 +1,11 @@
 @use "../settings" as *;
 @use "../tools" as *;
 
+.c-test__heading {
+    position: absolute;
+    visibility: hidden;
+}
+
 .c-test-card {
     @include wrapper-size(50%, 60%);
     @include flex(row, nowrap, center, center);
