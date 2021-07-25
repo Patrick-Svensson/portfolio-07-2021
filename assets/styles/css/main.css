@@ -814,6 +814,11 @@ img {
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   z-index: 3;
 }
+@media (min-width: 25em) and (max-height: 42em) {
+  .o-modal-container {
+    display: none;
+  }
+}
 
 .activateModalContainer {
   opacity: 1;
