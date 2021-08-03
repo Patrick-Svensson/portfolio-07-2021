@@ -76,6 +76,7 @@
     &__quote {
         font-style: italic;
         @include responsive(mobile) {
+            font-size: 1rem;
         }
     }
 

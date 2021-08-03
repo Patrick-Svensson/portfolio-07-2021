@@ -186,18 +186,6 @@ p {
   letter-spacing: 0.06rem;
   line-height: 1.6rem;
   font-size: 1.4rem;
-  font-size: clamp(1rem, 0.8857rem + 0.3571vw, 1.4rem);
-}
-@media screen and (max-width: 48em) {
-  p {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 30em) {
-  p {
-    font-size: 1rem;
-    line-height: normal;
-  }
 }
 
 a {
@@ -661,7 +649,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   gap: 3rem;
-  padding: 10rem 10rem;
+  padding: 10rem 5rem;
 }
 @media screen and (max-width: 75em) {
   .o-myself-content-container {
@@ -671,7 +659,7 @@ img {
 }
 @media screen and (max-width: 30em) {
   .o-myself-content-container {
-    padding: 4rem;
+    padding: 4rem 2rem;
   }
 }
 .o-myself__img-container {
@@ -1461,6 +1449,11 @@ img {
 .c-test-card__quote {
   font-style: italic;
 }
+@media screen and (max-width: 30em) {
+  .c-test-card__quote {
+    font-size: 1rem;
+  }
+}
 .c-test-card__link {
   font-size: 1.2rem;
 }
@@ -1692,11 +1685,6 @@ img {
 
 .c-myself__text {
   padding-bottom: 1rem;
-}
-@media screen and (max-width: 30em) {
-  .c-myself__text {
-    font-size: 1rem;
-  }
 }
 
 .c-text--smallCaps {

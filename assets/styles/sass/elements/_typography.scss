@@ -85,13 +85,4 @@ p {
     letter-spacing: 0.06rem;
     line-height: 1.6rem;
     font-size: 1.4rem;
-    @include responsive(tablet-port) {
-        font-size: 1.2rem;
-    }
-
-    @include responsive(mobile) {
-        font-size: 1rem;
-        line-height: normal;
-    }
-    font-size: clamp(1rem, 0.8857rem + 0.3571vw, 1.4rem);
 }
