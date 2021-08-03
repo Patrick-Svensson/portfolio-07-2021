@@ -17,6 +17,9 @@
     @include responsive(tablet-land) {
         margin: 5rem 0;
     }
+    @include responsive(mobile) {
+        width: 92%;
+    }
 }
 
 .o-frame-container {
@@ -68,6 +71,9 @@
 
         @include responsive(mobile-land) {
             display: none;
+        }
+        @include responsive(mobile) {
+            width: 92%;
         }
     }
 
@@ -249,6 +255,9 @@
         @include wrapper-size(80%, 70%);
         @include flex(column, nowrap, space-between, flex-start);
         z-index: 1;
+        @include responsive(mobile) {
+            width: 90%;
+        }
     }
 
     &__links-wrapper {
