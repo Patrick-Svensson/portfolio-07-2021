@@ -15,10 +15,10 @@ h1 {
     }
 
     @include responsive(mobile) {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
 
-    font-size: clamp(3.5rem, 2.7857rem + 2.2321vw, 6rem);
+    font-size: clamp(3.8rem, 3.1714rem + 1.9643vw, 6rem);
     @include responsive(mobile-land) {
         font-size: 3.8rem;
     }
