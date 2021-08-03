@@ -14,7 +14,7 @@ h1 {
         font-size: 4.2rem;
     }
 
-    // font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
+    font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
     @include responsive(mobile-land) {
         font-size: 4.2rem;
     }

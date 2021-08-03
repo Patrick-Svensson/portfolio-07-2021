@@ -94,6 +94,7 @@ h1 {
   font-weight: 700;
   text-align: left;
   font-size: 6rem;
+  font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
 }
 @media screen and (max-width: 48em) {
   h1 {
