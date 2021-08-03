@@ -68,6 +68,9 @@
     &__qoute-container {
         @include wrapper-size(70%, 100%);
         @include flex(row, wrap, center, center);
+        @include responsive(tablet-land) {
+            width: 100%;
+        }
         @include responsive(mobile) {
             width: 80%;
         }

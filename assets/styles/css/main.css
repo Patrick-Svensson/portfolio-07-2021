@@ -1439,6 +1439,11 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
+@media screen and (max-width: 75em) {
+  .c-test-card__qoute-container {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 30em) {
   .c-test-card__qoute-container {
     width: 80%;
