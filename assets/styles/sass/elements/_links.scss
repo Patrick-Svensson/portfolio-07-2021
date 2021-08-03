@@ -12,9 +12,9 @@ a {
     }
 
     @include responsive(mobile) {
-        font-size: 1rem;
+        font-size: 1.2rem;
         letter-spacing: normal;
     }
 
-    font-size: clamp(1rem, 0.7143rem + 0.8929vw, 2rem);
+    font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
 }

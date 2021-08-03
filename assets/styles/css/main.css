@@ -194,7 +194,7 @@ a {
   color: #a81414;
   font-weight: 700;
   font-size: 2rem;
-  font-size: clamp(1rem, 0.7143rem + 0.8929vw, 2rem);
+  font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
 }
 @media screen and (max-width: 48em) {
   a {
@@ -203,7 +203,7 @@ a {
 }
 @media screen and (max-width: 30em) {
   a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: normal;
   }
 }
@@ -358,6 +358,7 @@ img {
 @media screen and (max-width: 30em) {
   .o-header-bg-wrapper {
     width: 92%;
+    height: 85%;
   }
 }
 .o-header-text-container {
@@ -1105,7 +1106,8 @@ img {
 }
 @media screen and (max-width: 30em) {
   .c-frame__text {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
   }
 }
 @media screen and (max-width: 30em) {
