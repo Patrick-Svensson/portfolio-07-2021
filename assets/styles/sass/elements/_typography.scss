@@ -3,24 +3,20 @@
 
 h1 {
     font-family: $fontProfile;
-    font-weight: 400;
+    font-weight: 700;
     text-align: left;
     font-size: 6rem;
-    @include responsive(tablet-land) {
-        font-size: 5.5rem;
-    }
-
     @include responsive(tablet-port) {
-        font-size: 4.5rem;
+        font-size: 5.2rem;
     }
 
     @include responsive(mobile) {
-        font-size: 3.8rem;
+        font-size: 4.2rem;
     }
 
-    font-size: clamp(3.8rem, 3.1714rem + 1.9643vw, 6rem);
+    // font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
     @include responsive(mobile-land) {
-        font-size: 3.8rem;
+        font-size: 4.2rem;
     }
 
     & > span {
