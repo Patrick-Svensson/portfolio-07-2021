@@ -53,9 +53,16 @@
 .o-header {
     &-wrapper {
         @include wrapper-size(100vw, 100vh);
-        @include flex(column, nowrap, center, center);
+        @include flex(column, nowrap, flex-start, center);
         position: relative;
         text-align: center;
+        margin-top: 3rem;
+        @include responsive(tablet-land) {
+            margin-top: 8rem;
+        }
+        @include responsive(mobile) {
+            margin-top: 2rem;
+        }
     }
 
     &-bg-wrapper {

@@ -17,7 +17,7 @@
                 margin-left: 0;
             }
             @include responsive(mobile) {
-                @include wrapper-size(2.5rem, 2.5rem);
+                @include wrapper-size(3rem, 3rem);
             }
         }
 
