@@ -323,12 +323,7 @@ img {
   align-items: center;
   position: relative;
   text-align: center;
-  margin-top: 3rem;
-}
-@media screen and (max-width: 75em) {
-  .o-header-wrapper {
-    margin-top: 8rem;
-  }
+  margin-top: 8rem;
 }
 @media screen and (max-width: 30em) {
   .o-header-wrapper {
@@ -354,12 +349,6 @@ img {
   -ms-flex-align: flex-start;
   align-items: flex-start;
   position: relative;
-  margin-top: 4rem;
-}
-@media screen and (max-width: 48em) {
-  .o-header-bg-wrapper {
-    margin-top: 0;
-  }
 }
 @media (min-width: 25em) and (max-height: 42em) {
   .o-header-bg-wrapper {
@@ -369,7 +358,7 @@ img {
 @media screen and (max-width: 30em) {
   .o-header-bg-wrapper {
     width: 92%;
-    height: 85%;
+    height: 80%;
   }
 }
 .o-header-text-container {
