@@ -327,7 +327,7 @@ img {
 }
 @media screen and (max-width: 30em) {
   .o-header-wrapper {
-    height: 95vh;
+    height: 97vh;
     margin-top: 4rem;
   }
 }
