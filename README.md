@@ -38,7 +38,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   The landing page has a video background playing a soft wave motion that is supposed to reflect my calm personality and further enhance the nautical vibe of the website.
 
-    -   A message is diplayed to a user with a mobile device held in landscape mode, politely prompting to turn the device to portrait mode.
+    -   A message is displayed to a user with a mobile device held in landscape mode, politely prompting to turn the device to portrait mode.
 
     <br>
     <br>
@@ -80,7 +80,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   If the user would like to find out more about my background, there is a clickable LinkedIn logo that will link to my LinkedIn page.
 
-    -   To keep our sealegs I have divided the last two sections with some soothing animated waves.
+    -   To keep our sealegs, I have divided the last two sections with some soothing animated waves.
 
     <br>
     <br>
