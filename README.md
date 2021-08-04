@@ -33,3 +33,4 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 -   Testamonials
     -   A background of a nautical chart to keep the maritime ambiance.
     -   I have chosen to show my testimonials in a slideshow, which the user controls by clicking on either the left or the right button beneath the testimonials card. The dots in between the buttons will indicate which card is currently on display.
+-
