@@ -15,7 +15,16 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   Existing Features
     -   Features left to implement
-    -   Testing
+
+ <br>
+
+-   Testing
+
+    -   Validator Testing
+
+    -   JavaScript Code
+
+    -   Website Performance
 
     <br>
 
