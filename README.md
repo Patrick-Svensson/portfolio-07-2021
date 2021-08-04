@@ -55,7 +55,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     <br>
     <br>
 
--   Testamonials
+-   Testamonials Section
 
     -   A background of a nautical chart to keep the maritime ambiance.
 
@@ -86,7 +86,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     <br>
     <br>
 
--   My Reachability
+-   My Reachability Section
 
     -   Background image that verifies my IxDF course "User Experience: The Beginner's Guide" with "Destinction: Top 10% in Class" certificate.
 
@@ -123,7 +123,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   CSS
 
-        -   No errors were found when passing through the official (Jigsaw) validator.
+    -   No errors were found when passing through the official (Jigsaw) validator.
 
     <br>
 
