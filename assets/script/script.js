@@ -53,7 +53,7 @@ scrollUpText.addEventListener("mouseleave", () => {
     document.querySelector(".c-scroll__text--up").classList.remove("showElement");
 });
 
-/* ****** Testamonial Carousel ****** */
+/* ****** Testimonial Carousel ****** */
 
 function slideTestCards(num) {
     showTestCards((cardIndex += num));
@@ -61,7 +61,7 @@ function slideTestCards(num) {
 
 function showTestCards(num) {
     var i;
-    var cards = document.getElementsByClassName("testamonialCards");
+    var cards = document.getElementsByClassName("testimonialCards");
     var dots = document.getElementsByClassName("c-test-carousel__dot");
     if (num > cards.length) {
         cardIndex = 1;
