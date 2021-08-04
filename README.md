@@ -15,6 +15,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   Existing Features
     -   Features left to implement
+    -   Testing
 
     <br>
 
@@ -90,3 +91,53 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     -   Background image that verifies my IxDF course "User Experience: The Beginner's Guide" with "Destinction: Top 10% in Class" certificate.
 
     -   Email address and a link to my LinkedIn page to make it easy for the user to contact me.
+
+<br>
+<br>
+
+### Features left to implement
+
+<Br>
+
+-   Some users may be sensitive to elements in motion. Thus, implementing an on/off toggle button on the landing page to enable the user to switch off/on animated features will make for better accessibility.
+
+-   Make my email address into a link that opens and starts a new message in the user's email server.
+
+<br>
+<br>
+
+## Testing
+
+---
+
+<br>
+
+### Validator Testing
+
+<br>
+
+-   HTML
+
+    -   No errors were returned when passing through the official W3C validator.  
+        <br>
+
+-   CSS
+
+        -   No errors were found when passing through the official (Jigsaw) validator.
+
+    <br>
+
+### JavaScript Code
+
+<br>
+
+-   JSHint
+    -   No errors were found when passing through the code quality tool.
+
+<br>
+
+### Website Perfomance
+
+<br>
+
+-   GT Matrix
