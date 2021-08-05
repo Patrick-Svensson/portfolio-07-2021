@@ -25,7 +25,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 <br>
 
--   Techcnologies Used
+-   Technologies Used
 
 -   Credits
 
