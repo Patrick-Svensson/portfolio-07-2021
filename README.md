@@ -22,9 +22,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 -   Testing
 
     -   Validator Testing
-
     -   JavaScript Code
-
     -   Website Performance
 
 <br>
@@ -32,6 +30,12 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 -   Techcnologies Used
 
 -   Credits
+
+    -   Media
+    -   Testimonials
+    -   CSS Animation
+    -   Debugging
+    -   Special Thanks
 
 <br>
 <br>
@@ -43,8 +47,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 <br>
 
 ### Existing Features
-
-<br>
 
 -   The landing page
 
@@ -109,8 +111,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 ### Features Left to Implement
 
-<Br>
-
 -   Some users may be sensitive to elements in motion. Thus, implementing an on/off toggle button on the landing page to enable the user to switch off/on animated features will make for better accessibility.
 
 -   Make my email address into a link that opens the "create a new message" window in the user's email sevice.
@@ -126,8 +126,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 ### Validator Testing
 
-<br>
-
 -   HTML
 
     -   No errors were returned when passing through the official W3C validator.  
@@ -141,16 +139,12 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 ### JavaScript Code
 
-<br>
-
 -   JSHint
     -   No errors were found when passing through the code quality tool.
 
 <br>
 
 ### Website Perfomance
-
-<br>
 
 -   GT Matrix
 
@@ -168,7 +162,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 <br>
 <br>
 
-## Technologies Used
+## Technologies, Libraries, and Frameworks Used
 
 ---
 
@@ -184,6 +178,10 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 -   CSS clamp()
 -   JavaScript
 -   Git
+-   GitHub
+-   Google Fonts
+-   Font Awesome
+-   TinyPNG
 
 <br>
 <br>
@@ -193,3 +191,39 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 ---
 
 <br>
+
+### Media
+
+-   Landing page background video was downloaded from Pixabay open source, video by ArtDio2020 <https://pixabay.com/sv/videos/linje-form-wave-abstrakt-digital-45947/>
+
+-   All photos are from my personal photo library.
+
+<br>
+
+### Testimonials
+
+-   I wish to express my gratitude to my fellow students, Erica Zandelin and Ottilia Lindell, for the kind words that were given, and for letting me share those quotes as testimonials in this portfolio.
+
+<br>
+
+### CSS Animations
+
+-   Waves (between the Myself- and the My Reachability section), a Codepen by Daniel Österman @Goodkatz.
+
+<br>
+
+### Debugging
+
+-   stackoverflow
+-   CSS-Tricks
+-   MDN Web Docs
+-   w3schools
+-   Google
+
+<br>
+
+### Special Thanks
+
+-   To my mentor Sandra Lindberg at Kodcoach for giving me such great advice, nudging me in the right direction, and for pushing me to write cleaner and more accessible code.
+
+-   To my partner in code and in life, Helena, for giving me the love and support I so desperately needed to create this portfolio.
