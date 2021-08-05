@@ -26,7 +26,11 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   Website Performance
 
-    <br>
+<br>
+
+-   Techcnologies
+
+<br>
 
 ## Features
 
@@ -148,9 +152,35 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 ### Website Perfomance
 
 <br>
+
 -   GT Matrix
 
     -   Grade: A
         Preformance: 99%
 
+<br>
+
+-   Pineberry
+
 -   Lighthouse
+
+    ![Lighthouse report](assets/images/lighthouse.jpg)
+
+<br>
+
+### Technologies
+
+---
+
+<br>
+
+-   Photoshop
+-   Figma
+-   HTML5
+-   CSS3
+-   Sass (scss)
+-   ITCSS (with @use and @forward, since @import is deprecated)
+-   BEMIT
+-   CSS clamp()
+-   JavaScript
+-   Git
