@@ -168,8 +168,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     -   Safari
 
 <br>
-
-<br>
 <br>
 
 ## Technologies, Libraries, and Frameworks Used
