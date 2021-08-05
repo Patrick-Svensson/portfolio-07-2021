@@ -1096,13 +1096,12 @@ img {
   }
 }
 .c-frame__text {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 400;
   padding: 0 2rem;
 }
 @media screen and (max-width: 30em) {
   .c-frame__text {
-    font-size: 0.8rem;
     line-height: 1.1rem;
   }
 }
