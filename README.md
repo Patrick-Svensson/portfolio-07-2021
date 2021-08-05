@@ -8,8 +8,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 ## Table of Contents
 
----
-
 <br>
 
 -   Features
@@ -41,8 +39,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 <br>
 
 ## Features
-
----
 
 <br>
 
@@ -120,8 +116,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 ## Testing
 
----
-
 <br>
 
 ### Validator Testing
@@ -164,8 +158,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 ## Technologies, Libraries, and Frameworks Used
 
----
-
 <br>
 
 -   Photoshop
@@ -187,8 +179,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 <br>
 
 ## Credits
-
----
 
 <br>
 
