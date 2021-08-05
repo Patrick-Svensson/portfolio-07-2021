@@ -230,4 +230,4 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   To my mentor Sandra Lindberg at Kodcoach for giving me such great advice, nudging me in the right direction, and for pushing me to write cleaner and more accessible code.
 
--   To my partner in code and in life, Helena, for giving me the love and support I so desperately needed to create this portfolio.
+-   To my partner in code and in life, Helena Plantin, for giving me the love and support I so desperately needed to create this portfolio.
