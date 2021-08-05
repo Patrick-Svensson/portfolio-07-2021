@@ -4,6 +4,7 @@
 
 The portfolio is intended to showcase a selection of my best work and to demonstrate what I am, digitally, capable of achieving. Also, reflect a piece of my personality and some of my interests. This, to make sure that recruiters and employers easily can evaluate my potential.  
 <br>
+<br>
 
 ## Table of Contents
 
@@ -28,8 +29,11 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 <br>
 
--   Techcnologies
+-   Techcnologies Used
 
+-   Credits
+
+<br>
 <br>
 
 ## Features
@@ -55,7 +59,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     -   A message is displayed to a user with a mobile device held in landscape mode, politely prompting to turn the device to portrait mode.
 
     <br>
-    <br>
 
 -   Navigation Bar
 
@@ -66,7 +69,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     -   An Up To Top button for easy navigation to the landing page.
 
     <br>
-    <br>
 
 -   Testamonials Section
 
@@ -75,7 +77,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     -   I have chosen to show my testimonials in a slideshow, which the user can control by clicking on either the left or the right button beneath the testimonials card. The dots in between the buttons will indicate which card is currently on display.
 
     <br>
-    <br>
 
 -   My Projects Section
 
@@ -83,7 +84,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   Clicking on one of the portholes will open a modal. It will present the project to the user and give the user the choice of viewing the source code on my GitHub page, viewing the project itself, or exit the modal by either clicking on the exit button or anywhere outside the modal box.
 
-    <br>
     <br>
 
 -   Myself Section
@@ -97,7 +97,6 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     -   To keep our sealegs, I have divided the last two sections with some soothing animated waves.
 
     <br>
-    <br>
 
 -   My Reachability Section
 
@@ -108,13 +107,13 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 <br>
 <br>
 
-### Features left to implement
+### Features Left to Implement
 
 <Br>
 
 -   Some users may be sensitive to elements in motion. Thus, implementing an on/off toggle button on the landing page to enable the user to switch off/on animated features will make for better accessibility.
 
--   Make my email address into a link that opens and starts a new message in the user's email server.
+-   Make my email address into a link that opens the "create a new message" window in the user's email sevice.
 
 <br>
 <br>
@@ -167,8 +166,9 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     ![Lighthouse report](assets/images/lighthouse.jpg)
 
 <br>
+<br>
 
-### Technologies
+## Technologies Used
 
 ---
 
@@ -184,3 +184,12 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 -   CSS clamp()
 -   JavaScript
 -   Git
+
+<br>
+<br>
+
+## Credits
+
+---
+
+<br>
