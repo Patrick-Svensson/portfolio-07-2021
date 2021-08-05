@@ -148,5 +148,9 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 ### Website Perfomance
 
 <br>
-
 -   GT Matrix
+
+    -   Grade: A
+        Preformance: 99%
+
+-   Lighthouse
