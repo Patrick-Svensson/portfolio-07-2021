@@ -22,6 +22,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
     -   Validator Testing
     -   JavaScript Code
     -   Website Performance
+    -   Cross Device and Browser Compatibility
 
 <br>
 
@@ -152,6 +153,21 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 -   Lighthouse
 
     ![Lighthouse report](assets/images/lighthouse.jpg)
+
+<br>
+
+### Cross Device and Browser Compatibility
+
+-   The website has been tested on several desktops, laptops, tablets, and mobile devices by myself, family, and friends to assure as good cross-compatibility as possible.
+
+-   Browsers
+
+    -   Chrome
+    -   Edge
+    -   Firefox
+    -   Safari
+
+<br>
 
 <br>
 <br>
