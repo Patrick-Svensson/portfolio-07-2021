@@ -68,7 +68,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     <br>
 
--   Testamonials Section
+-   Testimonials Section
 
     -   A background of a nautical chart to keep the maritime ambiance.
 
@@ -98,7 +98,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   My Reachability Section
 
-    -   Background image that verifies my IxDF course "User Experience: The Beginner's Guide" with "Destinction: Top 10% in Class" certificate.
+    -   The background image that verifies my IxDF course "User Experience: The Beginner's Guide" with "Distinction: Top 10% in Class" certificate.
 
     -   Email address and a link to my LinkedIn page to make it easy for the user to contact me.
 
@@ -109,7 +109,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   Some users may be sensitive to elements in motion. Thus, implementing an on/off toggle button on the landing page to enable the user to switch off/on animated features will make for better accessibility.
 
--   Make my email address into a link that opens the "create a new message" window in the user's email sevice.
+-   Make my email address into a link that opens the "create a new message" window in the user's email service.
 
 <br>
 <br>
@@ -138,12 +138,12 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 <br>
 
-### Website Perfomance
+### Website Performance
 
 -   GT Matrix
 
     -   Grade: A
-        Preformance: 99%
+        Performance: 99%
 
 <br>
 
