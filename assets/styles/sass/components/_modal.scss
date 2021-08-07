@@ -18,12 +18,15 @@
     }
 
     @include responsive(mobile) {
-        height: 85vh;
+        @include wrapper-size(100vw, 100vh);
     }
 
     &__content-wrapper {
         @include wrapper-size(85%, 85%);
         @include flex(column, nowrap, space-around, center);
+        @include responsive(mobile) {
+            @include wrapper-size(90%, 95%);
+        }
     }
 
     &__heading-container {
@@ -107,6 +110,7 @@
     &__link-text {
         color: $colourBgLight;
         letter-spacing: 0.2rem;
+        padding: 1.5rem 0;
 
         &--left {
             padding-right: 5rem;

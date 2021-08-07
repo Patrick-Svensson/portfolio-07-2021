@@ -3,12 +3,9 @@
 
 .c-navbar__links {
     padding-bottom: 1rem;
-    margin-right: 2rem;
-    @include responsive(mobile) {
-        margin-right: 1rem;
-    }
+    margin-right: 1rem;
 
     &-item {
-        padding-top: 2rem;
+        padding-top: 2.8rem;
     }
 }
