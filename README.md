@@ -1,6 +1,6 @@
 # The Portfolio
 
-![Heading, and Multi Device Mockup](assets/images/readme-header.jpg)
+![Heading, and Multi Device Mockup](assets/images/landing-mockup.jpg)
 
 The portfolio is intended to showcase a selection of my best work and to demonstrate what I am, digitally, capable of achieving. Also, reflect a piece of my personality and some of my interests. This, to make sure that recruiters and employers easily can evaluate my potential.  
 <br>
