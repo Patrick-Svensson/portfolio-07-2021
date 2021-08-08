@@ -3,9 +3,12 @@
 
 .c-navbar__links {
     padding-bottom: 1rem;
-    margin-right: 5rem;
-    @include responsive(tablet-port) {
-        margin-right: 1rem;
+
+    &:last-child {
+        margin-right: 5rem;
+        @include responsive(tablet-port) {
+            margin-right: 2rem;
+        }
     }
 
     &-item {

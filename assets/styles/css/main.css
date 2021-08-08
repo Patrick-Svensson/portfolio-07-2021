@@ -197,18 +197,18 @@ a {
   color: #a81414;
   font-weight: 700;
   font-size: 2.3rem;
-  font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
+  font-size: clamp(1.4rem, 1.1429rem + 0.8036vw, 2.3rem);
 }
 @media screen and (max-width: 48em) {
   a {
     font-size: 1.8rem;
-    font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
+    font-size: clamp(1.4rem, 1.1429rem + 0.8036vw, 2.3rem);
   }
 }
 @media screen and (max-width: 30em) {
   a {
-    font-size: 1.2rem;
-    font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
+    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1.1429rem + 0.8036vw, 2.3rem);
     letter-spacing: normal;
   }
 }
@@ -1287,11 +1287,13 @@ img {
 
 .c-navbar__links {
   padding-bottom: 1rem;
+}
+.c-navbar__links:last-child {
   margin-right: 5rem;
 }
 @media screen and (max-width: 48em) {
-  .c-navbar__links {
-    margin-right: 1rem;
+  .c-navbar__links:last-child {
+    margin-right: 2rem;
   }
 }
 .c-navbar__links-item {
