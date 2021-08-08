@@ -78,6 +78,15 @@
         }
     }
 
+    &__img-container {
+        position: absolute;
+        top: 10rem;
+        right: 30rem;
+        @include responsive(tablet-land) {
+            display: none;
+        }
+    }
+
     &-text-container {
         @include wrapper-size(90%, 70%);
         @include flex(column, wrap, space-evenly, flex-start);

@@ -357,6 +357,16 @@ img {
     height: 80%;
   }
 }
+.o-header__img-container {
+  position: absolute;
+  top: 10rem;
+  right: 30rem;
+}
+@media screen and (max-width: 75em) {
+  .o-header__img-container {
+    display: none;
+  }
+}
 .o-header-text-container {
   width: 90%;
   height: 70%;
@@ -847,7 +857,7 @@ img {
 }
 
 .o-header-drawing-bg {
-  background-image: url("../../images/flicka-drawing-bg.png");
+  background-image: url("../../images/flicka-drawing-faded.png");
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -867,13 +877,9 @@ img {
   -ms-flex-align: flex-end;
   align-items: flex-end;
 }
-@media screen and (max-width: 75em) {
-  .o-header-drawing-bg {
-    background-image: url("../../images/flicka-drawing-faded.png");
-    background-size: contain;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-  }
+
+.o-img__header {
+  border: 1rem solid rgba(0, 0, 0, 0.2);
 }
 
 /* ****** Testimonials ****** */

@@ -12,12 +12,13 @@
 }
 
 .o-header-drawing-bg {
-    @include background-image(url("../../images/flicka-drawing-bg.png"), contain, bottom right);
+    @include background-image(url("../../images/flicka-drawing-faded.png"), contain, bottom right);
     @include wrapper-size(100%, 100%);
     @include flex(column, nowrap, flex-end, flex-end);
-    @include responsive(tablet-land) {
-        @include background-image(url("../../images/flicka-drawing-faded.png"), contain, bottom right);
-    }
+}
+
+.o-img__header {
+    border: 1rem solid rgba(0, 0, 0, 0.2);
 }
 
 /* ****** Testimonials ****** */
