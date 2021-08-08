@@ -51,7 +51,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   My logotype displaying my nickname Pat placed on top of the first letter of my surname. The design is my own, and the Spinnaker font is chosen to reflect my sailing passion. To save space, the logo is removed on small screens.
 
-    -   An image to show my drawing and design for the rig and sail plan to my pilot cutter.
+    -   To give the user a face to the name, I display a picture of myself which is set upon a background image of my drawing and design for the rig and sail plan to my pilot cutter.
 
     -   The landing page has a video background playing a soft wave motion that is supposed to reflect my calm personality and further enhance the nautical vibe of the website.
 
