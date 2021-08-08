@@ -88,7 +88,8 @@
     }
 
     &-text-container {
-        @include wrapper-size(90%, 70%);
+        @include wrapper-size(85%, 70%);
+        min-width: 27rem;
         @include flex(column, wrap, space-evenly, flex-start);
         margin-top: 3rem;
     }
@@ -98,7 +99,7 @@
 
 .o-navbar {
     &-links-wrapper {
-        @include wrapper-size(90%, 15%);
+        @include wrapper-size(95%, 15%);
         @include flex(row, nowrap, flex-start, flex-end);
         @include responsive(mobile) {
             height: 25%;
