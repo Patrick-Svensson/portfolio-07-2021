@@ -65,7 +65,7 @@
 
     &-bg-wrapper {
         @include wrapper-size(80%, 75%);
-        max-width: 140rem;
+        max-width: 120rem;
         max-height: 130rem;
         @include flex(row, nowrap, flex-start, flex-start);
         position: relative;
@@ -81,7 +81,7 @@
     &__img-container {
         position: absolute;
         top: 10rem;
-        right: 30rem;
+        right: 25rem;
         @include responsive(tablet-land) {
             display: none;
         }
@@ -107,7 +107,6 @@
 
     &-links-container {
         @include wrapper-size(100%, auto);
-        max-width: 60rem;
         @include flex(row, nowrap, space-between, flex-end);
     }
 }

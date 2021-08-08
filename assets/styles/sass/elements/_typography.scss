@@ -6,15 +6,17 @@ h1 {
     font-weight: 700;
     text-align: left;
     font-size: 6rem;
+    font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
     @include responsive(tablet-port) {
         font-size: 5.2rem;
+        font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
     }
 
     @include responsive(mobile) {
         font-size: 4.2rem;
+        font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
     }
 
-    font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
     @include responsive(mobile-land) {
         font-size: 4.2rem;
     }
@@ -27,30 +29,34 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: 2.4rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
     padding-top: 1rem;
     @include responsive(tablet-port) {
         font-size: 1.8rem;
+        font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
     }
 
     @include responsive(mobile) {
         font-size: 1.4rem;
+        font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
     }
-    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
 }
 
 h3 {
     font-weight: 700;
     padding: 1rem 4rem;
     font-size: 3.2rem;
+    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
     @include responsive(tablet-port) {
         font-size: 2.6rem;
+        font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
     }
 
     @include responsive(mobile) {
         font-size: 2rem;
+        font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
         padding: 1rem 2rem;
     }
-    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
 }
 
 h4 {
@@ -66,14 +72,16 @@ h5 {
     font-style: italic;
     letter-spacing: 0.08rem;
     font-size: 2.4rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
     @include responsive(tablet-port) {
         font-size: 1.8rem;
+        font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
     }
 
     @include responsive(mobile) {
         font-size: 1.4rem;
+        font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
     }
-    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
 }
 
 p {

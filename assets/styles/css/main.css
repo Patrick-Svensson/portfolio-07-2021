@@ -99,11 +99,13 @@ h1 {
 @media screen and (max-width: 48em) {
   h1 {
     font-size: 5.2rem;
+    font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
   }
 }
 @media screen and (max-width: 30em) {
   h1 {
     font-size: 4.2rem;
+    font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
   }
 }
 @media (min-width: 25em) and (max-height: 42em) {
@@ -118,17 +120,19 @@ h1 > span {
 h2 {
   font-weight: 400;
   font-size: 2.4rem;
-  padding-top: 1rem;
   font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+  padding-top: 1rem;
 }
 @media screen and (max-width: 48em) {
   h2 {
     font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   }
 }
 @media screen and (max-width: 30em) {
   h2 {
     font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   }
 }
 
@@ -141,11 +145,13 @@ h3 {
 @media screen and (max-width: 48em) {
   h3 {
     font-size: 2.6rem;
+    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
   }
 }
 @media screen and (max-width: 30em) {
   h3 {
     font-size: 2rem;
+    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
     padding: 1rem 2rem;
   }
 }
@@ -168,11 +174,13 @@ h5 {
 @media screen and (max-width: 48em) {
   h5 {
     font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   }
 }
 @media screen and (max-width: 30em) {
   h5 {
     font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   }
 }
 
@@ -188,17 +196,19 @@ a {
   letter-spacing: 0.1rem;
   color: #a81414;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
 }
 @media screen and (max-width: 48em) {
   a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
   }
 }
 @media screen and (max-width: 30em) {
   a {
     font-size: 1.2rem;
+    font-size: clamp(1.2rem, 0.9714rem + 0.7143vw, 2rem);
     letter-spacing: normal;
   }
 }
@@ -329,7 +339,7 @@ img {
 .o-header-bg-wrapper {
   width: 80%;
   height: 75%;
-  max-width: 140rem;
+  max-width: 120rem;
   max-height: 130rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,7 +370,7 @@ img {
 .o-header__img-container {
   position: absolute;
   top: 10rem;
-  right: 30rem;
+  right: 25rem;
 }
 @media screen and (max-width: 75em) {
   .o-header__img-container {
@@ -412,7 +422,6 @@ img {
 .o-navbar-links-container {
   width: 100%;
   height: auto;
-  max-width: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,11 +990,13 @@ img {
 @media screen and (max-width: 48em) {
   .c-header__heading--small {
     font-size: 2rem;
+    font-size: clamp(1.6rem, 1.3714rem + 0.7143vw, 2.4rem);
   }
 }
 @media screen and (max-width: 30em) {
   .c-header__heading--small {
     font-size: 1.6rem;
+    font-size: clamp(1.6rem, 1.3714rem + 0.7143vw, 2.4rem);
   }
 }
 .c-header__heading--medium {
@@ -999,11 +1010,13 @@ img {
 @media screen and (max-width: 48em) {
   .c-header__heading--medium {
     font-size: 2.8rem;
+    font-size: clamp(2.2rem, 1.9143rem + 0.8929vw, 3.2rem);
   }
 }
 @media screen and (max-width: 30em) {
   .c-header__heading--medium {
     font-size: 2.2rem;
+    font-size: clamp(2.2rem, 1.9143rem + 0.8929vw, 3.2rem);
   }
 }
 
@@ -1273,7 +1286,12 @@ img {
 
 .c-navbar__links {
   padding-bottom: 1rem;
-  margin-right: 1rem;
+  margin-right: 3rem;
+}
+@media screen and (max-width: 48em) {
+  .c-navbar__links {
+    margin-right: 1rem;
+  }
 }
 .c-navbar__links-item {
   padding-top: 2.8rem;
@@ -1703,11 +1721,13 @@ img {
 @media screen and (max-width: 48em) {
   .c-contact__address {
     font-size: 1.8rem;
+    font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
   }
 }
 @media screen and (max-width: 30em) {
   .c-contact__address {
     font-size: 1.2rem;
+    font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
     margin-left: 2rem;
     letter-spacing: 1px;
   }
