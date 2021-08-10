@@ -222,7 +222,7 @@
     }
 
     &__text-wrapper {
-        @include wrapper-size(50rem, auto);
+        @include wrapper-size(60rem, auto);
         @include flex(column, nowrap, space-between, center);
         @include responsive(tablet-land) {
             width: 100%;

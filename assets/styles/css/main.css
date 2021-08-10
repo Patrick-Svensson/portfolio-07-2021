@@ -187,8 +187,14 @@ h5 {
 p {
   font-weight: 400;
   letter-spacing: 0.06rem;
-  line-height: 1.6rem;
-  font-size: 1.4rem;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 30em) {
+  p {
+    line-height: 1.4rem;
+    font-size: 1.4rem;
+  }
 }
 
 a {
@@ -690,7 +696,7 @@ img {
   margin: 0 3rem 2rem 0;
 }
 .o-myself__text-wrapper {
-  width: 50rem;
+  width: 60rem;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1719,7 +1725,6 @@ img {
 
 .c-myself__text {
   padding-bottom: 1.2rem;
-  line-height: 2rem;
 }
 
 .c-text--smallCaps {
