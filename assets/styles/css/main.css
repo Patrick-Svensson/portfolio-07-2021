@@ -1456,7 +1456,6 @@ img {
   }
 }
 .c-test-card__qoute-container {
-  position: relative;
   width: 70%;
   height: 100%;
   display: -webkit-box;
@@ -1484,6 +1483,7 @@ img {
   }
 }
 .c-test-card__quote {
+  position: relative;
   font-style: italic;
 }
 @media screen and (max-width: 30em) {
@@ -1493,7 +1493,7 @@ img {
 }
 .c-test-card__quote--mark {
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   left: -5rem;
   font-size: 15rem;
   padding-right: 3rem;
