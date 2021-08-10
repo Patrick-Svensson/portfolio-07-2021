@@ -1485,7 +1485,7 @@ img {
     font-size: 1rem;
   }
 }
-.c-test-card__quote > span {
+.c-test-card__quote--mark {
   position: absolute;
   top: 4rem;
   left: -5rem;
