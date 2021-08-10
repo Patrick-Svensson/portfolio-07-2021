@@ -1491,6 +1491,7 @@ img {
   left: -5rem;
   font-size: 15rem;
   opacity: 0.1;
+  overflow: visible;
 }
 .c-test-card__link {
   font-size: 1.2rem;
