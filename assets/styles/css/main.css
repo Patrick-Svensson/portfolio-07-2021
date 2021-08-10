@@ -1489,6 +1489,7 @@ img {
   position: absolute;
   top: 4rem;
   left: -5rem;
+  padding-right: 3rem;
   font-size: 15rem;
   opacity: 0.1;
   overflow: visible;
