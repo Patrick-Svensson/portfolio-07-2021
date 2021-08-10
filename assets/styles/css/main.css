@@ -1450,6 +1450,7 @@ img {
   }
 }
 .c-test-card__qoute-container {
+  position: relative;
   width: 70%;
   height: 100%;
   display: -webkit-box;
@@ -1483,6 +1484,13 @@ img {
   .c-test-card__quote {
     font-size: 1rem;
   }
+}
+.c-test-card__quote > span {
+  position: absolute;
+  top: 4rem;
+  left: -5rem;
+  font-size: 15rem;
+  opacity: 0.1;
 }
 .c-test-card__link {
   font-size: 1.2rem;

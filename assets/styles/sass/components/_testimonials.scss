@@ -66,6 +66,7 @@
     }
 
     &__qoute-container {
+        position: relative;
         @include wrapper-size(70%, 100%);
         @include flex(row, wrap, center, center);
         @include responsive(tablet-land) {
@@ -80,6 +81,14 @@
         font-style: italic;
         @include responsive(mobile) {
             font-size: 1rem;
+        }
+
+        & > span {
+            position: absolute;
+            top: 4rem;
+            left: -5rem;
+            font-size: 15rem;
+            opacity: 0.1;
         }
     }
 
