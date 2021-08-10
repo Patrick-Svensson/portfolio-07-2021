@@ -374,6 +374,11 @@ img {
 }
 @media screen and (max-width: 75em) {
   .o-header__img-container {
+    right: 5rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .o-header__img-container {
     display: none;
   }
 }

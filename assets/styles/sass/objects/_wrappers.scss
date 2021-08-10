@@ -83,6 +83,10 @@
         top: 10rem;
         right: 25rem;
         @include responsive(tablet-land) {
+            right: 5rem;
+        }
+
+        @include responsive(tablet-port) {
             display: none;
         }
     }
