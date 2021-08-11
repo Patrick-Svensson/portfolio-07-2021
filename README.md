@@ -110,6 +110,8 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   Some users may be sensitive to elements in motion. Thus, implementing an on/off toggle button on the landing page to enable the user to switch off/on animated features will make for better accessibility.
 
+-   Render content on testimonial cards dynamicaly from an array, for DRY code.
+
 -   Make my email address into a link that opens the "create a new message" window in the user's email service.
 
 <br>
