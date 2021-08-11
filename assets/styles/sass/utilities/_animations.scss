@@ -78,10 +78,10 @@
 /* ****** Scroll Icon ****** */
 
 .u-scroll__symbol {
-    -webkit-animation: bounce 0.5s linear 1s infinite alternate;
-    -moz-animation: bounce 0.5s linear 1s infinite alternate;
-    -o-animation: bounce 0.5s linear 1s infinite alternate;
-    animation: bounce 0.5s linear 1s infinite alternate;
+    -webkit-animation: bounce 1s linear 1s infinite alternate;
+    -moz-animation: bounce 1s linear 1s infinite alternate;
+    -o-animation: bounce 1s linear 1s infinite alternate;
+    animation: bounce 1s linear 1s infinite alternate;
 }
 
 @-webkit-keyframes bounce {
