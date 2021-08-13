@@ -228,12 +228,6 @@
             width: 100%;
         }
     }
-
-    &__link-wrapper {
-        width: 75%;
-        @include flex(row, nowrap, flex-start, flex-end);
-        padding-bottom: 2rem;
-    }
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */

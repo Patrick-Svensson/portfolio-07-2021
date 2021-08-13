@@ -200,7 +200,7 @@ p {
 a {
   text-decoration: none;
   letter-spacing: 0.1rem;
-  color: #a81414;
+  color: #2e5e7a;
   font-weight: 700;
   font-size: 2.3rem;
   font-size: clamp(1.4rem, 1.1429rem + 0.8036vw, 2.3rem);
@@ -716,23 +716,6 @@ img {
   .o-myself__text-wrapper {
     width: 100%;
   }
-}
-.o-myself__link-wrapper {
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: flex-start;
-  -ms-flex-pack: flex-start;
-  justify-content: flex-start;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  padding-bottom: 2rem;
 }
 
 /* ****** Waves (Codepen by Daniel Österman @Goodkatz) ****** */
@@ -1575,11 +1558,11 @@ img {
 }
 .c-test-carousel__control-button--left {
   padding-right: 1rem;
-  color: #a81414;
+  color: #2e5e7a;
 }
 .c-test-carousel__control-button--right {
   padding-left: 1rem;
-  color: #a81414;
+  color: #2e5e7a;
 }
 
 .activeDot {
@@ -1644,7 +1627,7 @@ img {
   }
 }
 .c-scroll__symbol {
-  color: #a81414;
+  color: #2e5e7a;
   padding-bottom: 0.8rem;
 }
 .c-scroll__link {
@@ -1725,6 +1708,9 @@ img {
 
 .c-myself__text {
   padding-bottom: 1.2rem;
+}
+.c-myself__link {
+  font-size: inherit;
 }
 
 .c-text--smallCaps {
@@ -2214,8 +2200,8 @@ img {
 
 .u-projects--hover:hover,
 focus {
-  -webkit-box-shadow: 0 0 0 5px #a81414;
-  box-shadow: 0 0 0 5px #a81414;
+  -webkit-box-shadow: 0 0 0 5px #2e5e7a;
+  box-shadow: 0 0 0 5px #2e5e7a;
 }
 
 /* ****** Hover styles for none touch devices ****** */
@@ -2230,13 +2216,14 @@ focus {
 .u-icon focus {
     background-color: #494949;
   }
-  .u-icon--myself:hover,
-.u-icon focus {
-    color: #a2bece;
-  }
   .u-icon--contact:hover,
 .u-icon focus {
     color: #fcfcfc;
+  }
+
+  .u-link--myself:hover,
+focus {
+    text-decoration: underline;
   }
 }
 /* ****** Hover styles for touch devices ****** */

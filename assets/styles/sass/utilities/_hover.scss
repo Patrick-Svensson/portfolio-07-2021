@@ -48,15 +48,15 @@ focus {
             background-color: $colourText;
         }
 
-        &--myself:hover,
-        focus {
-            color: $colourWater;
-        }
-
         &--contact:hover,
         focus {
             color: $colourBgLight;
         }
+    }
+
+    .u-link--myself:hover,
+    focus {
+        text-decoration: underline;
     }
 }
 
