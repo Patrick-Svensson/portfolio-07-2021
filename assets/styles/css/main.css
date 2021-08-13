@@ -2208,8 +2208,8 @@ img {
 
 .u-projects--hover:hover,
 focus {
-  -webkit-box-shadow: 0 0 0 5px #2e5e7a;
-  box-shadow: 0 0 0 5px #2e5e7a;
+  -webkit-box-shadow: 0 0 0 10px #2e5e7a;
+  box-shadow: 0 0 0 10px #2e5e7a;
 }
 
 /* ****** Hover styles for none touch devices ****** */
