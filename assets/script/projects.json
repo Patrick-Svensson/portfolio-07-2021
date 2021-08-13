@@ -12,28 +12,6 @@
 
     {
         "projectNumber": 2,
-        "heading": "glasbrukit",
-        "image": "../../assets/images/glasbrukit.jpg",
-        "description": "A group assignment at the IT programming VT, Sundsgården's Folk High School.\n\nThe main goal was to learn how to collaborate with Git in a team. Secondly, to create a website that nests at least three levels deep in order to make us work with more complex file paths.\n\nMy contribution to the project was the landing-, and the contact page for which I made the design, wireframes, and code. The design was made using Photoshop and Figma. The website is responsive and built with HTML, Sass, and JavaScript.",
-        "link1": "https://github.com/Patrick-Svensson/glas-brukitgrup",
-        "link2": "https://he-2600.github.io/glas-brukitgrup/",
-        "linkText1": "view source code",
-        "linkText2": "view website"
-    },
-
-    {
-        "projectNumber": 3,
-        "heading": "sean connery quiz",
-        "image": "../../assets/images/sean-connery-quiz.jpg",
-        "description": "The Sean Connery Character Quotes Quiz, is a JavaScript project consisting of an interactive web application made with HTML, CSS, Bootstrap, and JavaScript. The JavaScript is based on a quiz tutorial by James Q Quick. I made the design with the aid of the Balsamiq wireframe tool. The application is fully responsive and got excellent test results for SEO and accessibility.",
-        "link1": "https://github.com/Patrick-Svensson/sean-connery-quiz",
-        "link2": "https://patrick-svensson.github.io/sean-connery-quiz/",
-        "linkText1": "view source code",
-        "linkText2": "view website"
-    },
-
-    {
-        "projectNumber": 4,
         "heading": "gaffer's dock",
         "image": "../../assets/images/gaffers-dock.jpg",
         "description": "Gaffer’s Dock, the very first website by my own design, was developed after only four weeks of studying HTML, CSS, and Bootstrap at Code Institute. Yet, it is fully responsive and functional throughout all devices. The project includes an extensive README.md file and wireframes made in Balsamiq.",
@@ -44,29 +22,7 @@
     },
 
     {
-        "projectNumber": 5,
-        "heading": "bhromaon",
-        "image": "../../assets/images/bhromaon.jpg",
-        "description": "Bhromaon, a coding challenge to recreate the design of a static website from a Figma desktop wireframe. Making it fully responsive on all devices. Tablet and mobile design free of choice. For this assignment I have used HTML, CSS, Bootstrap, and Sass, being mindful of semantics and accessibility.",
-        "link1": "https://github.com/Patrick-Svensson/bhromaon",
-        "link2": "https://patrick-svensson.github.io/bhromaon/",
-        "linkText1": "view source code",
-        "linkText2": "view website"
-    },
-
-    {
-        "projectNumber": 6,
-        "heading": "emoji mischief",
-        "image": "../../assets/images/emoji-mischief.jpg",
-        "description": "Emoji mischief, a mini-project involving the task of coding SVG-images in XML from wireframes and animate them with CSS.",
-        "link1": "https://github.com/Patrick-Svensson/svg-in-play",
-        "link2": "https://patrick-svensson.github.io/svg-in-play/",
-        "linkText1": "view source code",
-        "linkText2": "view website"
-    },
-
-    {
-        "projectNumber": 7,
+        "projectNumber": 3,
         "heading": "paradox",
         "image": "../../assets/images/paradox.jpg",
         "description": "The little girl standing in the archway and the woman to the right in the background are the same person.\n\nWith Object Selection and the Lasso tool, I have isolated the background in the picture with the little girl, putting extra effort into the details in the iron gate. I then replaced the background with the picture of the two women to create the illusion of a paradox.",
@@ -77,7 +33,7 @@
     },
 
     {
-        "projectNumber": 8,
+        "projectNumber": 4,
         "heading": "Cinema logo",
         "image": "../assets/images/movie-theatre.png",
         "description": "Figma design for logo, navbar and, footer for a fictitious movie theatre website. The design was created as a wireframe for a group assignment in the IT-Programming course at Sundsgården's Folk Highschool.\n\nIn the design process, I used tools as Auto layout, Arc Plugin and, Font Awesome. The Federo font, together with the earth-tone hues in the colour palette, was chosen to spark the feeling of the early 20th-century.",
