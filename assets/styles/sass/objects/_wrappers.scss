@@ -162,7 +162,10 @@
     &__container {
         @include flex(row, wrap, center, center);
         margin-bottom: 5rem;
-        padding: 10rem 0;
+        padding: 20rem 0;
+        @include responsive(mobile) {
+            padding: 5rem 0;
+        }
     }
 
     &__group-container {
@@ -170,7 +173,7 @@
     }
 
     &__subgroup-container {
-        @include flex(column, nowrap, space-between, center);
+        @include flex(row, wrap, center, center);
     }
 }
 
