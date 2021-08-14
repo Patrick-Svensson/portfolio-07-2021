@@ -78,7 +78,7 @@ button {
 
 * {
   font-family: "Open Sans", sans-serif;
-  color: #494949;
+  color: #3d3d3d;
 }
 
 body,
@@ -187,7 +187,7 @@ img {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
-  border: 0.1rem solid #494949;
+  border: 0.1rem solid #3d3d3d;
   overflow: hidden;
 }
 
@@ -966,7 +966,7 @@ img {
   display: block;
   padding-top: 1rem;
   margin-bottom: 2rem;
-  font-weight: 400;
+  opacity: 0.95;
   font-size: 3.2rem;
   font-size: clamp(2.2rem, 1.9143rem + 0.8929vw, 3.2rem);
 }
@@ -1647,7 +1647,7 @@ img {
 
 .c-icon {
   font-size: 4rem;
-  color: #494949;
+  color: #3d3d3d;
   padding: 1rem;
 }
 @media screen and (max-width: 30em) {
@@ -1680,7 +1680,7 @@ img {
   -ms-transform: rotate(-22deg);
   -o-transform: rotate(-22deg);
   transform: rotate(-22deg);
-  border: 0.1rem solid #494949;
+  border: 0.1rem solid #3d3d3d;
   -webkit-box-shadow: 0.2rem 0.3rem 0.3rem 0 #636363;
   box-shadow: 0.2rem 0.3rem 0.3rem 0 #636363;
   position: relative;
@@ -1930,7 +1930,7 @@ img {
   width: 50%;
   height: 60%;
   border-radius: 0.5rem;
-  border: 0.1rem solid #494949;
+  border: 0.1rem solid #3d3d3d;
   background-color: #fcfcfc;
   -webkit-box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
   box-shadow: 0.2rem 0.3rem 0.3rem 0 #aaa;
@@ -2220,7 +2220,7 @@ focus {
 
   .u-icon-base:hover,
 .u-icon focus {
-    background-color: #494949;
+    background-color: #3d3d3d;
   }
   .u-icon--contact:hover,
 .u-icon focus {
@@ -2244,11 +2244,11 @@ focus {
   }
   .u-icon--myself:hover,
 .u-icon focus {
-    color: #494949;
+    color: #3d3d3d;
   }
   .u-icon--contact:hover,
 .u-icon focus {
-    color: #494949;
+    color: #3d3d3d;
   }
 }
 @supports (gap: 3rem) {
