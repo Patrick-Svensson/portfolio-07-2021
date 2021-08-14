@@ -495,7 +495,7 @@ img {
 }
 @media screen and (max-width: 30em) {
   .o-test-wrapper {
-    height: 100vh;
+    height: 95vh;
   }
 }
 .o-test-carousel__control-panel {
