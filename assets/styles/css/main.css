@@ -118,25 +118,6 @@ h1 > span {
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 2.4rem;
-  font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-  padding-top: 1rem;
-}
-@media screen and (max-width: 48em) {
-  h2 {
-    font-size: 1.8rem;
-    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-  }
-}
-@media screen and (max-width: 30em) {
-  h2 {
-    font-size: 1.4rem;
-    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-  }
-}
-
-h3 {
   font-family: "Spinnaker", sans-serif;
   font-weight: 700;
   padding: 1rem 4rem;
@@ -144,45 +125,25 @@ h3 {
   font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
 }
 @media screen and (max-width: 48em) {
-  h3 {
+  h2 {
     font-size: 2.6rem;
     font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
   }
 }
 @media screen and (max-width: 30em) {
-  h3 {
+  h2 {
     font-size: 2rem;
     font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
     padding: 1rem 2rem;
   }
 }
 
-h4 {
+h3 {
   font-family: "Spinnaker", sans-serif;
   font-size: 2.6rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-}
-
-h5 {
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: 0.08rem;
-  font-size: 2.4rem;
-  font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-}
-@media screen and (max-width: 48em) {
-  h5 {
-    font-size: 1.8rem;
-    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-  }
-}
-@media screen and (max-width: 30em) {
-  h5 {
-    font-size: 1.4rem;
-    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
-  }
 }
 
 p {
@@ -982,9 +943,9 @@ img {
   }
 }
 .c-header__heading--small {
+  font-family: inherit;
   display: block;
   padding-top: 4rem;
-  font-weight: 400;
   font-size: 2.4rem;
   font-size: clamp(1.6rem, 1.3714rem + 0.7143vw, 2.4rem);
 }
@@ -1001,6 +962,7 @@ img {
   }
 }
 .c-header__heading--medium {
+  font-family: inherit;
   display: block;
   padding-top: 1rem;
   margin-bottom: 2rem;
@@ -1018,6 +980,24 @@ img {
   .c-header__heading--medium {
     font-size: 2.2rem;
     font-size: clamp(2.2rem, 1.9143rem + 0.8929vw, 3.2rem);
+  }
+}
+.c-header__text {
+  font-family: "Spinnaker", sans-serif;
+  font-size: 2.4rem;
+  font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+  padding: 1rem 0 0 0;
+}
+@media screen and (max-width: 48em) {
+  .c-header__text {
+    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+  }
+}
+@media screen and (max-width: 30em) {
+  .c-header__text {
+    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
   }
 }
 
@@ -1754,6 +1734,23 @@ img {
 }
 .c-contact__heading {
   padding: 0;
+}
+.c-contact__sub-text {
+  letter-spacing: 0.08rem;
+  font-size: 2.4rem;
+  font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+}
+@media screen and (max-width: 48em) {
+  .c-contact__sub-text {
+    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+  }
+}
+@media screen and (max-width: 30em) {
+  .c-contact__sub-text {
+    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+  }
 }
 
 .c-projects__img-container {

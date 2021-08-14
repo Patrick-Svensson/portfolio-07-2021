@@ -28,4 +28,19 @@
     &__heading {
         padding: 0;
     }
+
+    &__sub-text {
+        letter-spacing: 0.08rem;
+        font-size: 2.4rem;
+        font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+        @include responsive(tablet-port) {
+            font-size: 1.8rem;
+            font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+        }
+
+        @include responsive(mobile) {
+            font-size: 1.4rem;
+            font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+        }
+    }
 }
