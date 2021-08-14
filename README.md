@@ -79,7 +79,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   My Projects Section
 
-    -   Here I get the opportunity to show the various tools and techniques in my stack. Eight portholes, each showing a filtered image of a project with a heading that names the main features of that particular project.
+    -   Here I get the opportunity to show the various tools and techniques in my stack. Four portholes, each showing a filtered image of a project with a heading that names the main features of that particular project.
 
     -   Clicking on one of the portholes will open a modal. It will present the project to the user and give the user the choice of viewing the source code on my GitHub page, viewing the project itself, or exit the modal by either clicking on the exit button or anywhere outside the modal box.
 
@@ -91,7 +91,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   A photograph of me which, when hovered over, will turn into a picture of my boat. The pictures will give the user a clearer picture of my persona.
 
-    -   If the user would like to find out more about my background, there is a clickable LinkedIn logo that will link to my LinkedIn page.
+    -   If the user would like to find out more about my background, there is a link to my LinkedIn page.
 
     -   To keep our sealegs, I have divided the last two sections with some soothing animated waves.
 
@@ -154,7 +154,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   Lighthouse
 
-    ![Lighthouse report](assets/images/lighthouse.jpg)
+    ![Lighthouse report](assets/images/lighthouse.png)
 
 <br>
 
