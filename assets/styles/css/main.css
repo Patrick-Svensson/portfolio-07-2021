@@ -1576,8 +1576,8 @@ img {
 }
 
 .c-scroll-symbol-container {
-  width: 4rem;
-  height: 4rem;
+  width: 4.8rem;
+  height: 4.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1616,7 +1616,7 @@ img {
 .c-scroll-symbol-container--up {
   position: absolute;
   bottom: 4rem;
-  right: 3.5rem;
+  right: 3rem;
   padding-bottom: 1rem;
   position: fixed;
   z-index: 3;
@@ -1624,7 +1624,7 @@ img {
 }
 @media screen and (max-width: 75em) {
   .c-scroll-symbol-container--up {
-    right: 2rem;
+    right: 1.5rem;
   }
 }
 @media screen and (max-width: 30em) {
