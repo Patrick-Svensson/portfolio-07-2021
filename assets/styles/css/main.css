@@ -298,6 +298,14 @@ img {
   text-align: center;
   margin-top: 8rem;
 }
+@media (min-width: 25em) and (max-height: 42em) {
+  .o-header-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}
 @media screen and (max-width: 30em) {
   .o-header-wrapper {
     height: 97vh;
@@ -938,8 +946,7 @@ img {
   .c-header--mobile-land {
     display: block;
     font-size: 1.6rem;
-    line-height: 3rem;
-    padding: 5rem 0 0 5rem;
+    letter-spacing: 0.1rem;
   }
 }
 .c-header__heading--small {
