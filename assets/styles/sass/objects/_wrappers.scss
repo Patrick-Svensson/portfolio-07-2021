@@ -137,6 +137,7 @@
 .o-test {
     &-wrapper {
         @include wrapper-size(100vw, 70vh);
+        min-height: 68rem;
         @include flex(row, nowrap, center, center);
         overflow: hidden;
         @include responsive(mobile) {
