@@ -87,11 +87,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
 -   Myself Section
 
-<<<<<<< HEAD
     -   I tell the user a little bit about who I am, what I have done in the past, and what I would like to achieve in the future. All in the easily readable font of Source Sans Pro.
-=======
-    -   I tell the user a little bit about who I am, what I have done in the past, and what I would like to achieve in the future. All in the easily readable and delicate font of Source Sans Pro.
->>>>>>> 09b2bb9746cd760c140e35243d0622016c8dbd46
 
     -   A photograph of me which, when hovered over, will turn into a picture of my boat. The pictures will give the user a clearer picture of my persona.
 
