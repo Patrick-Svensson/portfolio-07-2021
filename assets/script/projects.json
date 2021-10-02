@@ -13,12 +13,12 @@
     {
         "projectNumber": 2,
         "heading": "Balsamiq",
-        "image": "../../assets/images/gaffers-dock.jpg",
-        "description": "Gaffer’s Dock, the very first website by my own design, was developed after only four weeks of studying HTML, CSS, and Bootstrap at Code Institute. Yet, it is fully responsive and functional throughout all devices. The project includes an extensive README.md file and wireframes made in Balsamiq.",
-        "link1": "https://github.com/Patrick-Svensson/gaffers-dock",
-        "link2": "https://patrick-svensson.github.io/gaffers-dock/",
-        "linkText1": "view source code",
-        "linkText2": "view website"
+        "image": "../../assets/images/balsamiq-bg.png",
+        "description": "Wireframes made with the low fidelity mockup tool Balsamiq. They were made for a static website frontend development project in the bootcamp at Code Institute.",
+        "link1": "../../assets/images/balsamiq-desktop.pdf",
+        "link2": "../../assets/images/balsamiq-mobile.pdf",
+        "linkText1": "desktop design",
+        "linkText2": "mobile design"
     },
 
     {
