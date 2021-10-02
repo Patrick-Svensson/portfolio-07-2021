@@ -24,10 +24,7 @@
             @include transform(translate(-50%, -50%));
             text-align: center;
             z-index: 2;
-
-            &--multi {
-                line-height: 3.5rem;
-            }
+            line-height: 3.5rem;
         }
 
         &-subheading {

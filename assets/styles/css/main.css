@@ -1787,8 +1787,6 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
-}
-.c-projects__img-heading--multi {
   line-height: 3.5rem;
 }
 .c-projects__img-subheading {
