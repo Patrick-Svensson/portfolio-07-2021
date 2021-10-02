@@ -1,28 +1,39 @@
 [
     {
         "projectNumber": 1,
-        "heading": "my portfolio",
-        "image": "../../assets/images/portfolio.jpg",
-        "description": "The project where I get the chance to show my qualities, interests, and a piece of my personality.\n\nTechnologies:\nHTML, CSS, Sass, JavaScript, Clamp, ITCSS & BEMIT - working with @use and @forward since @import is about to be deprecated. Wireframes made with Figma.",
-        "link1": "",
-        "link2": "https://github.com/Patrick-Svensson/portfolio-05-2021",
-        "linkText1": "",
-        "linkText2": "view source code"
+        "heading": "ux research study",
+        "image": "../../assets/images/research-bg.jpg",
+        "description": "A research study for an online whisky shop I conducted for the milestone project in the Udacity UX Design Course.",
+        "link1": "../../assets/images/research-plan.pdf",
+        "link2": "../../assets/images/research-report.pdf",
+        "linkText1": "research plan",
+        "linkText2": "research report"
     },
 
     {
         "projectNumber": 2,
-        "heading": "gaffer's dock",
-        "image": "../../assets/images/gaffers-dock.jpg",
-        "description": "Gaffer’s Dock, the very first website by my own design, was developed after only four weeks of studying HTML, CSS, and Bootstrap at Code Institute. Yet, it is fully responsive and functional throughout all devices. The project includes an extensive README.md file and wireframes made in Balsamiq.",
-        "link1": "https://github.com/Patrick-Svensson/gaffers-dock",
-        "link2": "https://patrick-svensson.github.io/gaffers-dock/",
-        "linkText1": "view source code",
-        "linkText2": "view website"
+        "heading": "balsamiq",
+        "image": "../../assets/images/balsamiq-bg.png",
+        "description": "Wireframes made with the low fidelity mockup tool Balsamiq. They were made for a static website frontend development project in the bootcamp at Code Institute.",
+        "link1": "../../assets/images/balsamiq-desktop.pdf",
+        "link2": "../../assets/images/balsamiq-mobile.pdf",
+        "linkText1": "desktop design",
+        "linkText2": "mobile design"
     },
 
     {
         "projectNumber": 3,
+        "heading": "figma",
+        "image": "../assets/images/portfolio.jpg",
+        "description": "I used Figma to create the desktop wireframes for this portfolio. The website itself and my GitHub pages demonstrate my skills in HTML, SCSS and JavaScript.",
+        "link1": "https://github.com/Patrick-Svensson",
+        "link2": "../../wireframes/portfolio-desktop.jpg",
+        "linkText1": "my GitHub pages",
+        "linkText2": "desktop design"
+    },
+
+    {
+        "projectNumber": 4,
         "heading": "paradox",
         "image": "../../assets/images/paradox.jpg",
         "description": "The little girl standing in the archway and the woman to the right in the background are the same person.\n\nWith Object Selection and the Lasso tool, I have isolated the background in the picture with the little girl, putting extra effort into the details in the iron gate. I then replaced the background with the picture of the two women to create the illusion of a paradox.",
@@ -30,16 +41,5 @@
         "link2": "../../assets/images/paradox-multi.jpg",
         "linkText1": "",
         "linkText2": "view image"
-    },
-
-    {
-        "projectNumber": 4,
-        "heading": "Cinema logo",
-        "image": "../assets/images/movie-theatre.png",
-        "description": "Figma design for logo, navbar and, footer for a fictitious movie theatre website. The design was created as a wireframe for a group assignment in the IT-Programming course at Sundsgården's Folk Highschool.\n\nIn the design process, I used tools as Auto layout, Arc Plugin and, Font Awesome. The Federo font, together with the earth-tone hues in the colour palette, was chosen to spark the feeling of the early 20th-century.",
-        "link1": "",
-        "link2": "../../assets/images/movie-theatre.png",
-        "linkText1": "",
-        "linkText2": "view design"
     }
 ]
