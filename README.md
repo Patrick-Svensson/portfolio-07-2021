@@ -81,7 +81,7 @@ The portfolio is intended to showcase a selection of my best work and to demonst
 
     -   Here I get the opportunity to show the various tools and techniques in my stack. Four portholes, each showing a filtered image of a project with a heading that names the main features of that particular project.
 
-    -   Clicking on one of the portholes will open a modal. It will present the project to the user and give the user the choice of viewing the source code on my GitHub page, viewing the project itself, or exit the modal by either clicking on the exit button or anywhere outside the modal box.
+    -   Clicking on one of the portholes will open a modal. It will display a presentation of the project and links that open the project for inspection. The user can exit the modal by either clicking on the exit button or anywhere outside the modal box.
 
     <br>
 
