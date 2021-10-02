@@ -1,18 +1,18 @@
 [
     {
         "projectNumber": 1,
-        "heading": "my portfolio",
-        "image": "../../assets/images/portfolio.jpg",
-        "description": "The project where I get the chance to show my qualities, interests, and a piece of my personality.\n\nTechnologies:\nHTML, CSS, Sass, JavaScript, Clamp, ITCSS & BEMIT - working with @use and @forward since @import is about to be deprecated. Wireframes made with Figma.",
-        "link1": "",
-        "link2": "https://github.com/Patrick-Svensson/portfolio-05-2021",
-        "linkText1": "",
-        "linkText2": "view source code"
+        "heading": "ux research study",
+        "image": "../../assets/images/research-bg.jpg",
+        "description": "A research study for an online whisky shop I conducted for the milestone project in the Udacity UX Design Course.",
+        "link1": "../../assets/images/research-plan.pdf",
+        "link2": "../../assets/images/research-report.pdf",
+        "linkText1": "research plan",
+        "linkText2": "research report"
     },
 
     {
         "projectNumber": 2,
-        "heading": "gaffer's dock",
+        "heading": "Balsamiq",
         "image": "../../assets/images/gaffers-dock.jpg",
         "description": "Gaffer’s Dock, the very first website by my own design, was developed after only four weeks of studying HTML, CSS, and Bootstrap at Code Institute. Yet, it is fully responsive and functional throughout all devices. The project includes an extensive README.md file and wireframes made in Balsamiq.",
         "link1": "https://github.com/Patrick-Svensson/gaffers-dock",
