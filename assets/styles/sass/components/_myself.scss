@@ -6,6 +6,13 @@
         &:last-of-type {
             margin-bottom: 3rem;
         }
+
+        &:first-of-type,
+        &:nth-of-type(4) {
+            @include responsive(mobile) {
+                display: none;
+            }
+        }
     }
 
     &__link {

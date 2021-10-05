@@ -1701,6 +1701,11 @@ img {
 .c-myself__text:last-of-type {
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 30em) {
+  .c-myself__text:first-of-type, .c-myself__text:nth-of-type(4) {
+    display: none;
+  }
+}
 .c-myself__link {
   font-size: inherit;
 }
