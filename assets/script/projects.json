@@ -25,7 +25,7 @@
         "projectNumber": 3,
         "heading": "figma",
         "image": "../assets/images/portfolio.jpg",
-        "description": "In parallel to my frontend studies, I have also taken the time to get proficient in Figma. I have learned how to make use of Figma's most powerful features, like the auto layout, create components or make prototypes, and I keep learning new features and shortcuts each time I use it. These are the wireframes for this portfolio. The website itself and my GitHub pages demonstrate the skills in HTML, SCSS and JavaScript I have picked up during a year of studies.",
+        "description": "In parallel to my frontend studies, I have also taken the time to get proficient in Figma. I have learned how to make use of Figma's most powerful features, like the auto layout, create components or make prototypes, and I keep learning new features and shortcuts each time I use it. \n\n These are the wireframes for this portfolio. The website itself and my GitHub pages demonstrate the skills in HTML, SCSS and JavaScript I have picked up from the two bootcamps.",
         "link1": "https://github.com/Patrick-Svensson",
         "link2": "../../wireframes/portfolio-desktop.jpg",
         "linkText1": "my GitHub pages",
