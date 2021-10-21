@@ -6,40 +6,40 @@
         "description": "By employing the guerrilla design tactics I learned from the Udacity UX Design Course, I quickly managed to plan and conduct this research study for an online whisky shop project in only a few days.",
         "link1": "../../assets/images/research-plan.pdf",
         "link2": "../../assets/images/research-report.pdf",
-        "linkText1": "research plan",
-        "linkText2": "research report"
+        "linkText1": "to research plan",
+        "linkText2": "to research report"
     },
 
     {
         "projectNumber": 2,
-        "heading": "balsamiq",
-        "image": "../../assets/images/balsamiq-bg.png",
+        "heading": "ideation",
+        "image": "../../assets/images/ideate.jpg",
         "description": "I find Balsamiq really easy to use. It is a brilliant tool to quickly create mockups for a design. These were made for my first static website frontend development project in the bootcamp at Code Institute.",
-        "link1": "../../assets/images/balsamiq-desktop.pdf",
-        "link2": "../../assets/images/balsamiq-mobile.pdf",
-        "linkText1": "desktop design",
-        "linkText2": "mobile design"
+        "link1": "",
+        "link2": "https://miro.com/app/board/o9J_lv9GfYY=/?invite_link_id=430624492844",
+        "linkText1": "",
+        "linkText2": "to miro board"
     },
 
     {
         "projectNumber": 3,
-        "heading": "figma",
-        "image": "../assets/images/portfolio.jpg",
+        "heading": "usability test",
+        "image": "../assets/images/user-test.png",
         "description": "In parallel to my frontend studies, I have also taken the time to get proficient in Figma. I have learned how to make use of Figma's most powerful features, like the auto layout, create components or make prototypes, and I keep learning new features and shortcuts each time I use it. \n\n These are the wireframes for this portfolio. The website itself and my GitHub pages demonstrate the skills in HTML, SCSS and JavaScript I have picked up from the two bootcamps.",
-        "link1": "https://github.com/Patrick-Svensson",
-        "link2": "../../wireframes/portfolio-desktop.jpg",
-        "linkText1": "my GitHub pages",
-        "linkText2": "desktop design"
+        "link1": "",
+        "link2": "https://miro.com/app/board/o9J_lov8624=/?invite_link_id=683011374359",
+        "linkText1": "",
+        "linkText2": "to miro board"
     },
 
     {
         "projectNumber": 4,
-        "heading": "paradox",
-        "image": "../../assets/images/paradox.jpg",
-        "description": "The little girl standing in the archway and the woman to the right in the background are the same person.\n\nWith Object Selection and the Lasso tool, I have isolated the background in the picture with the little girl, putting extra effort into the details in the iron gate. I then replaced the background with the picture of the two women to create the illusion of a paradox.",
+        "heading": "prototype",
+        "image": "../assets/images/prototype.png",
+        "description": "In parallel to my frontend studies, I have also taken the time to get proficient in Figma. I have learned how to make use of Figma's most powerful features, like the auto layout, create components or make prototypes, and I keep learning new features and shortcuts each time I use it. \n\n These are the wireframes for this portfolio. The website itself and my GitHub pages demonstrate the skills in HTML, SCSS and JavaScript I have picked up from the two bootcamps.",
         "link1": "",
-        "link2": "../../assets/images/paradox-multi.jpg",
+        "link2": "https://www.figma.com/proto/4UKvGWqPwc6gcklqpsIs4g/DramScape-Mockups?page-id=187%3A2045&node-id=187%3A2415&viewport=288%2C48%2C0.19&scaling=scale-down&starting-point-node-id=187%3A2415",
         "linkText1": "",
-        "linkText2": "view image"
+        "linkText2": "to lo-fi prototype"
     }
 ]
