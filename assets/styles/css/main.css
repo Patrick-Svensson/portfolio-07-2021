@@ -153,6 +153,16 @@ p {
   font-size: 1.8rem;
 }
 
+cite {
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 75em) {
+  cite {
+    padding: 2rem;
+  }
+}
+
 a {
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -1098,13 +1108,13 @@ img {
   }
 }
 .c-frame__text {
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 @media screen and (max-width: 75em) {
   .c-frame__text {
-    line-height: 1.1rem;
+    line-height: 1rem;
     padding: 2rem;
   }
 }
@@ -1470,14 +1480,6 @@ img {
   font-size: 15rem;
   padding-right: 3rem;
   opacity: 0.1;
-}
-.c-test-card__link {
-  font-size: 1.2rem;
-}
-@media screen and (max-width: 30em) {
-  .c-test-card__link {
-    font-size: 1rem;
-  }
 }
 
 .testimonialCards {

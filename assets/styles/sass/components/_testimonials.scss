@@ -93,13 +93,6 @@
             opacity: 0.1;
         }
     }
-
-    &__link {
-        font-size: 1.2rem;
-        @include responsive(mobile) {
-            font-size: 1rem;
-        }
-    }
 }
 
 .testimonialCards {

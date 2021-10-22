@@ -58,3 +58,11 @@ p {
     line-height: 2rem;
     font-size: 1.8rem;
 }
+
+cite {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    @include responsive(tablet-land) {
+        padding: 2rem;
+    }
+}
