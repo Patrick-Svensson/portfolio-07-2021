@@ -1466,6 +1466,8 @@ img {
 .c-test-card__quote {
   position: relative;
   font-style: italic;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
 }
 @media screen and (max-width: 30em) {
   .c-test-card__quote {

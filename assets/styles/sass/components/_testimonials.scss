@@ -79,6 +79,8 @@
     &__quote {
         position: relative;
         font-style: italic;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
         @include responsive(mobile) {
             font-size: 1rem;
             line-height: 1.6rem;
