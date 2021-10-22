@@ -3,18 +3,18 @@
         "projectNumber": 1,
         "heading": "ux research study",
         "image": "../../assets/images/research-bg.jpg",
-        "description": "By employing the guerrilla design tactics I learned from the Udacity UX Design Course, I quickly managed to plan and conduct this research study for an online whisky shop project in only a few days.",
+        "description": "By employing the guerrilla design tactics I learned from the Udacity UX Design Course, I quickly managed to plan and conduct this research study for an online whisky shop project.",
         "link1": "../../assets/images/research-plan.pdf",
         "link2": "../../assets/images/research-report.pdf",
-        "linkText1": "to research plan",
-        "linkText2": "to research report"
+        "linkText1": "research plan",
+        "linkText2": "research report"
     },
 
     {
         "projectNumber": 2,
-        "heading": "ideation",
+        "heading": "define & ideate",
         "image": "../../assets/images/ideate.jpg",
-        "description": "I find Balsamiq really easy to use. It is a brilliant tool to quickly create mockups for a design. These were made for my first static website frontend development project in the bootcamp at Code Institute.",
+        "description": "In Miro, I used the affinity mapping technique to define the design problems and opportunities. I then moved into ideation with sketching techniques like Crazy-8 and Rapid Ideation. Finally prioritizing ideas with Idea Mapping and Value vs Complexity Quadrant.",
         "link1": "",
         "link2": "https://miro.com/app/board/o9J_lv9GfYY=/?invite_link_id=430624492844",
         "linkText1": "",
@@ -23,23 +23,23 @@
 
     {
         "projectNumber": 3,
-        "heading": "usability test",
-        "image": "../assets/images/user-test.png",
-        "description": "In parallel to my frontend studies, I have also taken the time to get proficient in Figma. I have learned how to make use of Figma's most powerful features, like the auto layout, create components or make prototypes, and I keep learning new features and shortcuts each time I use it. \n\n These are the wireframes for this portfolio. The website itself and my GitHub pages demonstrate the skills in HTML, SCSS and JavaScript I have picked up from the two bootcamps.",
+        "heading": "prototype",
+        "image": "../assets/images/prototype.png",
+        "description": "A lo-fi feature prototype for the whisky shop project made with Figma. The user's goal is to add 3x Sample Vials of a product of choice to the shopping cart and close the confirmation pop-up box.\nUser journey:\n\n1. Enter the New In Stock page.\n2. Select a product.\n3. Navigate to Product Details page.\n4. Add 3 Sample Vials to the cart.\n5. Close the confirmation pop-up box.",
         "link1": "",
-        "link2": "https://miro.com/app/board/o9J_lov8624=/?invite_link_id=683011374359",
+        "link2": "https://www.figma.com/proto/4UKvGWqPwc6gcklqpsIs4g/DramScape-Mockups?page-id=187%3A2045&node-id=187%3A2415&viewport=288%2C48%2C0.19&scaling=scale-down&starting-point-node-id=187%3A2415",
         "linkText1": "",
-        "linkText2": "to miro board"
+        "linkText2": "to prototype"
     },
 
     {
         "projectNumber": 4,
-        "heading": "prototype",
-        "image": "../assets/images/prototype.png",
-        "description": "In parallel to my frontend studies, I have also taken the time to get proficient in Figma. I have learned how to make use of Figma's most powerful features, like the auto layout, create components or make prototypes, and I keep learning new features and shortcuts each time I use it. \n\n These are the wireframes for this portfolio. The website itself and my GitHub pages demonstrate the skills in HTML, SCSS and JavaScript I have picked up from the two bootcamps.",
+        "heading": "usability test",
+        "image": "../assets/images/user-test.png",
+        "description": "By conducting moderate usability studies with five respondents, I was able to identify the issues to the design and continue the design iterations with further ideation and prototyping.",
         "link1": "",
-        "link2": "https://www.figma.com/proto/4UKvGWqPwc6gcklqpsIs4g/DramScape-Mockups?page-id=187%3A2045&node-id=187%3A2415&viewport=288%2C48%2C0.19&scaling=scale-down&starting-point-node-id=187%3A2415",
+        "link2": "https://miro.com/app/board/o9J_lov8624=/?invite_link_id=683011374359",
         "linkText1": "",
-        "linkText2": "to lo-fi prototype"
+        "linkText2": "to miro board"
     }
 ]
