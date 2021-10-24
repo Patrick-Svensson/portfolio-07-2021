@@ -806,6 +806,11 @@ img {
   background: -o-linear-gradient(left, #a2bece 0%, #dce9ee 100%);
   background: linear-gradient(90deg, #a2bece 0%, #dce9ee 100%);
 }
+@media (min-width: 25em) and (max-height: 42em) {
+  .o-footer-wrapper {
+    display: none;
+  }
+}
 
 /* ****** Project Modal ****** */
 .o-modal-container {
