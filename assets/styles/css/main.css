@@ -1719,6 +1719,10 @@ img {
     height: 4rem;
   }
 }
+.c-icon__footer {
+  font-size: 1.6rem;
+  padding-right: 1rem;
+}
 
 .c-myself__text {
   padding-bottom: 1.2rem;
@@ -1848,12 +1852,15 @@ img {
 .c-footer-list__item {
   font-weight: 400;
   letter-spacing: 0.02rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   font-size: 1.6rem;
   list-style: circle;
 }
-.c-footer-list__item:not(:nth-of-type(3)) {
-  padding-bottom: 1rem;
+.c-footer-list__item:not(:nth-of-type(1)) {
+  padding-top: 2rem;
+}
+.c-footer-list__item--icons {
+  padding-top: 0.5rem;
 }
 
 .c-modal {
