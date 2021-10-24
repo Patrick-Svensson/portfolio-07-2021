@@ -1,0 +1,11 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.c-footer-list {
+    margin: 8rem;
+
+    @include responsive(mobile) {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}

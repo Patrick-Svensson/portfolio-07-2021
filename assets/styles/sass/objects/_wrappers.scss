@@ -292,6 +292,16 @@
     }
 }
 
+/* ****** Footer ****** */
+
+.o-footer-wrapper {
+    @include flex(row, nowrap, flex-start, center);
+    position: relative;
+    background: -webkit-gradient(linear, left top, right top, from($colourWater), to($colourCloud));
+    background: -o-linear-gradient(left, $colourWater 0%, $colourCloud 100%);
+    background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
+}
+
 /* ****** Project Modal ****** */
 
 .o-modal-container {
