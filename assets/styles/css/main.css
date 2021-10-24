@@ -153,17 +153,6 @@ p {
   font-size: 2rem;
 }
 
-li {
-  font-weight: 400;
-  letter-spacing: 0.02rem;
-  line-height: 2rem;
-  font-size: 1.6rem;
-  list-style: circle;
-}
-li:not(:nth-of-type(3)) {
-  padding-bottom: 1rem;
-}
-
 cite {
   font-size: 1.1rem;
   padding: 0 1rem;
@@ -1855,6 +1844,16 @@ img {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+}
+.c-footer-list__item {
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  list-style: circle;
+}
+.c-footer-list__item:not(:nth-of-type(3)) {
+  padding-bottom: 1rem;
 }
 
 .c-modal {
