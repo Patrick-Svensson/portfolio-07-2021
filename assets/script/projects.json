@@ -25,9 +25,9 @@
         "projectNumber": 3,
         "heading": "prototype",
         "image": "../assets/images/prototype.png",
-        "description": "A lo-fi feature prototype for the whisky shop project made with Figma. The user's goal is to add 3x Sample Vials of a product of choice to the shopping cart and close the confirmation pop-up box.\n\nUser journey:\n1. Enter the New In Stock page.\n2. Select a product.\n3. Navigate to Product Details page.\n4. Add 3 Sample Vials to the cart.\n5. Close the confirmation pop-up box.",
+        "description": "A lo-fi feature prototype for the whisky shop project made with Figma. The user's goal is to add a Sample Vial of a product of choice to the shopping cart and close the confirmation pop-up box.\n\nUser journey:\n1. Enter the New Temptations page.\n2. Select a product.\n3. Navigate to Product Details page.\n4. Add a Sample Vial to the cart.\n5. Close the confirmation pop-up box.",
         "link1": "",
-        "link2": "https://www.figma.com/proto/4UKvGWqPwc6gcklqpsIs4g/DramScape-Mockups?page-id=187%3A2045&node-id=187%3A2415&viewport=288%2C48%2C0.19&scaling=scale-down&starting-point-node-id=187%3A2415",
+        "link2": "https://www.figma.com/proto/4UKvGWqPwc6gcklqpsIs4g/DramScape-Mockups?page-id=154%3A6858&node-id=154%3A6868&viewport=288%2C48%2C0.26&scaling=scale-down&starting-point-node-id=269%3A4105",
         "linkText1": "",
         "linkText2": "to prototype"
     },
