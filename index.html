@@ -4,17 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Portfolio by UX/UI Designer and FrontEnd Developer Patrick Svensson." />
-        <title>Front-End Developer Portfolio</title>
+        <meta name="description" content="Portfolio by UX/UI Designer Patrick Svensson." />
+        <title>Patrick Svensson UX/UI Designer Portfolio</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Spinnaker&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&family=Spinnaker&display=swap"
             rel="stylesheet"
         />
         <link
             rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -23,19 +23,13 @@
     </head>
     <body class="page">
         <!-- ****** Header Background Video ****** -->
-        <video playsinline autoplay muted loop poster="assets/images/portfolio-waves.png" class="o-bg-video">
-            <source src="assets/videos/portfolio-waves.mp4" />
+        <video playsinline autoplay muted loop poster="assets/images/landing.jpg" class="o-bg-video">
+            <source src="assets/videos/portfolio-soft-waves.mp4" />
         </video>
 
         <!-- ****** Header ****** -->
         <header class="o-header-wrapper">
-            <svg class="c-logo--mobile-land" aria-hidden="true">
-                <use xlink:href="assets/images/personal-logo.svg#personalLogo"></use>
-            </svg>
-            <h1 class="c-header--mobile-land">
-                To view content,<br />
-                please turn the device to portrait mode!
-            </h1>
+            <h1 class="c-header--mobile-land">To view content, please turn the device to portrait mode!</h1>
             <div class="o-header-bg-wrapper">
                 <div class="o-header-drawing-bg">
                     <svg class="c-logo" aria-hidden="true">
@@ -44,134 +38,169 @@
                     <div class="o-header-text-container">
                         <h1 class="c-header__heading">
                             Hi there,<br />I'm Patrick
-                            <span class="c-header__heading--small">From boatbuilder to</span>
-                            <span class="c-header__heading--medium">Front-End Developer,<br />UX/UI Designer</span>
-                            <span class="c-header__heading--small">Let me share a little bit of &#8230;</span>
+                            <span class="c-header__heading--small">My portfolio as a junior</span>
+                            <span class="c-header__heading--medium">UX/UI Designer</span>
                         </h1>
+                        <h2 class="c-header__text">Let me share a little bit of &#8230;</h2>
                     </div>
                     <div class="o-navbar-links-wrapper">
                         <ul class="o-navbar-links-container">
                             <li class="c-navbar__links u-links">
-                                <a class="c-navbar__links-item" href="#my-projects">&#8230; my projects</a>
+                                <a class="c-navbar__links-item" href="#my-projects">my skills</a>
                             </li>
                             <li class="c-navbar__links u-links">
-                                <a class="c-navbar__links-item" href="#myself">&#8230; myself</a>
+                                <a class="c-navbar__links-item" href="#myself">myself</a>
                             </li>
                             <li class="c-navbar__links u-links">
-                                <a class="c-navbar__links-item" href="#contact">&#8230; how to reach me</a>
+                                <a class="c-navbar__links-item" href="#contact">my reachability</a>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="o-img-container o-header__img-container">
+                    <img class="o-img__header" src="assets/images/landing-portrait.jpg" alt="Portait of Patrick Svensson" />
                 </div>
                 <div class="c-header-frame--top-left"></div>
                 <div class="c-header-frame--top"></div>
                 <div class="c-header-frame--bottom-right"></div>
                 <div class="c-header-frame--bottom"></div>
             </div>
+            <div class="o-scroll-nav-wrapper">
+                <!-- ****** Scroll Down Button ****** -->
+                <div class="c-scroll-symbol-container c-scroll-symbol-container--down u-btn--hover">
+                    <a
+                        href="#testimonials"
+                        class="c-scroll__link c-scroll__symbol u-scroll__symbol"
+                        aria-label="Scroll to testimonials"
+                        >&#65086;</a
+                    >
+                </div>
+                <p class="c-scroll__text c-scroll__text--down">scroll to testimonials &#8230;</p>
+            </div>
         </header>
 
-        <!-- ****** Scroll Down Button ****** -->
-        <div class="c-scroll-symbol-container c-scroll-symbol-container--down">
-            <a href="#testamonials" class="c-scroll-link c-scroll-symbol u-scroll-symbol">&#65086;</a>
-        </div>
-
         <!-- ****** Up-to-Top Button ****** -->
-        <div class="c-scroll-symbol-container c-scroll-symbol-container--up">
-            <a href="#" class="c-scroll-link c-scroll-symbol">&#65085;</a>
+        <div class="c-scroll-symbol-container c-scroll-symbol-container--up u-btn--hover">
+            <a href="#" class="c-scroll__link c-scroll__symbol" aria-label="Scroll to top">&#65085;</a>
         </div>
+        <p class="c-scroll__text c-scroll__text--up">up to top!</p>
 
         <main class="o-main-wrapper">
-            <!-- ****** Testamonials ****** -->
-            <section class="o-test-wrapper" id="testamonials">
+            <!-- ****** Testimonials ****** -->
+            <section class="o-test-wrapper" id="testimonials">
                 <div class="o-test-bg">
-                    <!-- ****** Card 1 ****** -->
+                    <h2 class="c-test__heading u-sr-only">testamonials</h2>
                     <div class="c-test-card">
-                        <div class="c-test-card__content-container u-test--fade testamonialCards">
+                        <!-- ****** Card 1 ****** -->
+                        <figure class="c-test-card__content-container u-fade-in testimonialCards">
                             <div class="c-test-card__content">
-                                <div class="o-img-wrapper c-test-card__img-container">
+                                <div class="c-test-card__img-container">
                                     <img
-                                        src="assets/images/erica-zandelin.png"
-                                        alt="Erica Zandelin, front-end developer student at Sundsgårdens Folk High School"
-                                    />
-                                </div>
-                                <div class="c-test-card__qoute-container">
-                                    <p class="c-test-card__quote">
-                                        “ Wiiiickedly great work! I really hope you work as a team leader / manager one day, you
-                                        would have fit really well as that! It has been super fun, thanks for all the help and
-                                        patience and for a great job! We might work together again sometime! ”
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="c-frame-text-holder c-frame-text-holder__test">
-                                <div class="c-frame-text-holder--top">
-                                    <a
-                                        class="c-frame__text c-test-card__link u-links u-links--frame"
-                                        href="http://www.ericazandelin.com/"
-                                        >- Erika Zandelin</a
-                                    >
-                                </div>
-                                <div class="c-frame-text-holder--bottom">
-                                    <h5 class="c-frame__text">IT - Student, <span>Sundsgården’s Folk High School</span></h5>
-                                </div>
-                            </div>
-                            <div class="c-frame c-frame__test c-frame--top-left"></div>
-                            <div class="c-frame c-frame__test c-frame--top"></div>
-                            <div class="c-frame c-frame__test c-frame--bottom-right"></div>
-                            <div class="c-frame c-frame__test c-frame--bottom"></div>
-                        </div>
-
-                        <!-- ****** Card 2 ****** -->
-                        <div class="c-test-card__content-container u-test--fade testamonialCards">
-                            <div class="c-test-card__content">
-                                <div class="o-img-wrapper c-test-card__img-container">
-                                    <img
-                                        src="assets/images/ottilia-lindell.png"
+                                        src="assets/images/ottilia-lindell.jpg"
                                         alt="Ottilia Lindell, front-end developer student at Sundsgårdens Folk High School"
                                     />
                                 </div>
-                                <div class="c-test-card__qoute-container">
+                                <blockquote
+                                    cite="https://sundsgarden.se/utbildningar-kurser/langa-kurser/yrkesutbildningar/it-som-framtidsyrke/"
+                                    class="c-test-card__qoute-container"
+                                >
                                     <p class="c-test-card__quote">
-                                        “ I have thought so many times how happy I am that I ended up in a group with you. You
-                                        share all your knowledge, are pedagogical, put the group in focus and others before
-                                        yourself and your projects. Those who hire you will really get a star in their team! ”
+                                        <span class="c-test-card__quote--mark">&#10077;</span>I have thought so many times how
+                                        happy I am that I ended up in a group with you. You share all your knowledge, are
+                                        pedagogical, put the group in focus and others before yourself and your projects. Those
+                                        who hire you will really get a star in their team!
                                     </p>
-                                </div>
+                                </blockquote>
                             </div>
-                            <div class="c-frame-text-holder c-frame-text-holder__test">
+                            <figcaption class="c-frame-text-holder c-frame-text-holder__test">
                                 <div class="c-frame-text-holder--top">
                                     <a
-                                        class="c-frame__text c-test-card__link u-links u-links--frame"
+                                        class="c-frame__text u-links u-links--frame"
                                         href="https://ottilialindell.se/"
+                                        aria-label="Ottilia Lindell's portfolio"
+                                        title="Ottilia Lindell's portfolio"
+                                        target="_blank"
+                                        rel="noopener"
                                         >- Ottilia Lindell</a
                                     >
                                 </div>
                                 <div class="c-frame-text-holder--bottom">
-                                    <h5 class="c-frame__text">IT - Student, <span>Sundsgården’s Folk High School</span></h5>
+                                    <cite>
+                                        IT - Student, <span class="c-frame__sub-text">Sundsgården’s Folk High School</span>
+                                    </cite>
                                 </div>
-                            </div>
+                            </figcaption>
                             <div class="c-frame c-frame__test c-frame--top-left"></div>
                             <div class="c-frame c-frame__test c-frame--top"></div>
                             <div class="c-frame c-frame__test c-frame--bottom-right"></div>
                             <div class="c-frame c-frame__test c-frame--bottom"></div>
-                        </div>
+                        </figure>
+
+                        <!-- ****** Card 2 ****** -->
+                        <figure class="c-test-card__content-container u-fade-in testimonialCards">
+                            <div class="c-test-card__content">
+                                <div class="c-test-card__img-container">
+                                    <img
+                                        src="assets/images/erica-zandelin.jpg"
+                                        alt="Erica Zandelin, front-end developer student at Sundsgårdens Folk High School"
+                                    />
+                                </div>
+                                <blockquote
+                                    cite="https://sundsgarden.se/utbildningar-kurser/langa-kurser/yrkesutbildningar/it-som-framtidsyrke/"
+                                    class="c-test-card__qoute-container"
+                                >
+                                    <p class="c-test-card__quote">
+                                        <span class="c-test-card__quote--mark">&#10077;</span>Wiiiickedly great work! I really
+                                        hope you work as a team leader / manager one day, you would have fit really well as that!
+                                        It has been super fun, thanks for all the help and patience and for a great job!
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <figcaption class="c-frame-text-holder c-frame-text-holder__test">
+                                <div class="c-frame-text-holder--top">
+                                    <a
+                                        class="c-frame__text u-links u-links--frame"
+                                        href="http://www.ericazandelin.com/"
+                                        aria-label="Erica Zandelin's portfolio"
+                                        title="Erica Zandelin's portfolio"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >- Erika Zandelin</a
+                                    >
+                                </div>
+                                <div class="c-frame-text-holder--bottom">
+                                    <cite>
+                                        IT - Student, <span class="c-frame__sub-text">Sundsgården’s Folk High School</span>
+                                    </cite>
+                                </div>
+                            </figcaption>
+                            <div class="c-frame c-frame__test c-frame--top-left"></div>
+                            <div class="c-frame c-frame__test c-frame--top"></div>
+                            <div class="c-frame c-frame__test c-frame--bottom-right"></div>
+                            <div class="c-frame c-frame__test c-frame--bottom"></div>
+                        </figure>
                     </div>
 
                     <!-- ****** Carousel Dots ****** -->
                     <div class="o-test-carousel__control-panel">
-                        <a
-                            class="c-test-carousel__control-button c-test-carousel__control-button--left"
+                        <button
+                            type="button"
+                            class="c-test-carousel__control-button c-test-carousel__control-button--left u-btn--hover"
                             onclick="slideTestCards(-1)"
-                            >&#12298;</a
                         >
+                            &#12298;
+                        </button>
                         <div class="c-test-carousel__dot-container">
                             <div class="c-test-carousel__dot"></div>
                             <div class="c-test-carousel__dot"></div>
                         </div>
-                        <a
-                            class="c-test-carousel__control-button c-test-carousel__control-button--right"
+                        <button
+                            type="button"
+                            class="c-test-carousel__control-button c-test-carousel__control-button--right u-btn--hover"
                             onclick="slideTestCards(1)"
-                            >&#12299;</a
                         >
+                            &#12299;
+                        </button>
                     </div>
                 </div>
             </section>
@@ -183,64 +212,51 @@
                         <div class="o-projects__container">
                             <div class="o-projects__group-container">
                                 <div class="o-projects__subgroup-container">
-                                    <div class="c-projects__img-container" id="1" onClick="projectImgId(this.id)">
+                                    <div
+                                        class="c-projects__img-container u-projects--hover"
+                                        id="1"
+                                        onClick="projectImgId(this.id)"
+                                    >
                                         <div class="c-projects__img-overlay c-projects__img-overlay--dark"></div>
-                                        <img class="c-projects__img" src="../../assets/images/portfolio.png" alt="" />
-                                        <h3 class="c-projects__img-heading c-projects__img-heading--multi">
-                                            <span class="c-projects__img-subheading">sass</span><br />itcss<br /><span
-                                                class="c-projects__img-subheading"
-                                                >javascript</span
-                                            >
-                                        </h3>
+                                        <img
+                                            class="c-projects__img"
+                                            src="../../assets/images/research-bg.jpg"
+                                            alt="Research study"
+                                        />
+                                        <h3 class="c-projects__img-heading">empathise</h3>
                                     </div>
-                                    <div class="c-projects__img-container" id="2" onClick="projectImgId(this.id)">
-                                        <div class="c-projects__img-overlay c-projects__img-overlay--light"></div>
-                                        <img class="c-projects__img" src="../../assets/images/glasbrukit.png" alt="" />
-                                        <h3 class="c-projects__img-heading c-projects__img-heading--react">
-                                            git<br /><span class="c-projects__img-subheading">remote</span>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="o-projects__subgroup-container">
-                                <div class="c-projects__img-container" id="3" onClick="projectImgId(this.id)">
-                                    <div class="c-projects__img-overlay c-projects__img-overlay--medium"></div>
-                                    <img class="c-projects__img" src="../../assets/images/sean-connery-quiz.png" alt="" />
-                                    <h3 class="c-projects__img-heading">java<br />script</h3>
-                                </div>
-                                <div class="c-projects__img-container" id="4" onClick="projectImgId(this.id)">
-                                    <div class="c-projects__img-overlay c-projects__img-overlay--light"></div>
-                                    <img class="c-projects__img" src="../../assets/images/gaffers-dock.png" alt="" />
-                                    <h3 class="c-projects__img-heading c-projects__img-heading--bootstrap">boot<br />strap</h3>
-                                </div>
-                            </div>
-                            <div class="o-projects__group-container">
-                                <div class="o-projects__subgroup-container">
-                                    <div class="c-projects__img-container" id="5" onClick="projectImgId(this.id)">
+                                    <div
+                                        class="c-projects__img-container u-projects--hover"
+                                        id="2"
+                                        onClick="projectImgId(this.id)"
+                                    >
                                         <div class="c-projects__img-overlay c-projects__img-overlay--medium"></div>
-                                        <img class="c-projects__img" src="../../assets/images/bhromaon.png" alt="" />
-                                        <h3 class="c-projects__img-heading c-projects__img-heading--multi">
-                                            sass<br /><span class="c-projects__img-subheading">bem</span>
-                                        </h3>
-                                    </div>
-                                    <div class="c-projects__img-container" id="6" onClick="projectImgId(this.id)">
-                                        <div class="c-projects__img-overlay c-projects__img-overlay--light"></div>
-                                        <img class="c-projects__img" src="../../assets/images/emoji-mischief.png" alt="" />
-                                        <h3 class="c-projects__img-heading c-projects__img-heading--multi">
-                                            svg<br /><span class="c-projects__img-subheading">xml</span>
-                                        </h3>
+                                        <img
+                                            class="c-projects__img"
+                                            src="../../assets/images/ideate.jpg"
+                                            alt="Balsamiq mockups"
+                                        />
+                                        <h3 class="c-projects__img-heading">define<br />&#38;<br />ideate</h3>
                                     </div>
                                 </div>
                                 <div class="o-projects__subgroup-container">
-                                    <div class="c-projects__img-container" id="7" onClick="projectImgId(this.id)">
-                                        <div class="c-projects__img-overlay c-projects__img-overlay--medium"></div>
-                                        <img class="c-projects__img" src="../../assets/images/paradox.png" alt="" />
-                                        <h3 class="c-projects__img-heading">photo<br />shop</h3>
-                                    </div>
-                                    <div class="c-projects__img-container" id="8" onClick="projectImgId(this.id)">
+                                    <div
+                                        class="c-projects__img-container u-projects--hover"
+                                        id="3"
+                                        onClick="projectImgId(this.id)"
+                                    >
                                         <div class="c-projects__img-overlay c-projects__img-overlay--dark"></div>
-                                        <img class="c-projects__img" src="../../assets/images/movie-theatre.png" alt="" />
-                                        <h3 class="c-projects__img-heading c-projects__img-heading--figma">figma</h3>
+                                        <img class="c-projects__img" src="../../assets/images/prototype.png" alt="Cinema Logo" />
+                                        <h3 class="c-projects__img-heading">prototype</h3>
+                                    </div>
+                                    <div
+                                        class="c-projects__img-container u-projects--hover"
+                                        id="4"
+                                        onClick="projectImgId(this.id)"
+                                    >
+                                        <div class="c-projects__img-overlay c-projects__img-overlay--dark"></div>
+                                        <img class="c-projects__img" src="../../assets/images/user-test.png" alt="Cinema Logo" />
+                                        <h3 class="c-projects__img-heading">test</h3>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +266,7 @@
                         <div class="c-frame c-frame__projects--bottom-right"></div>
                         <div class="c-frame c-frame__projects--bottom"></div>
                         <div class="c-frame-text-holder c-frame-text-holder--left c-frame-text-holder-container">
-                            <h2 class="c-frame__text">&#8230; my projects</h2>
+                            <h2>my skills</h2>
                         </div>
                     </div>
                 </div>
@@ -262,51 +278,55 @@
                     <div class="o-frame-container o-myself-frame-container">
                         <div class="o-myself-content-wrapper">
                             <div class="o-myself-content-container">
-                                <div class="o-img-wrapper o-myself__img-container">
-                                    <img class="o-img__myself" src="assets/images/myself-bw.png" alt="Myself" />
+                                <div class="o-img-container o-myself__img-container">
                                     <img
-                                        class="o-img__flicka"
-                                        src="assets/images/flicka.png"
+                                        class="o-img__myself u-fade-in"
+                                        src="assets/images/myself-bw.jpg"
+                                        alt="Portrait of Patrick Svensson"
+                                    />
+                                    <img
+                                        class="o-img__flicka u-fade-in"
+                                        src="assets/images/flicka.jpg"
                                         alt="My sailing boat Flicka in sunrise"
                                     />
                                 </div>
                                 <div class="o-myself__text-wrapper">
                                     <p class="c-myself__text">
-                                        <span class="c-text--smallCaps">Since I am an aesthetic and service-minded person </span>
-                                        with strong visual skills, I have taken a special interest in UX/UI design with insights
-                                        into user tests, A/B tests, and design thinking. I collaborate easily, always with an open
-                                        mind that constantly wants to learn more and find new ways to improve my work.
+                                        <span class="c-text--smallCaps">At fifty-one, </span>
+                                        I switched my career into tech, left the boatbuilding industry to find a new path in life.
                                     </p>
                                     <p class="c-myself__text">
-                                        At fifty-one, I switched my career into tech. To keep the osteoarthritis in my hands at
-                                        bay, I had to leave the boatbuilding industry behind and find a new path in life.
+                                        My name is Patrick Svensson and I chose frontend development and UX/UI design, where I can
+                                        still use my creativity and analytic skills to seek clever solutions to problems, but in a
+                                        digital context. It is something I have enjoyed doing as a boatbuilder as well as a bar
+                                        manager.
                                     </p>
                                     <p class="c-myself__text">
-                                        I chose frontend development and UX/UI design, where I can still use my creativity and
-                                        analytic skills to seek clever solutions to problems, but in a digital context. It is
-                                        something I have enjoyed doing as a boatbuilder as well as a bar manager.
+                                        I am an empathetic and aesthetic person, and therefore, found a great passion for UX/UI
+                                        design. My ambition is to work with UCD and Design Thinking, conduct UX research, run user
+                                        tests, create mockups and prototypes. My work experiences have given me a keen eye for
+                                        details, and I am determined to keep learning about layout, branding, typography, colour
+                                        palettes, interface components and more.
                                     </p>
                                     <p class="c-myself__text">
-                                        Many years of work experience have taught me to interpret and understand the needs of the
-                                        customer, take responsibility for my work, and given me an outstandingly high work ethic.
-                                    </p>
-                                    <p class="c-myself__text">
-                                        This career change is a thrilling challenge. It also presents a great opportunity for me
-                                        to gain new knowledge, experience, and grow as a person.
+                                        The successful management- and team roles in my career (read more on my
+                                        <a
+                                            class="c-myself__link u-link--myself"
+                                            href="https://www.linkedin.com/in/patrick-svensson-cmist33/"
+                                            aria-label="Find me on LinkedIn"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >LinkedIn page</a
+                                        >) show that I take responsibility, am capable of working independently, yet collaborate
+                                        easily, with an open mind that constantly wants to learn more and find new ways to improve
+                                        my work. My communication skills are well suited for holding presentations and workshops.
                                     </p>
                                     <p class="c-myself__text">
                                         I live in a traditional sailing boat, moored up on the east coast of Sweden not far from
-                                        Stockholm, where I enjoy sailing and cooking delicious vegetarian food together with my
-                                        partner Helena and the ship’s cat Mina.
+                                        Stockholm. Here, I enjoy the Baltic Sea, and cooking delicious vegetarian food together
+                                        with my partner Helena and the ship’s cat Mina.
                                     </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="o-myself__link-wrapper">
-                            <div class="c-icon-base u-icon-base">
-                                <a href="https://www.linkedin.com/in/patrick-svensson-cmist33/">
-                                    <i class="fab fa-linkedin-in c-icon c-icon--linkedin u-icon--myself"></i>
-                                </a>
                             </div>
                         </div>
                         <div class="c-frame c-frame--top-left"></div>
@@ -314,12 +334,12 @@
                         <div class="c-frame c-frame--bottom-right"></div>
                         <div class="c-frame c-frame--bottom"></div>
                         <div class="c-frame-text-holder c-frame-text-holder--right c-frame-text-holder-container">
-                            <h2 class="c-frame__text">... myself</h2>
+                            <h2>myself</h2>
                         </div>
                     </div>
                 </div>
                 <!-- ****** Waves (Copepen by Daniel Österman @Goodkatz) ****** -->
-                <div class="o-waves-wrapper">
+                <div class="o-waves-wrapper" id="contact">
                     <div>
                         <svg
                             class="c-waves"
@@ -347,54 +367,90 @@
             </section>
 
             <!-- ****** Contact ****** -->
-            <section class="o-contact-wrapper" id="contact">
+            <section class="o-contact-wrapper">
                 <div class="o-contact-bg"></div>
                 <div class="o-contact-content-wrapper">
-                    <h2>&#8230; how to reach me</h2>
+                    <h2 class="c-contact__heading">my reachability</h2>
                     <div class="o-contact__links-wrapper">
                         <div class="o-contact__link-container">
-                            <div class="c-icon-base u-icon-base">
-                                <a href="#">
-                                    <i class="far fa-envelope c-icon u-icon u-icon--contact"></i>
-                                </a>
+                            <div class="c-icon-base">
+                                <i class="far fa-envelope c-icon" aria-hidden="true"></i>
                             </div>
-                            <a class="c-contact__links u-links" href="#">ps.digitalepost@gmail.com</a>
+                            <p class="c-contact__address c-contact__address--email">reachme@patrick.eu.com</p>
                         </div>
                         <div class="o-contact__link-container">
                             <div class="c-icon-base u-icon-base">
-                                <a href="https://www.linkedin.com/in/patrick-svensson-cmist33/">
-                                    <i class="fab fa-linkedin-in c-icon c-icon--linkedin u-icon u-icon--contact"></i>
+                                <a href="https://www.linkedin.com/in/patrick-svensson-cmist33/" aria-label="Find me on LinkedIn">
+                                    <i
+                                        class="fab fa-linkedin-in c-icon c-icon--linkedin u-icon u-icon--contact"
+                                        aria-hidden="true"
+                                        title="LinkedIn"
+                                        target="_blank"
+                                        rel="noopener"
+                                    ></i>
                                 </a>
                             </div>
-                            <a class="c-contact__links u-links" href="https://www.linkedin.com/in/patrick-svensson-cmist33/"
+                            <a
+                                class="c-contact__address u-links"
+                                href="https://www.linkedin.com/in/patrick-svensson-cmist33/"
+                                target="_blank"
+                                rel="noopener"
                                 >linkedin.com/in/patrick-svensson-cmist33</a
                             >
                         </div>
                     </div>
-                    <h4>Together we can reach even higher!</h4>
+                    <h3 class="c-contact__sub-text">Let's make progress together!</h3>
                 </div>
             </section>
         </main>
+
+        <!-- ***** Footer ***** -->
+        <footer>
+            <div class="o-footer-wrapper">
+                <ul class="c-footer-list">
+                    <li class="c-footer-list__item">This portfolio was created by the author with</li>
+                    <li class="c-footer-list__item--icons">
+                        HTML&nbsp;
+                        <i class="c-icon__footer fab fa-html5" aria-hidden="true"></i>&nbsp; CSS&nbsp;
+                        <i class="c-icon__footer fab fa-css3-alt" aria-hidden="true"></i>&nbsp; SCSS&nbsp;
+                        <i class="c-icon__footer fab fa-sass" aria-hidden="true"></i>&nbsp; JavaScript&nbsp;
+                        <i class="c-icon__footer fab fa-js" aria-hidden="true"></i>
+                    </li>
+                    <li class="c-footer-list__item">Images derive from the author's private image gallery.</li>
+                    <li class="c-footer-list__item">
+                        The landing background is an image of a hand-drawn sail plan with lateral resistance calculations made by
+                        the author for his gaff-rigged pilot cutter.
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
         <!-- ***** Modal ***** -->
         <div class="o-modal-container">
             <div class="c-modal modal-7">
                 <div class="c-modal__content-wrapper">
                     <div class="c-modal__heading-container">
-                        <h2 class="c-modal__heading"></h2>
+                        <h2 class="c-modal__heading">#</h2>
                         <div class="c-modal__X-wrapper">
                             <i class="fas fa-times c-modal__X"></i>
                         </div>
                     </div>
                     <div class="c-modal__main-content">
-                        <div class="c-modal__img-container">
-                            <img class="c-modal__img" src="" />
+                        <div class="o-img-container">
+                            <img class="c-modal__img" src="#" alt="Project" />
                         </div>
                         <div class="c-modal__text-box">
                             <p class="c-modal__text"></p>
                         </div>
                         <div class="c-modal__link-container">
-                            <a href="#" class="modalLink1 c-modal__link-text u-links"></a>
-                            <a href="#" class="modalLink2 c-modal__link-text u-links"></a>
+                            <a
+                                href="#"
+                                class="modalLink1 c-modal__link-text c-modal__link-text--left u-links"
+                                title="View source code"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                            <a href="#" class="modalLink2 c-modal__link-text u-links" title="View project" target="_blank"></a>
                         </div>
                     </div>
                 </div>
