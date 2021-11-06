@@ -5,20 +5,30 @@
     font-size: 4rem;
     color: $colourText;
     padding: 1rem;
+    @include responsive(mobile) {
+        font-size: 3rem;
+    }
 
     &--linkedin {
         margin-top: 0.5rem;
     }
 
     &-base {
-        width: 5rem;
-        height: 5rem;
+        @include wrapper-size(5rem, 5rem);
         border-radius: 6%;
-        background-color: transperent;
         @include flex(row, nowrap, center, center);
         @include transform(rotate(-22deg));
         border: 0.1rem solid $colourText;
+        -webkit-box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
         box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourDarkShadow;
         position: relative;
+        @include responsive(mobile) {
+            @include wrapper-size(4rem, 4rem);
+        }
+    }
+
+    &__footer {
+        font-size: 1.6rem;
+        padding-right: 1rem;
     }
 }

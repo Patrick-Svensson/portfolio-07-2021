@@ -1,4 +1,46 @@
-.c-contact__links {
-    margin: 2rem 0 0 4rem;
-    z-index: 1;
+@use "../tools" as *;
+
+.c-contact {
+    &__address {
+        margin-left: 3rem;
+        padding: 1.5rem 0;
+        letter-spacing: 2px;
+        z-index: 1;
+        font-size: 2.4rem;
+        font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
+        @include responsive(tablet-port) {
+            font-size: 1.8rem;
+            font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
+        }
+
+        @include responsive(mobile) {
+            font-size: 1.2rem;
+            font-size: clamp(1.2rem, 0.8571rem + 1.0714vw, 2.4rem);
+            margin-left: 2rem;
+            letter-spacing: 1px;
+        }
+
+        &--email {
+            font-weight: 700;
+        }
+    }
+
+    &__heading {
+        padding: 0;
+    }
+
+    &__sub-text {
+        letter-spacing: 0.08rem;
+        font-size: 2.4rem;
+        font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+        @include responsive(tablet-port) {
+            font-size: 1.8rem;
+            font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+        }
+
+        @include responsive(mobile) {
+            font-size: 1.4rem;
+            font-size: clamp(1.4rem, 1.0571rem + 1.0714vw, 2.6rem);
+        }
+    }
 }

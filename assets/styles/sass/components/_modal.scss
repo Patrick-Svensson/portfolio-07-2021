@@ -5,6 +5,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: $colourProjectCardText;
     @include wrapper-size(60vw, 70vh);
@@ -16,42 +18,39 @@
     }
 
     @include responsive(mobile) {
-        height: 85vh;
+        @include wrapper-size(100vw, 100vh);
     }
 
     &__content-wrapper {
         @include wrapper-size(85%, 85%);
         @include flex(column, nowrap, space-around, center);
+        @include responsive(mobile) {
+            @include wrapper-size(90%, 95%);
+        }
     }
 
     &__heading-container {
         width: 100%;
         align-self: flex-end;
         @include flex(row, wrap-reverse, space-between, center);
-        gap: 3rem;
     }
 
     &__heading {
         color: $colourBgLight;
         text-transform: uppercase;
-        letter-spacing: 0.8rem;
+        letter-spacing: 0.4rem;
     }
 
     &__main-content {
         @include wrapper-size(100%, 70%);
         @include flex(row, wrap, space-between, center);
-        gap: 3rem;
         @include responsive(tablet-port) {
             @include flex(column, nowrap, space-between, center);
         }
     }
 
-    &__img-container {
-        width: clamp(14rem, 10rem + 12.5vw, 28rem);
-        height: clamp(14rem, 10rem + 12.5vw, 28rem);
-    }
-
     &__img {
+        -webkit-box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
         box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
     }
 
@@ -60,11 +59,12 @@
         border-radius: 0.5rem;
         border: 0.1rem solid $colourText;
         background-color: $colourBgLight;
+        -webkit-box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
         box-shadow: 0.2rem 0.3rem 0.3rem 0 $colourLightShadow;
         overflow: scroll;
         padding: 3rem;
         @include responsive(tablet-port) {
-            width: 100%;
+            @include wrapper-size(100%, 40%);
         }
     }
 
@@ -73,6 +73,7 @@
         cursor: pointer;
         border-radius: 0.25rem;
         border: 1px solid $colourBgLight;
+        margin-left: 3rem;
 
         &:hover {
             background-color: $colourBgLight;
@@ -96,18 +97,24 @@
     &__link-container {
         @include wrapper-size(100%, 15%);
         @include flex(row, wrap, flex-end, center);
-        gap: 5rem;
         @include responsive(tablet-port) {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
-        }
-
-        @include responsive(mobile) {
-            gap: 2rem;
+            margin-top: 3rem;
         }
     }
 
     &__link-text {
         color: $colourBgLight;
         letter-spacing: 0.2rem;
+        padding: 1.5rem 0;
+
+        &--left {
+            padding-right: 5rem;
+            @include responsive(mobile) {
+                padding-right: 2rem;
+            }
+        }
     }
 }

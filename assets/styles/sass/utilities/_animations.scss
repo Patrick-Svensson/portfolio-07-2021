@@ -77,11 +77,11 @@
 
 /* ****** Scroll Icon ****** */
 
-.u-scroll-symbol {
-    -webkit-animation: bounce 0.5s linear 1s infinite alternate;
-    -moz-animation: bounce 0.5s linear 1s infinite alternate;
-    -o-animation: bounce 0.5s linear 1s infinite alternate;
-    animation: bounce 0.5s linear 1s infinite alternate;
+.u-scroll__symbol {
+    -webkit-animation: bounce 1s linear 1s infinite alternate;
+    -moz-animation: bounce 1s linear 1s infinite alternate;
+    -o-animation: bounce 1s linear 1s infinite alternate;
+    animation: bounce 1s linear 1s infinite alternate;
 }
 
 @-webkit-keyframes bounce {
@@ -116,18 +116,18 @@
 
 /* ****** Testamonial Fading Animation ****** */
 
-.u-test--fade {
-    -webkit-animation-name: u-test--fade;
-    -moz-animation-name: u-test--fade;
-    -o-animation-name: u-test--fade;
+.u-fade-in {
+    -webkit-animation-name: u-fade-in;
+    -moz-animation-name: u-fade-in;
+    -o-animation-name: u-fade-in;
     -webkit-animation-duration: 1.5s;
     -moz-animation-duration: 1.5s;
     -o-animation-duration: 1.5s;
-    animation-name: u-test--fade;
+    animation-name: u-fade-in;
     animation-duration: 1.5s;
 }
 
-@-webkit-keyframes u-test--fade {
+@-webkit-keyframes u-fade-in {
     from {
         opacity: 0.4;
     }
@@ -136,7 +136,7 @@
     }
 }
 
-@-moz-keyframes u-test--fade {
+@-moz-keyframes u-fade-in {
     from {
         opacity: 0.4;
     }
@@ -145,7 +145,7 @@
     }
 }
 
-@keyframes u-test--fade {
+@keyframes u-fade-in {
     from {
         opacity: 0.4;
     }

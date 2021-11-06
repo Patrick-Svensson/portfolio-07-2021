@@ -4,6 +4,7 @@
 
 .o-bg-video {
     @include wrapper-size(100vw, 100vh);
+    -o-object-fit: cover;
     object-fit: cover;
     position: fixed;
     top: 0;
@@ -11,19 +12,21 @@
 }
 
 .o-header-drawing-bg {
-    @include background-image(url("../../images/flicka-drawing.png"), contain, bottom right);
+    @include background-image(url("../../images/flicka-drawing-faded.png"), contain, bottom right);
     @include wrapper-size(100%, 100%);
     @include flex(column, nowrap, flex-end, flex-end);
-    @include responsive(tablet-land) {
-        @include background-image(url("../../images/flicka-drawing-faded.png"), contain, bottom right);
-    }
 }
 
-/* ****** Testamonials ****** */
+.o-img__header {
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+}
+
+/* ****** Testimonials ****** */
 
 .o-test-bg {
     background-image: url("../../images/polar-chart.png");
     @include wrapper-size(100%, 83%);
+    -o-object-fit: cover;
     object-fit: cover;
     background-repeat: no-repeat;
     background-position-x: 80%;
@@ -53,9 +56,8 @@
 /* ****** Contact ****** */
 
 .o-contact-bg {
-    @include background-image(url("../../images/certificate.jpg"), contain, center);
+    @include background-image(url("../../images/certificate-faded.jpg"), contain, center);
     @include wrapper-size(100%, 100%);
     @include transform(rotate(-25deg) matrix(1.6, -0.3, -0.1, 1.6, 250, 40));
-    opacity: 8%;
     position: absolute;
 }

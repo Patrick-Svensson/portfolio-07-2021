@@ -1,0 +1,67 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.c-header {
+    &--mobile-land {
+        display: none;
+        @include responsive(mobile-land) {
+            display: block;
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    &__heading {
+        &--small {
+            font-family: inherit;
+            display: block;
+            padding-top: 4rem;
+            font-size: 2.4rem;
+            font-size: clamp(1.6rem, 1.3714rem + 0.7143vw, 2.4rem);
+            @include responsive(tablet-port) {
+                font-size: 2rem;
+                font-size: clamp(1.6rem, 1.3714rem + 0.7143vw, 2.4rem);
+            }
+
+            @include responsive(mobile) {
+                font-size: 1.6rem;
+                font-size: clamp(1.6rem, 1.3714rem + 0.7143vw, 2.4rem);
+            }
+        }
+
+        &--medium {
+            font-family: inherit;
+            display: block;
+            padding-top: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-size: 3.2rem;
+            font-size: clamp(2.2rem, 1.9143rem + 0.8929vw, 3.2rem);
+            @include responsive(tablet-port) {
+                font-size: 2.8rem;
+                font-size: clamp(2.2rem, 1.9143rem + 0.8929vw, 3.2rem);
+            }
+
+            @include responsive(mobile) {
+                font-size: 2.2rem;
+                font-size: clamp(2.2rem, 1.9143rem + 0.8929vw, 3.2rem);
+            }
+        }
+    }
+
+    &__text {
+        font-family: $fontProfile;
+        font-size: 2.4rem;
+        font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+        padding: 1rem 0 0 0;
+        @include responsive(tablet-port) {
+            font-size: 1.8rem;
+            font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+        }
+
+        @include responsive(mobile) {
+            font-size: 1.4rem;
+            font-size: clamp(1.4rem, 1.0364rem + 1.1364vw, 2.4rem);
+        }
+    }
+}

@@ -24,7 +24,7 @@
     }
 
     &--bottom:before {
-        @include frame(90%, 0);
+        @include frame(99%, 0);
         right: 0;
         bottom: 0;
         border-bottom: 0.1rem solid $colourFrame;
@@ -84,7 +84,19 @@
     }
 
     &__text {
-        padding: 0 2rem 0 2rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 0 1rem;
+        @include responsive(tablet-land) {
+            line-height: 1rem;
+            padding: 2rem;
+        }
+    }
+
+    &__sub-text {
+        @include responsive(mobile) {
+            display: block;
+        }
     }
 
     &-text-holder {
@@ -94,8 +106,6 @@
 
         &-container {
             @include flex(column, nowrap, center, center);
-            // width: clamp(12rem, 6.8571rem + 16.0714vw, 30rem);
-            height: clamp(4rem, 3.4286rem + 1.7857vw, 6rem);
         }
 
         &__test {

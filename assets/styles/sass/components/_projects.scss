@@ -7,14 +7,13 @@
         position: relative;
         border-radius: 50%;
         cursor: pointer;
-
-        &:hover,
-        focus {
-            box-shadow: 0 0 0 5px $colourLinks;
-        }
+        margin: 1.5rem;
     }
 
     &__img {
+        max-width: 100%;
+        height: 100%;
+        -webkit-filter: blur(1.4px);
         filter: blur(1.4px);
 
         &-heading {
@@ -25,10 +24,6 @@
             @include transform(translate(-50%, -50%));
             text-align: center;
             z-index: 2;
-
-            &--multi {
-                line-height: 3.5rem;
-            }
         }
 
         &-subheading {
@@ -44,15 +39,15 @@
             left: 0;
             z-index: 1;
             &--dark {
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: rgba(0, 0, 0, 0.7);
             }
 
             &--medium {
-                background-color: rgba(0, 0, 0, 0.5);
+                background-color: rgba(0, 0, 0, 0.6);
             }
 
             &--light {
-                background-color: rgba(0, 0, 0, 0.4);
+                background-color: rgba(0, 0, 0, 0.3);
             }
         }
     }

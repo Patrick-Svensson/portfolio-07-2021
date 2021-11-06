@@ -1,8 +1,22 @@
 @use "../tools" as *;
 
-.c-myself__text {
-    padding-bottom: 1rem;
-    @include responsive(mobile) {
+.c-myself {
+    &__text {
+        padding-bottom: 1.2rem;
+        &:last-of-type {
+            margin-bottom: 3rem;
+        }
+
+        &:first-of-type,
+        &:nth-of-type(4) {
+            @include responsive(mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        font-size: inherit;
     }
 }
 

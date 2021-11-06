@@ -1,0 +1,28 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.c-footer-list {
+    margin: 8rem;
+
+    @include responsive(mobile) {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    &__item {
+        font-weight: 400;
+        letter-spacing: 0.02rem;
+        line-height: 2.2rem;
+        font-size: 1.6rem;
+        list-style: circle;
+
+        &:not(:nth-of-type(1)) {
+            padding-top: 2rem;
+        }
+
+        &--icons {
+            font-size: 1.6rem;
+            padding-top: 0.5rem;
+        }
+    }
+}

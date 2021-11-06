@@ -11,11 +11,14 @@
 }
 
 .o-section-container {
-    width: 85%;
+    width: 80%;
     @include flex(row, nowrap, center, center);
     margin: 10rem 0;
     @include responsive(tablet-land) {
         margin: 5rem 0;
+    }
+    @include responsive(mobile) {
+        width: 92%;
     }
 }
 
@@ -24,14 +27,25 @@
     max-width: 140rem;
     position: relative;
     @include responsive(tablet-land) {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
+        margin: 4rem 0;
     }
 
     @include responsive(mobile) {
-        margin-top: 7rem;
-        margin-bottom: 7rem;
+        margin: 0;
     }
+}
+
+.o-img-container {
+    @include wrapper-size(28rem, 28rem);
+    @include responsive(tablet-port) {
+        @include wrapper-size(20rem, 20rem);
+    }
+
+    @include responsive(mobile) {
+        @include wrapper-size(14rem, 14rem);
+    }
+    width: clamp(14rem, 10rem + 12.5vw, 28rem);
+    height: clamp(14rem, 10rem + 12.5vw, 28rem);
 }
 
 /* ****** Header ****** */
@@ -39,29 +53,56 @@
 .o-header {
     &-wrapper {
         @include wrapper-size(100vw, 100vh);
-        @include flex(row, nowrap, center, center);
+        @include flex(column, nowrap, flex-start, center);
         position: relative;
         text-align: center;
+        margin-top: 8rem;
+        @include responsive(mobile-land) {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: 4rem;
+        }
+
+        @include responsive(mobile) {
+            height: 97vh;
+            margin-top: 4rem;
+        }
     }
 
     &-bg-wrapper {
-        @include wrapper-size(80%, 80%);
-        max-width: 140rem;
+        @include wrapper-size(80%, 75%);
+        max-width: 120rem;
         max-height: 130rem;
         @include flex(row, nowrap, flex-start, flex-start);
         position: relative;
-        @include responsive(tablet-port) {
-            @include wrapper-size(85%, 85%);
+        @include responsive(mobile-land) {
+            display: none;
+        }
+        @include responsive(mobile) {
+            width: 92%;
+            height: 80%;
+        }
+    }
+
+    &__img-container {
+        position: absolute;
+        top: 10rem;
+        right: 25rem;
+        @include responsive(tablet-land) {
+            right: 5rem;
         }
 
-        @include responsive(mobile-land) {
+        @include responsive(tablet-port) {
             display: none;
         }
     }
 
     &-text-container {
-        @include wrapper-size(90%, 55%);
-        @include flex(column, wrap, space-between, flex-start);
+        @include wrapper-size(85%, 70%);
+        min-width: 27rem;
+        @include flex(column, wrap, space-evenly, flex-start);
+        margin-top: 3rem;
     }
 }
 
@@ -69,33 +110,46 @@
 
 .o-navbar {
     &-links-wrapper {
-        @include wrapper-size(90%, 25%);
+        @include wrapper-size(95%, 15%);
         @include flex(row, nowrap, flex-start, flex-end);
+        @include responsive(mobile) {
+            height: 25%;
+        }
     }
 
     &-links-container {
         @include wrapper-size(100%, auto);
-        max-width: 60rem;
         @include flex(row, nowrap, space-between, flex-end);
     }
 }
 
-/* ****** Testamonials ****** */
+.o-scroll-nav-wrapper {
+    @include wrapper-size(100%, 6rem);
+    @include flex(row, nowrap, center, center);
+    margin-top: 2rem;
+    @include responsive(mobile) {
+        height: 3rem;
+    }
+}
+
+/* ****** Testimonials ****** */
 
 .o-test {
     &-wrapper {
         @include wrapper-size(100vw, 70vh);
+        min-height: 68rem;
         @include flex(row, nowrap, center, center);
         overflow: hidden;
         @include responsive(mobile) {
-            height: 100vh;
+            height: 95vh;
         }
     }
 
     &-carousel__control-panel {
-        @include wrapper-size(50vw, 6rem);
+        @include wrapper-size(50vw, 7rem);
         max-width: 50rem;
         @include flex(row, nowrap, space-between, flex-start);
+        -ms-flex-item-align: end;
         align-self: flex-end;
     }
 }
@@ -104,6 +158,7 @@
 .o-projects {
     &-wrapper {
         width: 100vw;
+        background: -o-linear-gradient(45deg, $colourCloud 0%, $colourBgLight 100%);
         background: linear-gradient(45deg, $colourCloud 0%, $colourBgLight 100%);
         @include flex(row, nowrap, center, center);
     }
@@ -115,26 +170,29 @@
     &__container {
         @include flex(row, wrap, center, center);
         margin-bottom: 5rem;
-        padding: 10rem;
-        gap: 3rem;
+        padding: 18rem 0;
+        @include responsive(mobile) {
+            padding: 5rem 0;
+        }
     }
 
     &__group-container {
         @include flex(row, wrap, center, center);
-        gap: 3rem;
     }
 
     &__subgroup-container {
-        @include flex(column, nowrap, space-between, center);
-        gap: 3rem;
+        @include flex(row, wrap, center, center);
     }
 }
+
 /* ****** Myself ****** */
 
 .o-myself {
     &-wrapper {
         width: 100vw;
         @include flex(column, nowrap, flex-end, center);
+        background: -webkit-gradient(linear, left top, right top, from($colourWater), to($colourCloud));
+        background: -o-linear-gradient(left, $colourWater 0%, $colourCloud 100%);
         background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
     }
 
@@ -148,42 +206,38 @@
     &-content-wrapper {
         @include flex(row, nowrap, space-between, center);
         @include responsive(mobile) {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
         }
     }
 
     &-content-container {
         @include flex(row, wrap, space-between, center);
-        gap: 5rem;
-        padding: 10rem 10rem;
+        gap: 3rem;
+        padding: 10rem 5rem;
         @include responsive(tablet-land) {
             padding-top: 6rem;
             padding-bottom: 6rem;
         }
 
         @include responsive(mobile) {
-            padding: 4rem;
+            padding: 4rem 2rem;
         }
     }
 
     &__img-container {
-        width: clamp(14rem, 10rem + 12.5vw, 28rem);
-        height: clamp(14rem, 10rem + 12.5vw, 28rem);
+        -ms-flex-item-align: start;
         align-self: flex-start;
+        margin: 0 3rem 2rem 0;
     }
 
     &__text-wrapper {
-        @include wrapper-size(50rem, auto);
+        @include wrapper-size(64rem, auto);
         @include flex(column, nowrap, space-between, center);
         @include responsive(tablet-land) {
             width: 100%;
         }
-    }
-
-    &__link-wrapper {
-        width: 75%;
-        @include flex(row, nowrap, flex-start, flex-end);
-        padding-bottom: 2rem;
     }
 }
 
@@ -192,6 +246,8 @@
 .o-waves-wrapper {
     @include wrapper-size(100vw, 15vh);
     position: relative;
+    background: -webkit-gradient(linear, left top, right top, from($colourWater), to($colourCloud));
+    background: -o-linear-gradient(left, $colourWater 0%, $colourCloud 100%);
     background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
     color: $colourBgLight;
     @include responsive(tablet-land) {
@@ -214,17 +270,38 @@
 
     &-content-wrapper {
         max-width: 140rem;
+        max-height: 50rem;
         @include wrapper-size(80%, 70%);
         @include flex(column, nowrap, space-between, flex-start);
+        z-index: 1;
+        @include responsive(mobile) {
+            width: 90%;
+        }
     }
 
     &__links-wrapper {
         @include wrapper-size(100%, 35%);
+        min-height: 14rem;
         @include flex(column, nowrap, space-between, flex-start);
     }
 
     &__link-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+    }
+}
+
+/* ****** Footer ****** */
+
+.o-footer-wrapper {
+    @include flex(row, nowrap, flex-start, center);
+    position: relative;
+    background: -webkit-gradient(linear, left top, right top, from($colourWater), to($colourCloud));
+    background: -o-linear-gradient(left, $colourWater 0%, $colourCloud 100%);
+    background: linear-gradient(90deg, $colourWater 0%, $colourCloud 100%);
+    @include responsive(mobile-land) {
+        display: none;
     }
 }
 
@@ -239,14 +316,25 @@
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
-    transform: scale(1.1);
+    @include transform(scale(1.1));
+    -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    -o-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     z-index: 3;
+    @include responsive(mobile-land) {
+        display: none;
+    }
 }
 
 .activateModalContainer {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    @include transform(scale(1));
+    -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    -o-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }

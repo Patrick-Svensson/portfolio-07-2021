@@ -3,11 +3,22 @@
 
 h1 {
     font-family: $fontProfile;
-    font-size: clamp(3.8rem, 2.5636rem + 3.8636vw, 7.2rem);
-    font-weight: 400;
+    font-weight: 700;
     text-align: left;
+    font-size: 6rem;
+    font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
+    @include responsive(tablet-port) {
+        font-size: 5.2rem;
+        font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
+    }
+
+    @include responsive(mobile) {
+        font-size: 4.2rem;
+        font-size: clamp(4.2rem, 3.6857rem + 1.6071vw, 6rem);
+    }
+
     @include responsive(mobile-land) {
-        font-size: 3.8rem;
+        font-size: 4.2rem;
     }
 
     & > span {
@@ -16,49 +27,42 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+    font-family: $fontProfile;
     font-weight: 700;
+    padding: 1rem 4rem;
+    font-size: 3.2rem;
+    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+    @include responsive(tablet-port) {
+        font-size: 2.6rem;
+        font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+    }
+
+    @include responsive(mobile) {
+        font-size: 2rem;
+        font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
+        padding: 1rem 2rem;
+    }
 }
 
 h3 {
     font-family: $fontProfile;
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
 
-h4 {
-    font-size: clamp(2rem, 1.5636rem + 1.3636vw, 3.2rem);
-    font-weight: 600;
-    font-style: italic;
-    letter-spacing: 0.08rem;
-}
-
-h5 {
-    font-size: 0.8rem;
-    font-weight: 400;
-    @include responsive(mobile) {
-        font-size: 0.6rem;
-    }
-}
-
-h5 > span {
-    @include responsive(mobile) {
-        display: block;
-    }
-}
-
 p {
-    font-size: clamp(0.8rem, 0.6545rem + 0.4545vw, 1.2rem);
     font-weight: 400;
-    letter-spacing: 0.06rem;
-    line-height: 1.6rem;
-    @include responsive(mobile) {
-        line-height: 1rem;
-    }
+    letter-spacing: 0.02rem;
+    line-height: 2.6rem;
+    font-size: 2rem;
 }
 
-li {
-    list-style: none;
+cite {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    @include responsive(tablet-land) {
+        padding: 2rem;
+    }
 }
